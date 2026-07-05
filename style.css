@@ -13,13 +13,6 @@ body {
 
 h1 {
   text-align: center;
-  margin-bottom: 5px;
-}
-
-.subtitle {
-  text-align: center;
-  opacity: 0.7;
-  margin-bottom: 20px;
 }
 
 .card {
@@ -49,62 +42,10 @@ button {
   color: black;
 }
 
-.actions {
-  display: flex;
-  gap: 10px;
-}
-
-.actions button {
-  flex: 1;
-  background: #1f2937;
-  color: white;
-}
-
-/* CARDS */
-.doa-card {
-  background: #111827;
-  padding: 15px;
-  margin-bottom: 12px;
-  border-radius: 12px;
-  border: 1px solid #1f2937;
-  transition: 0.2s;
-}
-
-.doa-card:hover {
-  border: 1px solid #22c55e;
-  transform: translateY(-2px);
-}
-
-.section-title {
-  font-weight: bold;
-  color: #22c55e;
-  margin-bottom: 8px;
-}
-
-/* ARABE */
-.arabic {
-  font-size: 22px;
-  text-align: right;
-  direction: rtl;
-  color: #f8fafc;
-}
-
-/* SALAWAT PREMIUM */
-.salawat {
-  font-size: 20px;
-  text-align: center;
-  direction: rtl;
-  padding: 15px;
-  background: linear-gradient(135deg, #1f2937, #0b1220);
-  border: 1px solid #22c55e;
-  border-radius: 12px;
-  color: #22c55e;
-  font-weight: bold;
-}
 .lang {
   display: flex;
   gap: 10px;
-  margin: 15px 0;
+  margin-bottom: 15px;
 }
 
 .lang button {
@@ -112,11 +53,30 @@ button {
   background: #1f2937;
   color: white;
   border-radius: 10px;
-  padding: 10px;
   border: 1px solid #374151;
 }
 
 .lang button.active {
   background: #22c55e;
   color: black;
+}
+
+.doa-card {
+  background: #111827;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  border: 1px solid #1f2937;
+}
+
+.section-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #22c55e;
+}
+
+.arabic {
+  font-size: 22px;
+  text-align: right;
+  direction: rtl;
 }
