@@ -28,39 +28,47 @@ function generateDua(selectedCategories) {
   let result = "";
 
   // 1. HAMD
-  result += "🤲 Au nom d'Allah, le Tout Miséricordieux, le Très Miséricordieux\n\n";
-  result += "Louange à Allah, Seigneur des mondes, Créateur des cieux et de la terre.\n\n";
+  result += "🤲 Au nom d'Allah, le Tout Miséricordieux, le Très Miséricordieux\n";
+  result += "Louange à Allah, Seigneur des mondes, Maître des cieux et de la terre.\n\n";
 
-  // 2. SALAWAT
-  result += "اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى نَبِيِّنَا مُحَمَّد ﷺ\n\n";
+  // 2. SALAWAT (IMPORTANT AJOUT)
+  result += "اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى نَبِيِّنَا مُحَمَّد ﷺ\n";
+  result += "Ô Allah, envoie Tes bénédictions et Ta paix sur le Prophète Muhammad ﷺ\n\n";
 
   // 3. DOUAS
-  selectedCategories = shuffle(selectedCategories);
+  const shuffled = selectedCategories.sort(() => Math.random() - 0.5);
 
-  selectedCategories.forEach(cat => {
+  shuffled.forEach(cat => {
     const dua = getRandomDua(cat);
     if (!dua) return;
 
-    result += `📿 (${cat.toUpperCase()})\n\n`;
-    result += `${dua.arabic}\n\n`;
-    result += `${dua.transliteration}\n\n`;
-    result += `${dua.translation}\n\n`;
-    result += `Source : ${dua.source}\n\n`;
-    result += "-----------------------------\n\n";
+    // FRANÇAIS
+    result += "🇫🇷 " + (cat.toUpperCase()) + "\n";
+    result += dua.translation + "\n\n";
+
+    // ARABE
+    result += "🇸🇦 Arabe :\n";
+    result += dua.arabic + "\n\n";
+
+    // PHONÉTIQUE
+    result += "🔤 Phonétique :\n";
+    result += dua.transliteration + "\n\n";
+
+    result += "------------------------\n\n";
   });
 
   // 4. ISTIGHFAR (OBLIGATOIRE)
   result += "📿 ISTIGHFAR\n\n";
   result += "Astaghfirullaha wa atoubu ilayh\n\n";
-  result += "Le Prophète ﷺ a dit : \"Celui qui demande pardon à Allah fréquemment, Allah lui ouvre des issues à chaque difficulté.\"\n\n";
+  result += "Le Prophète ﷺ a dit : Celui qui demande pardon fréquemment, Allah lui ouvre des issues.\n\n";
 
-  result += "-----------------------------\n\n";
+  result += "------------------------\n\n";
 
-  // 5. YAQÎN (FOI ET CERTITUDE)
-  result += "❤️ YAQÎN (CONFIANCE EN ALLAH)\n\n";
-  result += "Invoque Allah avec certitude. Rien n’est perdu auprès de Lui.\n";
-  result += "Chaque dou’a est entendue : soit exaucée immédiatement, soit protégée, soit réservée pour l’au-delà.\n\n";
-  result += "Ne cesse jamais d’invoquer, même si la réponse tarde.\n";
+  // 5. YAQÎN
+  result += "❤️ YAQÎN (CERTITUDE EN ALLAH)\n\n";
+  result += "Invoque Allah avec certitude.\n";
+  result += "Allah répond toujours : soit immédiatement, soit plus tard, soit par une protection.\n";
+  result += "Ne désespère jamais de Sa miséricorde.\n";
 
   return result;
 }
