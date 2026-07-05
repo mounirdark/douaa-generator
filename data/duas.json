@@ -1,0 +1,136 @@
+{
+  "mariage": [
+    {
+      "id": "quran_25_74",
+      "source": "Coran 25:74",
+      "type": "coran",
+      "arabic": "رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا",
+      "transliteration": "Rabbana hab lana min azwajina wa dhurriyyatina qurrata a'yun waj'alna lil muttaqina imama",
+      "translation": "Seigneur, accorde-nous des épouses et des descendants qui soient une joie pour nos yeux, et fais de nous un exemple pour les pieux."
+    },
+    {
+      "id": "general_blessing_spouse",
+      "source": "Sunna (doua générale)",
+      "type": "sunna",
+      "arabic": "اللَّهُمَّ بَارِكْ لِي فِي أَهْلِي وَبَارِكْ لِي فِيمَا رَزَقْتَنِي",
+      "transliteration": "Allahumma barik li fi ahli wa barik li fima razaqtani",
+      "translation": "Ô Allah, bénis ma famille et ce que Tu m’as accordé."
+    },
+    {
+      "id": "good_spouse_doa",
+      "source": "Doua générale authentique",
+      "type": "sunna",
+      "arabic": "اللَّهُمَّ ارْزُقْنِي زَوْجًا صَالِحًا وَاجْعَلْ بَيْنَنَا مَوَدَّةً وَرَحْمَةً",
+      "transliteration": "Allahumma urzuqni zawjan salihan waj'al baynana mawaddatan wa rahmah",
+      "translation": "Ô Allah, accorde-moi un conjoint pieux et mets entre nous amour et miséricorde."
+    }
+  ],
+
+  "famille": [
+    {
+      "id": "parents_17_24",
+      "source": "Coran 17:24",
+      "type": "coran",
+      "arabic": "رَبِّ ارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا",
+      "transliteration": "Rabbi irhamhuma kama rabbayani saghira",
+      "translation": "Seigneur, fais-leur miséricorde comme ils m’ont élevé lorsque j’étais petit."
+    },
+    {
+      "id": "family_protection",
+      "source": "Sunna",
+      "type": "sunna",
+      "arabic": "اللَّهُمَّ احْفَظْ أَهْلِي وَبَارِكْ فِيهِمْ",
+      "transliteration": "Allahumma ihfaz ahli wa barik fihim",
+      "translation": "Ô Allah, protège ma famille et mets la bénédiction en eux."
+    },
+    {
+      "id": "love_family",
+      "source": "Doua générale",
+      "type": "sunna",
+      "arabic": "اللَّهُمَّ أَلِّفْ بَيْنَ قُلُوبِنَا وَأَصْلِحْ ذَاتَ بَيْنِنَا",
+      "transliteration": "Allahumma allif bayna qulubina wa aslih dhata baynina",
+      "translation": "Ô Allah, unis nos cœurs et réconcilie nos relations."
+    }
+  ],
+
+  "travail": [
+    {
+      "id": "moussa_28_24",
+      "source": "Coran 28:24",
+      "type": "coran",
+      "arabic": "رَبِّ إِنِّي لِمَا أَنْزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ",
+      "transliteration": "Rabbi inni lima anzalta ilayya min khayrin faqir",
+      "translation": "Seigneur, j’ai grand besoin du bien que Tu feras descendre vers moi."
+    },
+    {
+      "id": "ease_work",
+      "source": "Sunna",
+      "type": "sunna",
+      "arabic": "اللَّهُمَّ يَسِّرْ لِي أَمْرِي وَافْتَحْ لِي أَبْوَابَ رِزْقِكَ",
+      "transliteration": "Allahumma yassir li amri waftah li abwaba rizqik",
+      "translation": "Ô Allah, facilite mes affaires et ouvre-moi les portes de Ta subsistance."
+    },
+    {
+      "id": "baraka_work",
+      "source": "Sunna",
+      "type": "sunna",
+      "arabic": "اللَّهُمَّ بَارِكْ لِي فِي عَمَلِي وَارْزُقْنِي طَيِّبًا",
+      "transliteration": "Allahumma barik li fi 'amali warzuqni tayyiban",
+      "translation": "Ô Allah, bénis mon travail et accorde-moi une subsistance licite."
+    }
+  ],
+
+  "argent": [
+    {
+      "id": "halal_rizq",
+      "source": "Hadith (Tirmidhi)",
+      "type": "sunna",
+      "arabic": "اللَّهُمَّ اكْفِنِي بِحَلَالِكَ عَنْ حَرَامِكَ وَأَغْنِنِي بِفَضْلِكَ عَمَّنْ سِوَاكَ",
+      "transliteration": "Allahumma ikfini bihalalika an haramika wa aghnini bifadlika amman siwak",
+      "translation": "Ô Allah, rends-moi suffisant par le licite afin que je n’ai pas besoin de l’illicite."
+    },
+    {
+      "id": "rizq_opening",
+      "source": "Sunna",
+      "type": "sunna",
+      "arabic": "اللَّهُمَّ ارْزُقْنِي رِزْقًا طَيِّبًا وَوَاسِعًا",
+      "transliteration": "Allahumma urzuqni rizqan tayyiban wa wasi'an",
+      "translation": "Ô Allah, accorde-moi une subsistance pure et abondante."
+    },
+    {
+      "id": "protection_debt",
+      "source": "Sunna",
+      "type": "sunna",
+      "arabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الدَّيْنِ وَغَلَبَةِ الرِّجَالِ",
+      "transliteration": "Allahumma inni a'udhu bika mina d-dayn wa ghalabatir rijal",
+      "translation": "Ô Allah, je cherche protection auprès de Toi contre les dettes et la domination des hommes."
+    }
+  ],
+
+  "patience": [
+    {
+      "id": "yunus_21_87",
+      "source": "Coran 21:87",
+      "type": "coran",
+      "arabic": "لَا إِلَٰهَ إِلَّا أَنتَ سُبْحَانَكَ إِنِّي كُنتُ مِنَ الظَّالِمِينَ",
+      "transliteration": "La ilaha illa anta subhanaka inni kuntu mina-z-zalimin",
+      "translation": "Il n’y a de divinité que Toi. Gloire à Toi, j’ai été du nombre des injustes."
+    },
+    {
+      "id": "patience_prayer",
+      "source": "Coran 2:153",
+      "type": "coran",
+      "arabic": "يَا أَيُّهَا الَّذِينَ آمَنُوا اسْتَعِينُوا بِالصَّبْرِ وَالصَّلَاةِ",
+      "transliteration": "Ya ayyuhal ladhina amanu ista'inu bis-sabri was-salat",
+      "translation": "Ô croyants, cherchez secours dans la patience et la prière."
+    },
+    {
+      "id": "relief_after_hardship",
+      "source": "Coran 94:5-6",
+      "type": "coran",
+      "arabic": "فَإِنَّ مَعَ الْعُسْرِ يُسْرًا إِنَّ مَعَ الْعُسْرِ يُسْرًا",
+      "transliteration": "Fa inna ma'al usri yusra",
+      "translation": "Certes, avec la difficulté vient la facilité."
+    }
+  ]
+}
