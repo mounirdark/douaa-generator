@@ -1,96 +1,87 @@
 let DUAS = {};
+let lastGenerated = "";
 
-// Charger les données
+// load data
 async function loadDuas() {
   const res = await fetch("./data/duas.json");
   DUAS = await res.json();
 }
 
+// get categories
 function getSelectedCategories() {
   const checkboxes = document.querySelectorAll('input[name="category"]:checked');
   return Array.from(checkboxes).map(cb => cb.value);
 }
 
-// tirer une dou'a aléatoire dans une catégorie
-function getRandomDua(category) {
-  const list = DUAS[category];
-  if (!list || list.length === 0) return null;
+// random
+function random(list) {
   return list[Math.floor(Math.random() * list.length)];
 }
 
-// Mélange simple pour éviter répétition
-function shuffle(array) {
-  return array.sort(() => Math.random() - 0.5);
+// build UI card
+function createCard(title, content, className = "") {
+  return `
+    <div class="doa-card ${className}">
+      <div class="section-title">${title}</div>
+      <div>${content}</div>
+    </div>
+  `;
 }
 
-// Construction du texte
-function generateDua(selectedCategories) {
-  let result = "";
+// generate
+function generate() {
+  const cats = getSelectedCategories();
 
-  // 1. HAMD
-  result += "🤲 Au nom d'Allah, le Tout Miséricordieux, le Très Miséricordieux\n";
-  result += "Louange à Allah, Seigneur des mondes, Maître des cieux et de la terre.\n\n";
-
-  // 2. SALAWAT (IMPORTANT AJOUT)
-  result += "اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى نَبِيِّنَا مُحَمَّد ﷺ\n";
-  result += "Ô Allah, envoie Tes bénédictions et Ta paix sur le Prophète Muhammad ﷺ\n\n";
-
-  // 3. DOUAS
-  const shuffled = selectedCategories.sort(() => Math.random() - 0.5);
-
-  shuffled.forEach(cat => {
-    const dua = getRandomDua(cat);
-    if (!dua) return;
-
-    // FRANÇAIS
-    result += "🇫🇷 " + (cat.toUpperCase()) + "\n";
-    result += dua.translation + "\n\n";
-
-    // ARABE
-    result += "🇸🇦 Arabe :\n";
-    result += dua.arabic + "\n\n";
-
-    // PHONÉTIQUE
-    result += "🔤 Phonétique :\n";
-    result += dua.transliteration + "\n\n";
-
-    result += "------------------------\n\n";
-  });
-
-  // 4. ISTIGHFAR (OBLIGATOIRE)
-  result += "📿 ISTIGHFAR\n\n";
-  result += "Astaghfirullaha wa atoubu ilayh\n\n";
-  result += "Le Prophète ﷺ a dit : Celui qui demande pardon fréquemment, Allah lui ouvre des issues.\n\n";
-
-  result += "------------------------\n\n";
-
-  // 5. YAQÎN
-  result += "❤️ YAQÎN (CERTITUDE EN ALLAH)\n\n";
-  result += "Invoque Allah avec certitude.\n";
-  result += "Allah répond toujours : soit immédiatement, soit plus tard, soit par une protection.\n";
-  result += "Ne désespère jamais de Sa miséricorde.\n";
-
-  return result;
-}
-
-// Affichage
-function displayDua(text) {
-  const output = document.getElementById("output");
-  output.innerText = text;
-}
-
-// Event principal
-document.getElementById("generateBtn").addEventListener("click", () => {
-  const selected = getSelectedCategories();
-
-  if (selected.length === 0) {
-    alert("Sélectionne au moins une catégorie.");
+  if (cats.length === 0) {
+    alert("Sélectionne au moins une catégorie");
     return;
   }
 
-  const dua = generateDua(selected);
-  displayDua(dua);
-});
+  let output = "";
 
-// Init
+  // HAMD
+  output += createCard("🤲 Louange",
+    "Louange à Allah, Seigneur des mondes."
+  );
+
+  // SALAWAT
+  output += createCard("ﷺ Salawat",
+    "اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى مُحَمَّد"
+  );
+
+  // DOUAS
+  cats.forEach(cat => {
+    const dua = random(DUAS[cat]);
+
+    output += createCard("🇫🇷 Français", dua.translation);
+    output += createCard("🇸🇦 Arabe", `<div class="arabic">${dua.arabic}</div>`);
+    output += createCard("🔤 Phonétique", dua.transliteration);
+  });
+
+  // ISTIGHFAR
+  output += createCard("📿 Istighfar",
+    "Astaghfirullaha wa atoubu ilayh"
+  );
+
+  // YAQIN
+  output += createCard("❤️ Yaqîn",
+    "Allah répond toujours aux invocations, au bon moment et de la meilleure manière."
+  );
+
+  lastGenerated = output;
+
+  document.getElementById("output").innerHTML = output;
+}
+
+// copy
+function copy() {
+  navigator.clipboard.writeText(lastGenerated.replace(/<[^>]*>/g, ""));
+  alert("Copié !");
+}
+
+// events
+document.getElementById("generateBtn").addEventListener("click", generate);
+document.getElementById("copyBtn").addEventListener("click", copy);
+document.getElementById("regenBtn").addEventListener("click", generate);
+
 loadDuas();
