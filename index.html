@@ -2,25 +2,42 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Douaa Generator</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <h1>🤲 Douaa Generator</h1>
+  <div class="container">
 
-  <div id="categories">
-    <label><input type="checkbox" name="category" value="mariage"> Mariage</label>
-    <label><input type="checkbox" name="category" value="famille"> Famille</label>
-    <label><input type="checkbox" name="category" value="travail"> Travail</label>
-    <label><input type="checkbox" name="category" value="argent"> Argent</label>
-    <label><input type="checkbox" name="category" value="patience"> Patience</label>
+    <h1>🤲 Douaa Generator</h1>
+    <p class="subtitle">Génère des invocations basées sur le Coran et la Sunna</p>
+
+    <div class="card">
+
+      <h2>Choisis tes besoins</h2>
+
+      <label><input type="checkbox" name="category" value="mariage"> Mariage</label>
+      <label><input type="checkbox" name="category" value="famille"> Famille</label>
+      <label><input type="checkbox" name="category" value="travail"> Travail</label>
+      <label><input type="checkbox" name="category" value="argent"> Argent</label>
+      <label><input type="checkbox" name="category" value="patience"> Patience</label>
+
+      <button id="generateBtn">✨ Générer ma dou’a</button>
+
+    </div>
+
+    <div id="output"></div>
+
+    <div class="actions">
+      <button id="copyBtn">📋 Copier</button>
+      <button id="regenBtn">🔁 Re-générer</button>
+    </div>
+
   </div>
 
-  <button id="generateBtn">Générer ma dou’a</button>
-
-  <pre id="output"></pre>
-
   <script src="app.js"></script>
+
 </body>
 </html>
