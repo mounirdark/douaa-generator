@@ -31,9 +31,11 @@ function getLouange() {
 // SALAWAT (NEUTRE, SANS STYLE SPÉCIAL)
 function getSalawat() {
   return {
-    fr: "Prier sur le Prophète ﷺ est une cause d’acceptation des invocations.",
-    ar: "اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى نَبِيِّنَا مُحَمَّد ﷺ",
-    ph: "Allahumma salli wa sallim 'ala Muhammad"
+    fr: "Ô Allah, prie sur Muhammad et sur la famille de Muhammad comme Tu as prié sur Ibrahim et sur la famille d'Ibrahim. Tu es certes Digne de louange et de glorification.",
+    
+    ar: "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
+    
+    ph: "Allahumma salli 'ala Muhammad wa 'ala ali Muhammad kama sallayta 'ala Ibrahim wa 'ala ali Ibrahim innaka hamidun majid"
   };
 }
 
