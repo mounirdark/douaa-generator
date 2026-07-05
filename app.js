@@ -1,16 +1,8 @@
 let DUAS = {};
-let lastGenerated = "";
+let lastData = null;
+let currentLang = "fr";
 
-// NOMS D'ALLAH SELON BESOIN
-const ALLAH_NAMES = {
-  mariage: "Ya Wadud (Le Tout Aimant), Ya Latif (Le Subtil Bienveillant)",
-  famille: "Ya Rahman (Le Très Miséricordieux), Ya Rahim",
-  travail: "Ya Razzaq (Le Pourvoyeur), Ya Fattah (Celui qui ouvre)",
-  argent: "Ya Razzaq, Ya Ghani (Le Riche absolu)",
-  patience: "Ya Sabur (Le Patient), Ya Hakim (Le Sage)"
-};
-
-// LOAD DATA
+// LOAD
 async function loadDuas() {
   const res = await fetch("./data/duas.json");
   DUAS = await res.json();
@@ -27,38 +19,106 @@ function random(list) {
   return list[Math.floor(Math.random() * list.length)];
 }
 
-// CARD UI
-function createCard(title, content) {
-  return `
-    <div class="doa-card">
-      <div class="section-title">${title}</div>
-      <div>${content}</div>
-    </div>
-  `;
+// INTRO (NOMS D'ALLAH SIMPLIFIÉ)
+function intro(cat) {
+  return {
+    fr: `Ô Allah, je me tourne vers Toi avec besoin et confiance.`,
+    ar: `اللهم إني أتوجه إليك`,
+    ph: `Allahumma inni atawajjahu ilayk`
+  };
 }
 
-// INTRO SPIRITUELLE
-function buildIntro(cat) {
-  return `
-Ô ${ALLAH_NAMES[cat]},
-
-Je me tourne vers Toi avec humilité et besoin.
-Toi qui entends toute chose et réponds aux invocations sincères.
-`;
+// SALAWAT (FORTEMENT MIS EN AVANT)
+function salawat() {
+  return {
+    fr: "🌙 Prier sur le Prophète ﷺ est une cause d'acceptation des invocations.",
+    ar: "اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى مُحَمَّد ﷺ",
+    ph: "Allahumma salli wa sallim 'ala Muhammad"
+  };
 }
 
-// SALAWAT PREMIUM
-function buildSalawat() {
-  return `
-<div class="salawat">
-اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَى نَبِيِّنَا مُحَمَّد ﷺ
-</div>
-
-Les prières sur le Prophète ﷺ sont une cause d’acceptation des invocations.
-`;
+// CLOSING DUAA (DOUA SANDWICH)
+function closing() {
+  return {
+    fr: "Ô Allah, accepte cette invocation et fais qu'elle soit un bien pour moi dans cette vie et dans l'au-delà.",
+    ar: "اللهم تقبل دعائي واجعل فيه الخير",
+    ph: "Allahumma taqabbal du'ai"
+  };
 }
 
-// GENERATION
+// BUILD CONTENT
+function buildContent(cats) {
+  let data = [];
+
+  cats.forEach(cat => {
+    const dua = random(DUAS[cat]);
+
+    data.push({
+      type: "intro",
+      content: intro(cat)
+    });
+
+    data.push({
+      type: "salawat",
+      content: salawat()
+    });
+
+    data.push({
+      type: "dua",
+      content: {
+        fr: dua.translation,
+        ar: dua.arabic,
+        ph: dua.transliteration
+      }
+    });
+
+    data.push({
+      type: "closing",
+      content: closing()
+    });
+  });
+
+  // ALWAYS FOOTER
+  data.push({
+    type: "footer",
+    content: {
+      fr: "📿 Multiplie l’istighfar : Astaghfirullaha wa atoubu ilayh\n❤️ Garde confiance en Allah (Yaqîn)",
+      ar: "استغفر الله",
+      ph: "Astaghfirullah"
+    }
+  });
+
+  return data;
+}
+
+// RENDER
+function render(lang) {
+  currentLang = lang;
+
+  const output = document.getElementById("output");
+
+  let html = "";
+
+  lastData.forEach(block => {
+    const c = block.content[lang] || block.content.fr;
+
+    if (block.type === "salawat") {
+      html += `<div class="doa-card salawat">${c}</div>`;
+    } else {
+      html += `<div class="doa-card">${c}</div>`;
+    }
+  });
+
+  output.innerHTML = html;
+
+  // active button UI
+  document.querySelectorAll("#langSwitcher button").forEach(b => {
+    b.classList.remove("active");
+    if (b.dataset.lang === lang) b.classList.add("active");
+  });
+}
+
+// GENERATE
 function generate() {
   const cats = getSelectedCategories();
 
@@ -67,52 +127,18 @@ function generate() {
     return;
   }
 
-  let output = "";
+  lastData = buildContent(cats);
 
-  cats.forEach(cat => {
-    const dua = random(DUAS[cat]);
+  document.getElementById("langSwitcher").classList.remove("hidden");
 
-    // 1. INTRO (NOMS D'ALLAH)
-    output += createCard("🕋 Invocation d'ouverture", buildIntro(cat));
-
-    // 2. LOUANGE
-    output += createCard("🤲 Louange", "Louange à Allah, Seigneur des mondes.");
-
-    // 3. SALAWAT (IMPORTANT)
-    output += createCard("🌙 Salawat", buildSalawat());
-
-    // 4. FRANÇAIS
-    output += createCard("🇫🇷 Français", dua.translation);
-
-    // 5. ARABE
-    output += createCard("🇸🇦 Arabe", `<div class="arabic">${dua.arabic}</div>`);
-
-    // 6. PHONETIQUE
-    output += createCard("🔤 Phonétique", dua.transliteration);
-  });
-
-  // 7. ISTIGHFAR
-  output += createCard("📿 Istighfar", "Astaghfirullaha wa atoubu ilayh");
-
-  // 8. YAQIN
-  output += createCard("❤️ Yaqîn",
-    "Allah répond toujours aux invocations : au bon moment, de la meilleure manière."
-  );
-
-  lastGenerated = output;
-  document.getElementById("output").innerHTML = output;
-}
-
-// COPY
-function copy() {
-  navigator.clipboard.writeText(lastGenerated.replace(/<[^>]*>/g, ""));
-  alert("Dou’a copiée !");
+  render("fr");
 }
 
 // EVENTS
 document.getElementById("generateBtn").addEventListener("click", generate);
-document.getElementById("copyBtn").addEventListener("click", copy);
-document.getElementById("regenBtn").addEventListener("click", generate);
 
-// INIT
+document.querySelectorAll("#langSwitcher button").forEach(btn => {
+  btn.addEventListener("click", () => render(btn.dataset.lang));
+});
+
 loadDuas();
