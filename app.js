@@ -22,9 +22,9 @@ function random(list) {
 // LOUANGE
 function getLouange() {
   return {
-    fr: "Louange à Allah, Seigneur des mondes, le Tout Miséricordieux.",
-    ar: "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
-    ph: "Alhamdulillahi Rabbil 'alamin"
+    fr: "Il n’y a de divinité digne d’être adorée qu’Allah, le Très Grand, le Très Clément. Il n’y a de divinité digne d’être adorée qu’Allah, Seigneur du Trône immense. Il n’y a de divinité digne d’être adorée qu’Allah, Seigneur des cieux, Seigneur de la terre et Seigneur du Noble Trône.",
+    ar: "لا إِلَهَ إِلَّا اللَّهُ الْعَظِيمُ الْحَلِيمُ، لا إِلَهَ إِلَّا اللَّهُ رَبُّ الْعَرْشِ الْعَظِيمِ، لا إِلَهَ إِلَّا اللَّهُ رَبُّ السَّمَاوَاتِ وَرَبُّ الْأَرْضِ وَرَبُّ الْعَرْشِ الْكَرِيمِ",
+    ph: "Lâ ilâha illallâhu al-'Azîmu al-Halîm, Lâ ilâha illallâhu Rabbu al-'Arshi al-'Azîm, Lâ ilâha illallâhu Rabbu as-samâwâti wa Rabbu al-ardi wa Rabbu al-'Arshi al-Karîm."
   };
 }
 
