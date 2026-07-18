@@ -359,17 +359,13 @@ function createTawakkulCard() {
       style="animation-delay: 420ms"
     >
       <h3 class="card-title">
-        Tawakkul et Yaqîn après l’invocation
+        Tawakkul et Yaqîn
       </h3>
 
       <div class="card-content tawakkul-content">
-        <h4>Multipliez l’istighfar</h4>
-
         <p>
-          Demandez pardon à Allah avec sincérité, reconnaissez vos
-          manquements et revenez vers Lui. L’istighfar accompagne le
-          repentir, la correction de ses actes et l’espoir en la
-          miséricorde d’Allah.
+          Multipliez l’istighfar, accomplissez les causes licites
+          et placez votre confiance en Allah.
         </p>
 
         <div class="dhikr">
@@ -380,40 +376,14 @@ function createTawakkulCard() {
           </small>
         </div>
 
-        <h4>Placez votre confiance en Allah</h4>
-
         <p>
-          Après avoir invoqué, accomplissez les causes licites qui sont à
-          votre portée, puis remettez le résultat à Allah. Le tawakkul ne
-          signifie pas rester passif : il consiste à agir tout en sachant
-          que le résultat appartient à Allah.
+          Invoquez avec un cœur fermement convaincu qu’Allah vous entend
+          et qu’Il répondra de la manière la plus juste, au meilleur moment.
         </p>
 
-        <h4>Gardez le yaqîn</h4>
-
         <p>
-          Invoquez avec un cœur présent, en ayant confiance dans l’écoute,
-          la sagesse et la miséricorde d’Allah. Une réponse peut arriver
-          au moment attendu, plus tard, ou prendre une forme différente
-          de celle que vous imaginiez.
-        </p>
-
-        <h4>Ne vous précipitez pas</h4>
-
-        <p>
-          Continuez d’invoquer sans désespérer. Éloignez-vous de
-          l’illicite, améliorez vos actes, demandez pardon, remerciez Allah
-          pour les bienfaits déjà reçus et conservez une bonne opinion de
-          votre Seigneur.
-        </p>
-
-        <h4>Agissez avec espérance</h4>
-
-        <p>
-          Faites votre part avec sérieux et sérénité. Ne prétendez pas
-          connaître la manière exacte dont Allah répondra, mais avancez
-          avec l’espérance que Son choix contient une sagesse et un bien
-          que vous ne percevez peut-être pas encore.
+          Ne perdez pas espoir : aucune invocation sincère n’est oubliée
+          auprès d’Allah.
         </p>
       </div>
     </article>
@@ -475,16 +445,13 @@ function buildPlainTextInvocation() {
   );
   lines.push("");
 
-  lines.push("TAWAKKUL ET YAQÎN APRÈS L’INVOCATION");
-  lines.push(
-    "Multipliez l’istighfar : Astaghfirullāha wa atūbu ilayh."
-  );
-  lines.push(
-    "Accomplissez les causes licites, placez votre confiance en Allah et ne vous précipitez pas dans l’attente de la réponse."
-  );
-  lines.push(
-    "Gardez un cœur présent, persévérez dans l’invocation et conservez une bonne opinion d’Allah."
-  );
+  lines.push("TAWAKKUL ET YAQÎN");
+lines.push(
+  "Multipliez l’istighfar, accomplissez les causes licites et placez votre confiance en Allah."
+);
+lines.push(
+  "Invoquez avec la ferme conviction qu’Allah vous entend et qu’aucune invocation sincère n’est oubliée auprès de Lui."
+);
 
   return lines.join("\n");
 }
