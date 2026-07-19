@@ -216,7 +216,31 @@ button {
   opacity: 0;
   pointer-events: none;
 }
+.details-link {
+  width: fit-content;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 16px;
+  padding: 9px 13px;
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  color: var(--primary);
+  background: var(--background-soft);
+  font-size: 0.82rem;
+  font-weight: 750;
+  text-decoration: none;
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    background 160ms ease;
+}
 
+.details-link:hover {
+  transform: translateX(3px);
+  border-color: var(--primary);
+  background: var(--primary-soft);
+}
 .category-icon {
   width: 42px;
   height: 42px;
