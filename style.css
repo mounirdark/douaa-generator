@@ -693,7 +693,7 @@ button {
 /* AccessibilitÃ© clavier */
 button:focus-visible,
 a:focus-visible,
-.category-option:has(input:focus-visible) {
+.category-option:focus-within {
   outline: 3px solid rgba(167, 124, 61, 0.42);
   outline-offset: 3px;
 }
