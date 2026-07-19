@@ -324,10 +324,23 @@ function createInvocationCard({
   source,
   language,
   className,
-  index
+  index,
+  duaId = null
 }) {
   const directionClass =
     language === "ar" ? "arabic-content" : "";
+
+  const detailsLink = duaId
+    ? `
+      <a
+        class="details-link"
+        href="./douaa.html?id=${encodeURIComponent(duaId)}"
+      >
+        En savoir plus sur cette douaa
+        <span aria-hidden="true">→</span>
+      </a>
+    `
+    : "";
 
   return `
     <article
@@ -349,8 +362,11 @@ function createInvocationCard({
           `
           : ""
       }
+
+      ${detailsLink}
     </article>
   `;
+}`;
 }
 
 function createTawakkulCard() {
