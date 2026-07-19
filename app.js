@@ -286,17 +286,18 @@ function renderInvocation() {
   );
 
   currentGeneration.selectedDuas.forEach((selection, index) => {
-    blocks.push(
-      createInvocationCard({
-        title: `Douaa : ${selection.category.label}`,
-        content: getLocalizedText(selection.dua, currentLanguage),
-        source: selection.dua.source,
-        language: currentLanguage,
-        className: "dua-card",
-        index: index + 2
-      })
-    );
-  });
+  blocks.push(
+    createInvocationCard({
+      title: `Douaa : ${selection.category.label}`,
+      content: getLocalizedText(selection.dua, currentLanguage),
+      source: selection.dua.source,
+      language: currentLanguage,
+      className: "dua-card",
+      index: index + 2,
+      duaId: selection.dua.id
+    })
+  );
+});
 
   blocks.push(
     createInvocationCard({
