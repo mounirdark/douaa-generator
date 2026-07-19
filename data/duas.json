@@ -281,6 +281,35 @@
 
   "duas": [
     {
+  "id": "musa_28_24",
+  "title": "L’invocation de Moussa dans le besoin",
+  "categories": ["travail", "projet", "rizq", "mariage"],
+
+  "french": "Seigneur, j’ai grand besoin du bien que Tu feras descendre vers moi.",
+  "arabic": "رَبِّ إِنِّي لِمَا أَنْزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ",
+  "transliteration": "Rabbi innī limā anzalta ilayya min khayrin faqīr.",
+
+  "source": "Coran 28:24",
+  "type": "Coran",
+
+  "context": "Moussa prononça cette invocation après avoir quitté l’Égypte et aidé deux femmes à abreuver leur troupeau à Madyan. Il se trouvait alors seul, sans ressources et dans un grand besoin.",
+
+  "meaning": "Cette invocation exprime la pauvreté du serviteur devant Allah et sa dépendance envers tout bien qu’Allah peut lui accorder.",
+
+  "whenToRead": [
+    "Lors d’une recherche d’emploi",
+    "Lorsqu’on traverse une difficulté financière",
+    "Avant ou pendant un nouveau projet",
+    "Lorsqu’on ressent un profond besoin d’aide"
+  ],
+
+  "lessons": [
+    "Faire une bonne action avant de demander",
+    "Reconnaître son besoin devant Allah",
+    "Demander le bien sans imposer une forme précise de réponse"
+  ]
+}
+    {
       "id": "quran_25_74",
       "categories": ["mariage", "couple", "famille", "enfants"],
       "french": "Seigneur, accorde-nous en nos époux et nos descendants la joie de nos yeux et fais de nous des guides pour les pieux.",
