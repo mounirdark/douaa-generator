@@ -366,7 +366,6 @@ function createInvocationCard({
       ${detailsLink}
     </article>
   `;
-}`;
 }
 
 function createTawakkulCard() {
