@@ -3,37 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Cette page affichera toutes les douaas d’un thème depuis le fichier JSON.">
+  <meta
+    name="description"
+    content="Retrouvez les douaas d’un thème depuis la bibliothèque Douaa Generator."
+  >
   <title>Thème — Douaa Generator</title>
-  <link rel="stylesheet" href="../style.css?v=14">
+  <link rel="stylesheet" href="../style.css?v=15">
 </head>
+
 <body>
   <div class="page-background"></div>
-  <header class="site-header">
-  <nav class="site-nav" aria-label="Navigation principale">
-    <a class="site-brand" href="../">
-      <span class="site-brand-symbol" aria-hidden="true">☾</span>
-      <span>Douaa Generator</span>
-    </a>
-    <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNavigation">☰</button>
-    <ul id="mainNavigation" class="site-nav-links">
-      <li><a class="site-nav-link" href="../">Générateur</a></li><li><a class="site-nav-link" href="../bibliotheque/">Bibliothèque</a></li><li><a class="site-nav-link" href="../guide-des-douaas/">Guide des douaas</a></li><li><a class="site-nav-link" href="../a-propos/">À propos</a></li>
-    </ul>
-  </nav>
-</header>
 
-  <header class="inner-hero">
-    <p class="eyebrow">Douaa Generator</p>
-    <h1>Thème</h1>
-    <p>Cette page affichera toutes les douaas d’un thème depuis le fichier JSON.</p>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Navigation principale">
+      <a class="site-brand" href="../index.html">
+        <span class="site-brand-symbol" aria-hidden="true">☾</span>
+        <span>Douaa Generator</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="mainNavigation"
+      >
+        ☰
+      </button>
+
+      <ul id="mainNavigation" class="site-nav-links">
+        <li><a class="site-nav-link" href="../index.html">Générateur</a></li>
+        <li><a class="site-nav-link active" href="../bibliotheque/index.html">Bibliothèque</a></li>
+        <li><a class="site-nav-link" href="../guide-des-douaas/index.html">Guide des douaas</a></li>
+        <li><a class="site-nav-link" href="../a-propos/index.html">À propos</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="container">
-    <section class="panel page-placeholder">
-      <p class="step-label">Architecture prête</p>
-      <h2>Thème</h2>
-      <p>Le chargement dynamique des douaas sera ajouté à l’étape suivante.</p>
-      <a class="primary-button compact detail-return-button" href="../">Retour au générateur</a>
+  <main class="container theme-page">
+    <a class="back-link" href="../bibliotheque/index.html">
+      <span aria-hidden="true">←</span>
+      Retour à la bibliothèque
+    </a>
+
+    <section id="themeHeader" class="panel theme-header-panel hidden">
+      <div class="theme-heading">
+        <span id="themeIcon" class="theme-large-icon" aria-hidden="true">✦</span>
+
+        <div>
+          <p class="eyebrow">Thème</p>
+          <h1 id="themeTitle">Douaas</h1>
+          <p id="themeDescription"></p>
+        </div>
+      </div>
+
+      <span id="themeCount" class="selection-count"></span>
+    </section>
+
+    <section id="themeDuas" class="theme-duas-list"></section>
+
+    <section id="themeLoading" class="panel detail-state-panel">
+      <p>Chargement des douaas…</p>
+    </section>
+
+    <section id="themeError" class="panel detail-state-panel hidden" role="alert">
+      <h1>Thème introuvable</h1>
+      <p>Ce thème n’existe pas ou la bibliothèque n’a pas pu être chargée.</p>
+      <a class="primary-button compact detail-return-button" href="../bibliotheque/index.html">
+        Retour à la bibliothèque
+      </a>
     </section>
   </main>
 
@@ -41,6 +79,7 @@
     <p>Douaa Generator — Invocations inspirées du Coran et de la Sunna.</p>
   </footer>
 
-  <script src="../menu.js?v=14"></script>
+  <script src="../menu.js?v=15"></script>
+  <script src="./theme.js?v=15"></script>
 </body>
 </html>
