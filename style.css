@@ -1023,3 +1023,222 @@ a:focus-visible,
     justify-content: center;
   }
 }
+
+
+
+/* =========================
+   BIBLIOTHÈQUE ET THÈMES
+========================= */
+
+.library-panel {
+  margin-bottom: 26px;
+}
+
+.library-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.library-card {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 13px;
+  align-items: center;
+  padding: 18px;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-medium);
+  color: var(--text);
+  background: var(--background-soft);
+  text-decoration: none;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.library-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(50, 79, 67, 0.38);
+  background: var(--surface-solid);
+  box-shadow: var(--shadow-soft);
+}
+
+.library-card-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  border-radius: 15px;
+  place-items: center;
+  color: var(--gold);
+  background: var(--gold-soft);
+  font-size: 1.35rem;
+}
+
+.library-card-content {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.library-card-content strong {
+  color: var(--primary-dark);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.08rem;
+  line-height: 1.25;
+}
+
+.library-card-content span {
+  color: var(--text-soft);
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.library-card-count {
+  grid-column: 2;
+  color: var(--primary);
+  font-size: 0.74rem;
+  font-weight: 800;
+}
+
+.theme-page {
+  padding-top: 38px;
+  padding-bottom: 20px;
+}
+
+.theme-header-panel {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+  padding: clamp(22px, 5vw, 38px);
+}
+
+.theme-heading {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.theme-large-icon {
+  width: 66px;
+  height: 66px;
+  flex-shrink: 0;
+  display: grid;
+  border-radius: 20px;
+  place-items: center;
+  color: var(--gold);
+  background: var(--gold-soft);
+  font-size: 1.8rem;
+}
+
+.theme-heading h1 {
+  margin: 0;
+  color: var(--primary-dark);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 6vw, 3.4rem);
+  font-weight: 600;
+  line-height: 1.08;
+}
+
+.theme-heading p:last-child {
+  margin: 10px 0 0;
+  color: var(--text-soft);
+}
+
+.theme-duas-list {
+  display: grid;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.theme-dua-card {
+  padding: clamp(21px, 4vw, 32px);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-large);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.theme-dua-heading {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.theme-dua-heading h2 {
+  margin: 0;
+  color: var(--primary-dark);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.35rem, 4vw, 1.9rem);
+  font-weight: 600;
+}
+
+.theme-dua-source {
+  flex-shrink: 0;
+  padding: 7px 10px;
+  border-radius: 999px;
+  color: var(--text-soft);
+  background: var(--background-soft);
+  font-size: 0.72rem;
+}
+
+.theme-dua-arabic {
+  margin: 22px 0 0;
+  color: var(--primary-dark);
+  font-family: "Noto Naskh Arabic", "Geeza Pro", serif;
+  font-size: clamp(1.45rem, 4vw, 2rem);
+  line-height: 2;
+  text-align: right;
+}
+
+.theme-dua-french {
+  margin: 18px 0 0;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.theme-dua-explanation {
+  margin: 13px 0 0;
+  padding-top: 13px;
+  border-top: 1px solid var(--border-soft);
+  color: var(--text-soft);
+  font-size: 0.86rem;
+}
+
+.empty-theme-panel {
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .library-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .library-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .theme-header-panel,
+  .theme-dua-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .theme-heading {
+    align-items: flex-start;
+  }
+
+  .theme-dua-source {
+    flex-shrink: 1;
+  }
+}
+
