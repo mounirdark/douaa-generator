@@ -8,7 +8,8 @@ const themeElements = {
   count: document.getElementById("themeCount"),
   list: document.getElementById("themeDuas"),
   loading: document.getElementById("themeLoading"),
-  error: document.getElementById("themeError")
+  error: document.getElementById("themeError"),
+  cta: document.getElementById("themeCta")
 };
 
 document.addEventListener("DOMContentLoaded", initializeThemePage);
@@ -22,7 +23,7 @@ async function initializeThemePage() {
   }
 
   try {
-    const response = await fetch("../data/duas.json?v=15", {
+    const response = await fetch("../data/duas.json?v=16", {
       cache: "no-store"
     });
 
@@ -73,6 +74,7 @@ function renderTheme(category, duas) {
 
   themeElements.loading.classList.add("hidden");
   themeElements.header.classList.remove("hidden");
+  themeElements.cta.classList.remove("hidden");
 }
 
 function createDuaCard(dua) {

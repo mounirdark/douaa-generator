@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", initializeLibrary);
 
 async function initializeLibrary() {
   try {
-    const response = await fetch("../data/duas.json?v=15", {
+    const response = await fetch("../data/duas.json?v=16", {
       cache: "no-store"
     });
 
