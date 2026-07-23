@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Parcourez la bibliothèque de Douaa Generator par thème."
+  >
+  <title>Bibliothèque — Douaa Generator</title>
+  <link rel="stylesheet" href="../style.css?v=17">
+</head>
+
+<body>
+  <div class="page-background"></div>
+
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Navigation principale">
+      <a class="site-brand" href="../index.html">
+        <span class="site-brand-symbol" aria-hidden="true">☾</span>
+        <span>Douaa Generator</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="mainNavigation"
+      >
+        ☰
+      </button>
+
+      <ul id="mainNavigation" class="site-nav-links">
+        <li><a class="site-nav-link" href="../index.html">Générateur</a></li>
+        <li><a class="site-nav-link active" aria-current="page" href="./index.html">Bibliothèque</a></li>
+        <li><a class="site-nav-link" href="../guide-des-douaas/index.html">Guide des douaas</a></li>
+        <li><a class="site-nav-link" href="../a-propos/index.html">À propos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <header class="inner-hero">
+    <p class="eyebrow">Bibliothèque</p>
+    <h1>Choisissez un thème</h1>
+    <p>
+      Retrouvez les invocations de la bibliothèque classées par besoin,
+      sans modifier ni dupliquer le fichier <code>data/duas.json</code>.
+    </p>
+  </header>
+
+  <main class="container">
+    <section class="panel library-panel" aria-labelledby="library-title">
+      <div class="panel-heading">
+        <div>
+          <p class="step-label">Tous les thèmes</p>
+          <h2 id="library-title">Bibliothèque des douaas</h2>
+        </div>
+
+        <span id="libraryCount" class="selection-count">
+          Chargement…
+        </span>
+      </div>
+
+      <p class="panel-description">
+        Sélectionnez un thème pour afficher toutes les douaas qui lui sont associées.
+      </p>
+
+      <div id="libraryGrid" class="library-grid"></div>
+
+      <p id="libraryLoading" class="loading-message">
+        Chargement de la bibliothèque…
+      </p>
+
+      <div id="libraryError" class="message message-error hidden" role="alert">
+        La bibliothèque n’a pas pu être chargée.
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Douaa Generator — Invocations inspirées du Coran et de la Sunna.</p>
+  </footer>
+
+  <script src="../menu.js?v=17"></script>
+  <script src="./bibliotheque.js?v=17"></script>
+</body>
+</html>
