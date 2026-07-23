@@ -23,7 +23,7 @@ async function initializeThemePage() {
   }
 
   try {
-    const response = await fetch("../data/duas.json?v=16", {
+    const response = await fetch("../data/duas.json?v=18", {
       cache: "no-store"
     });
 
@@ -61,7 +61,7 @@ function renderTheme(category, duas) {
   themeElements.count.textContent =
     `${duas.length} ${duas.length > 1 ? "douaas" : "douaa"}`;
 
-  document.title = `${category.label} — Douaa Generator`;
+  updateThemeSeo(category, duas.length);
 
   themeElements.list.innerHTML = duas.length
     ? duas.map(createDuaCard).join("")
@@ -75,6 +75,74 @@ function renderTheme(category, duas) {
   themeElements.loading.classList.add("hidden");
   themeElements.header.classList.remove("hidden");
   themeElements.cta.classList.remove("hidden");
+}
+
+
+function updateThemeSeo(category, duaCount) {
+  const title = `Douaas ${category.label} — Textes, sources et traductions`;
+  const description =
+    `Découvrez ${duaCount} ${duaCount > 1 ? "douaas" : "douaa"} pour le thème ${category.label}, avec texte arabe, traduction française et sources.`;
+  const canonical =
+    `https://douaagenerator.fr/theme/index.html?id=${encodeURIComponent(category.id)}`;
+
+  document.title = title;
+  updateMeta("description", description);
+  updatePropertyMeta("og:title", title);
+  updatePropertyMeta("og:description", description);
+  updatePropertyMeta("og:url", canonical);
+  updateMeta("twitter:title", title);
+  updateMeta("twitter:description", description);
+  updateCanonical(canonical);
+
+  injectJsonLd({
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": title,
+    "description": description,
+    "url": canonical,
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Douaa Generator",
+      "url": "https://douaagenerator.fr/"
+    }
+  });
+}
+
+function updateMeta(name, content) {
+  let element = document.querySelector(`meta[name="${name}"]`);
+  if (!element) {
+    element = document.createElement("meta");
+    element.setAttribute("name", name);
+    document.head.appendChild(element);
+  }
+  element.setAttribute("content", content);
+}
+
+function updatePropertyMeta(property, content) {
+  let element = document.querySelector(`meta[property="${property}"]`);
+  if (!element) {
+    element = document.createElement("meta");
+    element.setAttribute("property", property);
+    document.head.appendChild(element);
+  }
+  element.setAttribute("content", content);
+}
+
+function updateCanonical(url) {
+  let element = document.querySelector('link[rel="canonical"]');
+  if (!element) {
+    element = document.createElement("link");
+    element.setAttribute("rel", "canonical");
+    document.head.appendChild(element);
+  }
+  element.setAttribute("href", url);
+}
+
+function injectJsonLd(data) {
+  const element = document.createElement("script");
+  element.type = "application/ld+json";
+  element.textContent = JSON.stringify(data);
+  document.head.appendChild(element);
 }
 
 function createDuaCard(dua) {

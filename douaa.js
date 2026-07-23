@@ -49,7 +49,7 @@ async function initializeDetailPage() {
   }
 
   try {
-    const response = await fetch("./data/duas.json?v=16", {
+    const response = await fetch("./data/duas.json?v=18", {
       cache: "no-store"
     });
 
@@ -98,7 +98,7 @@ function renderDetailPage() {
       .filter(Boolean)
       .join(" — ");
 
-  document.title = `${detailElements.title.textContent} — Douaa Generator`;
+  updateDuaSeo();
 
   renderOptionalParagraph(
     detailElements.referenceSection,
@@ -151,6 +151,79 @@ function renderDetailPage() {
   renderRelatedDuas();
   renderBackToThemeLink();
   setDetailLanguage("fr");
+}
+
+
+function updateDuaSeo() {
+  const title = `${detailElements.title.textContent} — Texte, traduction et source`;
+  const descriptionSource =
+    currentDua.meaning ||
+    currentDua.context ||
+    currentDua.french ||
+    "Découvrez cette invocation, son texte, sa traduction et sa source.";
+  const description = String(descriptionSource).replace(/\s+/g, " ").slice(0, 155);
+  const canonical =
+    `https://douaagenerator.fr/douaa.html?id=${encodeURIComponent(currentDua.id)}`;
+
+  document.title = title;
+  updateMeta("description", description);
+  updatePropertyMeta("og:title", title);
+  updatePropertyMeta("og:description", description);
+  updatePropertyMeta("og:url", canonical);
+  updateMeta("twitter:title", title);
+  updateMeta("twitter:description", description);
+  updateCanonical(canonical);
+
+  injectJsonLd({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": detailElements.title.textContent,
+    "description": description,
+    "url": canonical,
+    "inLanguage": ["fr", "ar"],
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Douaa Generator",
+      "url": "https://douaagenerator.fr/"
+    }
+  });
+}
+
+function updateMeta(name, content) {
+  let element = document.querySelector(`meta[name="${name}"]`);
+  if (!element) {
+    element = document.createElement("meta");
+    element.setAttribute("name", name);
+    document.head.appendChild(element);
+  }
+  element.setAttribute("content", content);
+}
+
+function updatePropertyMeta(property, content) {
+  let element = document.querySelector(`meta[property="${property}"]`);
+  if (!element) {
+    element = document.createElement("meta");
+    element.setAttribute("property", property);
+    document.head.appendChild(element);
+  }
+  element.setAttribute("content", content);
+}
+
+function updateCanonical(url) {
+  let element = document.querySelector('link[rel="canonical"]');
+  if (!element) {
+    element = document.createElement("link");
+    element.setAttribute("rel", "canonical");
+    document.head.appendChild(element);
+  }
+  element.setAttribute("href", url);
+}
+
+function injectJsonLd(data) {
+  const element = document.createElement("script");
+  element.type = "application/ld+json";
+  element.textContent = JSON.stringify(data);
+  document.head.appendChild(element);
 }
 
 function setDetailLanguage(language) {

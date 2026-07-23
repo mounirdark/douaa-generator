@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", loadEssentialDuas);
 
 async function loadEssentialDuas() {
   try {
-    const response = await fetch("../data/duas.json?v=16", {
+    const response = await fetch("../data/duas.json?v=18", {
       cache: "no-store"
     });
 
