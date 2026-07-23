@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Retrouvez les douaas d’un thème depuis la bibliothèque Douaa Generator."
+  >
+  <title>Thème — Douaa Generator</title>
+  <link rel="stylesheet" href="../style.css?v=17">
+</head>
+
+<body>
+  <div class="page-background"></div>
+
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Navigation principale">
+      <a class="site-brand" href="../index.html">
+        <span class="site-brand-symbol" aria-hidden="true">☾</span>
+        <span>Douaa Generator</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="mainNavigation"
+      >
+        ☰
+      </button>
+
+      <ul id="mainNavigation" class="site-nav-links">
+        <li><a class="site-nav-link" href="../index.html">Générateur</a></li>
+        <li><a class="site-nav-link active" href="../bibliotheque/index.html">Bibliothèque</a></li>
+        <li><a class="site-nav-link" href="../guide-des-douaas/index.html">Guide des douaas</a></li>
+        <li><a class="site-nav-link" href="../a-propos/index.html">À propos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container theme-page">
+    <a class="back-link" href="../bibliotheque/index.html">
+      <span aria-hidden="true">←</span>
+      Retour à la bibliothèque
+    </a>
+
+    <section id="themeHeader" class="panel theme-header-panel hidden">
+      <div class="theme-heading">
+        <span id="themeIcon" class="theme-large-icon" aria-hidden="true">✦</span>
+
+        <div>
+          <p class="eyebrow">Thème</p>
+          <h1 id="themeTitle">Douaas</h1>
+          <p id="themeDescription"></p>
+        </div>
+      </div>
+
+      <span id="themeCount" class="selection-count"></span>
+    </section>
+
+    <section id="themeDuas" class="theme-duas-list"></section>
+
+    <section id="themeCta" class="guide-cta hidden">
+      <p class="eyebrow">Invocation personnalisée</p>
+      <h2>Vous souhaitez réunir plusieurs besoins ?</h2>
+      <p>
+        Utilisez le générateur pour composer une invocation à partir de
+        plusieurs thèmes.
+      </p>
+      <a class="primary-button compact" href="../index.html">
+        Utiliser le générateur
+      </a>
+    </section>
+
+    <section id="themeLoading" class="panel detail-state-panel">
+      <p>Chargement des douaas…</p>
+    </section>
+
+    <section id="themeError" class="panel detail-state-panel hidden" role="alert">
+      <h1>Thème introuvable</h1>
+      <p>Ce thème n’existe pas ou la bibliothèque n’a pas pu être chargée.</p>
+      <a class="primary-button compact detail-return-button" href="../bibliotheque/index.html">
+        Retour à la bibliothèque
+      </a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Douaa Generator — Invocations inspirées du Coran et de la Sunna.</p>
+  </footer>
+
+  <script src="../menu.js?v=17"></script>
+  <script src="./theme.js?v=17"></script>
+</body>
+</html>

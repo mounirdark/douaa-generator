@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Générez une invocation personnalisée à partir de plusieurs thèmes, en français, arabe ou phonétique.">
+  <title>Douaa Generator</title>
+  <link rel="stylesheet" href="./style.css?v=17">
+</head>
+<body>
+  <div class="page-background"></div>
+  <header class="site-header">
+  <nav class="site-nav" aria-label="Navigation principale">
+    <a class="site-brand" href="./index.html">
+      <span class="site-brand-symbol" aria-hidden="true">☾</span>
+      <span>Douaa Generator</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNavigation">☰</button>
+    <ul id="mainNavigation" class="site-nav-links">
+      <li><a class="site-nav-link active" aria-current="page" href="./index.html">Générateur</a></li><li><a class="site-nav-link" href="./bibliotheque/index.html">Bibliothèque</a></li><li><a class="site-nav-link" href="./guide-des-douaas/index.html">Guide des douaas</a></li><li><a class="site-nav-link" href="./a-propos/index.html">À propos</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <header class="hero">
+    <div class="hero-symbol" aria-hidden="true">☾</div>
+    <p class="eyebrow">Invocations personnalisées</p>
+    <h1>Douaa Generator</h1>
+    <p class="hero-description">
+      Choisissez les sujets qui vous tiennent à cœur et composez une invocation structurée avec louange, salawat, douas, clôture, istighfar, tawakkul et yaqîn.
+    </p>
+  </header>
+
+  <main class="container">
+    <section class="panel selection-panel" aria-labelledby="selection-title">
+      <div class="panel-heading">
+        <div>
+          <p class="step-label">Étape 1</p>
+          <h2 id="selection-title">Choisissez vos intentions</h2>
+        </div>
+        <span id="selectionCount" class="selection-count">0 sélection</span>
+      </div>
+
+      <p class="panel-description">
+        Vous pouvez sélectionner plusieurs catégories. Une invocation sera choisie pour chacune d’elles.
+      </p>
+
+      <div id="categoriesGrid" class="categories-grid"></div>
+
+      <div id="selectionError" class="message message-error hidden" role="alert">
+        Sélectionnez au moins une catégorie.
+      </div>
+
+      <button id="generateBtn" class="primary-button" type="button" disabled>
+        <span>Générer mon invocation</span>
+        <span aria-hidden="true">✦</span>
+      </button>
+
+      <p id="loadingMessage" class="loading-message">
+        Chargement de la bibliothèque d’invocations…
+      </p>
+    </section>
+
+    <section id="resultSection" class="result-section hidden" aria-labelledby="result-title">
+      <div class="result-header">
+        <div>
+          <p class="step-label">Étape 2</p>
+          <h2 id="result-title">Votre invocation</h2>
+        </div>
+        <div id="languageSwitcher" class="language-switcher">
+          <button class="language-button active" type="button" data-lang="fr" aria-pressed="true">Français</button>
+          <button class="language-button" type="button" data-lang="ar" aria-pressed="false">العربية</button>
+          <button class="language-button" type="button" data-lang="ph" aria-pressed="false">Phonétique</button>
+        </div>
+      </div>
+
+      <div id="output" class="invocation-flow"></div>
+
+      <div class="result-actions">
+        <button id="copyBtn" class="secondary-button" type="button">Copier l’invocation</button>
+        <button id="regenerateBtn" class="primary-button compact" type="button">Générer une autre version</button>
+      </div>
+
+      <div id="copyMessage" class="message message-success hidden" role="status">Invocation copiée.</div>
+    </section>
+
+    <section class="disclaimer">
+      <h2>À propos des textes</h2>
+      <p>
+        Les passages coraniques et les invocations rapportées sont accompagnés de leur source dans la bibliothèque. Certaines formulations de liaison sont indiquées comme formulations générales et ne doivent pas être attribuées au Coran ou au Prophète ﷺ.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Qu’Allah accepte nos invocations, nous pardonne et nous guide vers ce qu’Il aime.</p>
+  </footer>
+
+  <script src="./menu.js?v=17"></script>
+  <script src="./app.js?v=17"></script>
+</body>
+</html>

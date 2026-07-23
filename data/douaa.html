@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Découvrez le texte, la source, le contexte et les enseignements d’une invocation."
+  >
+  <title>Détail de la douaa — Douaa Generator</title>
+  <link rel="stylesheet" href="./style.css?v=17">
+</head>
+
+<body>
+  <div class="page-background"></div>
+
+
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Navigation principale">
+      <a class="site-brand" href="./index.html">
+        <span class="site-brand-symbol" aria-hidden="true">☾</span>
+        <span>Douaa Generator</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="mainNavigation"
+      >
+        ☰
+      </button>
+
+      <ul id="mainNavigation" class="site-nav-links">
+        <li><a class="site-nav-link" href="./index.html">Générateur</a></li>
+        <li><a class="site-nav-link" href="./bibliotheque/index.html">Bibliothèque</a></li>
+        <li><a class="site-nav-link" href="./guide-des-douaas/index.html">Guide des douaas</a></li>
+        <li><a class="site-nav-link" href="./a-propos/index.html">À propos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container detail-page">
+    <a class="back-link" href="./index.html">
+      <span aria-hidden="true">←</span>
+      Retour au générateur
+    </a>
+
+    <section id="detailPanel" class="detail-panel hidden">
+      <header class="detail-header">
+        <p id="detailType" class="eyebrow"></p>
+        <h1 id="detailTitle"></h1>
+        <p id="detailSource" class="detail-source"></p>
+      </header>
+
+      <div class="detail-language-switcher language-switcher" aria-label="Choisir la langue">
+        <button class="language-button active" type="button" data-detail-lang="fr" aria-pressed="true">
+          Français
+        </button>
+        <button class="language-button" type="button" data-detail-lang="ar" aria-pressed="false">
+          العربية
+        </button>
+        <button class="language-button" type="button" data-detail-lang="ph" aria-pressed="false">
+          Phonétique
+        </button>
+      </div>
+
+      <article class="detail-text-card detail-main-text">
+        <h2>Texte de l’invocation</h2>
+        <p id="detailText"></p>
+      </article>
+
+      <section id="referenceSection" class="detail-section hidden">
+        <h2>Référence et origine</h2>
+        <p id="detailReference"></p>
+      </section>
+
+      <section id="contextSection" class="detail-section hidden">
+        <h2>Contexte</h2>
+        <p id="detailContext"></p>
+      </section>
+
+      <section id="meaningSection" class="detail-section hidden">
+        <h2>Comprendre cette douaa</h2>
+        <p id="detailMeaning"></p>
+      </section>
+
+      <section id="whenSection" class="detail-section hidden">
+        <h2>Quand la réciter ?</h2>
+        <ul id="detailWhen"></ul>
+      </section>
+
+      <section id="applicationSection" class="detail-section detail-highlight-section hidden">
+        <h2>Comment l’appliquer aujourd’hui ?</h2>
+        <ul id="detailApplication"></ul>
+      </section>
+
+      <section id="lessonsSection" class="detail-section hidden">
+        <h2>Enseignements à retenir</h2>
+        <ul id="detailLessons"></ul>
+      </section>
+
+      <section id="benefitsSection" class="detail-section hidden">
+        <h2>Ce qu’elle peut nous apporter</h2>
+        <ul id="detailBenefits"></ul>
+      </section>
+
+      <section id="mistakesSection" class="detail-section detail-warning-section hidden">
+        <h2>Erreurs fréquentes à éviter</h2>
+        <ul id="detailMistakes"></ul>
+      </section>
+
+      <section id="relatedSection" class="detail-section hidden">
+        <h2>Douas similaires</h2>
+        <div id="relatedDuas" class="related-duas-grid"></div>
+      </section>
+
+      <nav class="detail-navigation" aria-label="Navigation de la fiche">
+        <a id="backToThemeLink" class="secondary-button" href="./bibliotheque/index.html">
+          Retour au thème
+        </a>
+        <a class="secondary-button" href="./bibliotheque/index.html">
+          Bibliothèque
+        </a>
+      </nav>
+
+      <div class="detail-actions">
+        <button id="shareDuaBtn" class="secondary-button" type="button">
+          Partager cette douaa
+        </button>
+
+        <a class="primary-button compact detail-return-button" href="./index.html">
+          Générer une autre invocation
+        </a>
+      </div>
+
+      <p id="shareMessage" class="message message-success hidden" role="status">
+        Le lien a été copié.
+      </p>
+    </section>
+
+    <section id="detailLoading" class="detail-panel detail-state-panel">
+      <p>Chargement de la douaa…</p>
+    </section>
+
+    <section id="detailError" class="detail-panel detail-state-panel hidden" role="alert">
+      <h1>Douaa introuvable</h1>
+      <p>Cette fiche n’existe pas ou n’est pas encore disponible.</p>
+      <a class="primary-button compact detail-return-button" href="./index.html">
+        Retour au générateur
+      </a>
+    </section>
+  </main>
+
+  <script src="./menu.js?v=17"></script>
+  <script src="./douaa.js?v=17"></script>
+</body>
+</html>
