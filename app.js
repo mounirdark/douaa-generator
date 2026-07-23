@@ -24,7 +24,7 @@ async function initializeApp() {
   bindStaticEvents();
 
   try {
-    const response = await fetch("./data/duas.json?v=16", {
+    const response = await fetch("./data/duas.json?v=17", {
       cache: "no-store"
     });
 
@@ -366,7 +366,6 @@ function createInvocationCard({
       ${detailsLink}
     </article>
   `;
-}`;
 }
 
 function createTawakkulCard() {
