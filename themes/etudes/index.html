@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Science, compréhension et réussite">
+  <title>Douaas Études et examens — Textes et traductions</title>
+  <link rel="stylesheet" href="/style.css?v=19">
+
+  <link rel="canonical" href="https://douaagenerator.fr/themes/etudes/">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:type" content="collection">
+  <meta property="og:site_name" content="Douaa Generator">
+  <meta property="og:title" content="Douaas par thème — Douaa Generator">
+  <meta property="og:description" content="Retrouvez toutes les invocations associées à un thème, avec leur texte arabe, leur traduction et leur source.">
+  <meta property="og:url" content="https://douaagenerator.fr/themes/etudes/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Douaas par thème — Douaa Generator">
+  <meta name="twitter:description" content="Retrouvez toutes les invocations associées à un thème, avec leur texte arabe, leur traduction et leur source.">
+</head>
+
+<body data-theme-id="etudes">
+  <div class="page-background"></div>
+
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Navigation principale">
+      <a class="site-brand" href="/">
+        <span class="site-brand-symbol" aria-hidden="true">☾</span>
+        <span>Douaa Generator</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="mainNavigation"
+      >
+        ☰
+      </button>
+
+      <ul id="mainNavigation" class="site-nav-links">
+        <li><a class="site-nav-link" href="/">Générateur</a></li>
+        <li><a class="site-nav-link active" href="/bibliotheque/">Bibliothèque</a></li>
+        <li><a class="site-nav-link" href="/guide-des-douaas/">Guide des douaas</a></li>
+        <li><a class="site-nav-link" href="/a-propos/">À propos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container theme-page">
+    <a class="back-link" href="/bibliotheque/">
+      <span aria-hidden="true">←</span>
+      Retour à la bibliothèque
+    </a>
+
+    <section id="themeHeader" class="panel theme-header-panel hidden">
+      <div class="theme-heading">
+        <span id="themeIcon" class="theme-large-icon" aria-hidden="true">✦</span>
+
+        <div>
+          <p class="eyebrow">Thème</p>
+          <h1 id="themeTitle">Douaas</h1>
+          <p id="themeDescription"></p>
+        </div>
+      </div>
+
+      <span id="themeCount" class="selection-count"></span>
+    </section>
+
+    <section id="themeDuas" class="theme-duas-list"></section>
+
+    <section id="themeCta" class="guide-cta hidden">
+      <p class="eyebrow">Invocation personnalisée</p>
+      <h2>Vous souhaitez réunir plusieurs besoins ?</h2>
+      <p>
+        Utilisez le générateur pour composer une invocation à partir de
+        plusieurs thèmes.
+      </p>
+      <a class="primary-button compact" href="/">
+        Utiliser le générateur
+      </a>
+    </section>
+
+    <section id="themeLoading" class="panel detail-state-panel">
+      <p>Chargement des douaas…</p>
+    </section>
+
+    <section id="themeError" class="panel detail-state-panel hidden" role="alert">
+      <h1>Thème introuvable</h1>
+      <p>Ce thème n’existe pas ou la bibliothèque n’a pas pu être chargée.</p>
+      <a class="primary-button compact detail-return-button" href="/bibliotheque/">
+        Retour à la bibliothèque
+      </a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Douaa Generator — Invocations inspirées du Coran et de la Sunna.</p>
+  </footer>
+
+  <script src="/menu.js?v=19"></script>
+  <script src="/theme/theme.js?v=19"></script>
+</body>
+</html>

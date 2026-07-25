@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", loadEssentialDuas);
 
 async function loadEssentialDuas() {
   try {
-    const response = await fetch("../data/duas.json?v=18", {
+    const response = await fetch("/data/duas.json?v=19", {
       cache: "no-store"
     });
 
@@ -77,7 +77,7 @@ function createEssentialCard(dua, categories) {
   return `
     <a
       class="essential-dua-card"
-      href="../douaa.html?id=${encodeURIComponent(dua.id)}"
+      href="/douaas/${encodeURIComponent(dua.slug || dua.id)}/"
     >
       <span class="essential-number">✦</span>
       <strong>${escapeHtml(title)}</strong>

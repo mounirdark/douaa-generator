@@ -24,7 +24,7 @@ async function initializeApp() {
   bindStaticEvents();
 
   try {
-    const response = await fetch("./data/duas.json?v=18", {
+    const response = await fetch("/data/duas.json?v=19", {
       cache: "no-store"
     });
 
@@ -294,7 +294,8 @@ function renderInvocation() {
       language: currentLanguage,
       className: "dua-card",
       index: index + 2,
-      duaId: selection.dua.id
+      duaId: selection.dua.id,
+      duaSlug: selection.dua.slug
     })
   );
 });

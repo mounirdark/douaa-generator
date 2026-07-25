@@ -3,122 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Composez gratuitement une invocation personnalisée à partir de thèmes comme le mariage, la famille, le travail, la santé, la protection ou le pardon.">
-  <title>Douaa Generator — Générateur d’invocations personnalisées</title>
-  <link rel="stylesheet" href="./style.css?v=18">
+  <meta name="description" content="Retrouvez toutes les invocations associées à un thème, avec leur texte arabe, leur traduction et leur source.">
+  <title>Douaas par thème — Douaa Generator</title>
+  <link rel="stylesheet" href="../style.css?v=19">
 
-  <link rel="canonical" href="https://douaagenerator.fr/">
+  <link rel="canonical" href="https://douaagenerator.fr/theme/">
   <meta property="og:locale" content="fr_FR">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="collection">
   <meta property="og:site_name" content="Douaa Generator">
-  <meta property="og:title" content="Douaa Generator — Générateur d’invocations personnalisées">
-  <meta property="og:description" content="Composez gratuitement une invocation personnalisée à partir de thèmes comme le mariage, la famille, le travail, la santé, la protection ou le pardon.">
-  <meta property="og:url" content="https://douaagenerator.fr/">
+  <meta property="og:title" content="Douaas par thème — Douaa Generator">
+  <meta property="og:description" content="Retrouvez toutes les invocations associées à un thème, avec leur texte arabe, leur traduction et leur source.">
+  <meta property="og:url" content="https://douaagenerator.fr/theme/">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Douaa Generator — Générateur d’invocations personnalisées">
-  <meta name="twitter:description" content="Composez gratuitement une invocation personnalisée à partir de thèmes comme le mariage, la famille, le travail, la santé, la protection ou le pardon.">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Douaa Generator",
-    "url": "https://douaagenerator.fr/",
-    "inLanguage": "fr",
-    "description": "Générateur et bibliothèque d’invocations en français, arabe et phonétique."
-  }
-  </script>
+  <meta name="twitter:title" content="Douaas par thème — Douaa Generator">
+  <meta name="twitter:description" content="Retrouvez toutes les invocations associées à un thème, avec leur texte arabe, leur traduction et leur source.">
 </head>
+
 <body>
   <div class="page-background"></div>
+
   <header class="site-header">
-  <nav class="site-nav" aria-label="Navigation principale">
-    <a class="site-brand" href="./index.html">
-      <span class="site-brand-symbol" aria-hidden="true">☾</span>
-      <span>Douaa Generator</span>
-    </a>
-    <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNavigation">☰</button>
-    <ul id="mainNavigation" class="site-nav-links">
-      <li><a class="site-nav-link active" aria-current="page" href="./index.html">Générateur</a></li><li><a class="site-nav-link" href="./bibliotheque/index.html">Bibliothèque</a></li><li><a class="site-nav-link" href="./guide-des-douaas/index.html">Guide des douaas</a></li><li><a class="site-nav-link" href="./a-propos/index.html">À propos</a></li>
-    </ul>
-  </nav>
-</header>
+    <nav class="site-nav" aria-label="Navigation principale">
+      <a class="site-brand" href="/">
+        <span class="site-brand-symbol" aria-hidden="true">☾</span>
+        <span>Douaa Generator</span>
+      </a>
 
-  <header class="hero">
-    <div class="hero-symbol" aria-hidden="true">☾</div>
-    <p class="eyebrow">Invocations personnalisées</p>
-    <h1>Douaa Generator</h1>
-    <p class="hero-description">
-      Choisissez les sujets qui vous tiennent à cœur et composez une invocation structurée avec louange, salawat, douas, clôture, istighfar, tawakkul et yaqîn.
-    </p>
-  </header>
-
-  <main class="container">
-    <section class="panel selection-panel" aria-labelledby="selection-title">
-      <div class="panel-heading">
-        <div>
-          <p class="step-label">Étape 1</p>
-          <h2 id="selection-title">Choisissez vos intentions</h2>
-        </div>
-        <span id="selectionCount" class="selection-count">0 sélection</span>
-      </div>
-
-      <p class="panel-description">
-        Vous pouvez sélectionner plusieurs catégories. Une invocation sera choisie pour chacune d’elles.
-      </p>
-
-      <div id="categoriesGrid" class="categories-grid"></div>
-
-      <div id="selectionError" class="message message-error hidden" role="alert">
-        Sélectionnez au moins une catégorie.
-      </div>
-
-      <button id="generateBtn" class="primary-button" type="button" disabled>
-        <span>Générer mon invocation</span>
-        <span aria-hidden="true">✦</span>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="mainNavigation"
+      >
+        ☰
       </button>
 
-      <p id="loadingMessage" class="loading-message">
-        Chargement de la bibliothèque d’invocations…
-      </p>
-    </section>
+      <ul id="mainNavigation" class="site-nav-links">
+        <li><a class="site-nav-link" href="/">Générateur</a></li>
+        <li><a class="site-nav-link active" href="/bibliotheque/">Bibliothèque</a></li>
+        <li><a class="site-nav-link" href="/guide-des-douaas/">Guide des douaas</a></li>
+        <li><a class="site-nav-link" href="/a-propos/">À propos</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section id="resultSection" class="result-section hidden" aria-labelledby="result-title">
-      <div class="result-header">
+  <main class="container theme-page">
+    <a class="back-link" href="/bibliotheque/">
+      <span aria-hidden="true">←</span>
+      Retour à la bibliothèque
+    </a>
+
+    <section id="themeHeader" class="panel theme-header-panel hidden">
+      <div class="theme-heading">
+        <span id="themeIcon" class="theme-large-icon" aria-hidden="true">✦</span>
+
         <div>
-          <p class="step-label">Étape 2</p>
-          <h2 id="result-title">Votre invocation</h2>
-        </div>
-        <div id="languageSwitcher" class="language-switcher">
-          <button class="language-button active" type="button" data-lang="fr" aria-pressed="true">Français</button>
-          <button class="language-button" type="button" data-lang="ar" aria-pressed="false">العربية</button>
-          <button class="language-button" type="button" data-lang="ph" aria-pressed="false">Phonétique</button>
+          <p class="eyebrow">Thème</p>
+          <h1 id="themeTitle">Douaas</h1>
+          <p id="themeDescription"></p>
         </div>
       </div>
 
-      <div id="output" class="invocation-flow"></div>
-
-      <div class="result-actions">
-        <button id="copyBtn" class="secondary-button" type="button">Copier l’invocation</button>
-        <button id="regenerateBtn" class="primary-button compact" type="button">Générer une autre version</button>
-      </div>
-
-      <div id="copyMessage" class="message message-success hidden" role="status">Invocation copiée.</div>
+      <span id="themeCount" class="selection-count"></span>
     </section>
 
-    <section class="disclaimer">
-      <h2>À propos des textes</h2>
+    <section id="themeDuas" class="theme-duas-list"></section>
+
+    <section id="themeCta" class="guide-cta hidden">
+      <p class="eyebrow">Invocation personnalisée</p>
+      <h2>Vous souhaitez réunir plusieurs besoins ?</h2>
       <p>
-        Les passages coraniques et les invocations rapportées sont accompagnés de leur source dans la bibliothèque. Certaines formulations de liaison sont indiquées comme formulations générales et ne doivent pas être attribuées au Coran ou au Prophète ﷺ.
+        Utilisez le générateur pour composer une invocation à partir de
+        plusieurs thèmes.
       </p>
+      <a class="primary-button compact" href="/">
+        Utiliser le générateur
+      </a>
+    </section>
+
+    <section id="themeLoading" class="panel detail-state-panel">
+      <p>Chargement des douaas…</p>
+    </section>
+
+    <section id="themeError" class="panel detail-state-panel hidden" role="alert">
+      <h1>Thème introuvable</h1>
+      <p>Ce thème n’existe pas ou la bibliothèque n’a pas pu être chargée.</p>
+      <a class="primary-button compact detail-return-button" href="/bibliotheque/">
+        Retour à la bibliothèque
+      </a>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>Qu’Allah accepte nos invocations, nous pardonne et nous guide vers ce qu’Il aime.</p>
+    <p>Douaa Generator — Invocations inspirées du Coran et de la Sunna.</p>
   </footer>
 
-  <script src="./menu.js?v=18"></script>
-  <script src="./app.js?v=18"></script>
+  <script src="../menu.js?v=19"></script>
+  <script src="./theme.js?v=19"></script>
 </body>
 </html>

@@ -41,7 +41,9 @@ document.addEventListener("DOMContentLoaded", initializeDetailPage);
 async function initializeDetailPage() {
   bindDetailEvents();
 
-  const duaId = new URLSearchParams(window.location.search).get("id");
+  const duaId = document.body.dataset.duaId ||
+    new URLSearchParams(window.location.search).get("id");
+  const duaSlug = document.body.dataset.duaSlug;
 
   if (!duaId) {
     showDetailError();
@@ -49,7 +51,7 @@ async function initializeDetailPage() {
   }
 
   try {
-    const response = await fetch("./data/duas.json?v=18", {
+    const response = await fetch("/data/duas.json?v=19", {
       cache: "no-store"
     });
 
@@ -58,7 +60,9 @@ async function initializeDetailPage() {
     }
 
     database = await response.json();
-    currentDua = database.duas.find((dua) => dua.id === duaId);
+    currentDua = database.duas.find(
+      (dua) => dua.id === duaId || (duaSlug && dua.slug === duaSlug)
+    );
 
     if (!currentDua) {
       showDetailError();
@@ -163,7 +167,7 @@ function updateDuaSeo() {
     "Découvrez cette invocation, son texte, sa traduction et sa source.";
   const description = String(descriptionSource).replace(/\s+/g, " ").slice(0, 155);
   const canonical =
-    `https://douaagenerator.fr/douaa.html?id=${encodeURIComponent(currentDua.id)}`;
+    `https://douaagenerator.fr/douaas/${encodeURIComponent(currentDua.slug || currentDua.id)}/`;
 
   document.title = title;
   updateMeta("description", description);
@@ -304,7 +308,7 @@ function renderRelatedDuas() {
       (dua) => `
         <a
           class="related-dua-card"
-          href="./douaa.html?id=${encodeURIComponent(dua.id)}"
+          href="/douaas/${encodeURIComponent(dua.slug || dua.id)}/"
         >
           <span class="related-dua-type">
             ${escapeHtml(dua.type || "Douaa")}
@@ -336,7 +340,7 @@ function renderBackToThemeLink() {
     : null;
 
   if (!categoryId) {
-    detailElements.backToThemeLink.href = "./bibliotheque/index.html";
+    detailElements.backToThemeLink.href = "/bibliotheque/";
     detailElements.backToThemeLink.textContent = "Retour à la bibliothèque";
     return;
   }
@@ -346,7 +350,7 @@ function renderBackToThemeLink() {
   );
 
   detailElements.backToThemeLink.href =
-    `./theme/index.html?id=${encodeURIComponent(categoryId)}`;
+    `/themes/${encodeURIComponent(category?.slug || categoryId)}/`;
 
   detailElements.backToThemeLink.textContent = category
     ? `Retour au thème ${category.label}`
