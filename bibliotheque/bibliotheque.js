@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", initializeLibrary);
 
 async function initializeLibrary() {
   try {
-    const response = await fetch("/data/duas.json?v=19", {
+    const response = await fetch("../data/duas.json?v=18", {
       cache: "no-store"
     });
 
@@ -48,7 +48,7 @@ function renderLibrary(categories, duas) {
       return `
         <a
           class="library-card"
-          href="/themes/${encodeURIComponent(category.slug || category.id)}/"
+          href="../theme/index.html?id=${encodeURIComponent(category.id)}"
         >
           <span class="library-card-icon" aria-hidden="true">
             ${escapeHtml(category.icon || "✦")}

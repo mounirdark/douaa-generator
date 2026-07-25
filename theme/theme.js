@@ -15,9 +15,7 @@ const themeElements = {
 document.addEventListener("DOMContentLoaded", initializeThemePage);
 
 async function initializeThemePage() {
-  const themeId =
-    document.body.dataset.themeId ||
-    new URLSearchParams(window.location.search).get("id");
+  const themeId = new URLSearchParams(window.location.search).get("id");
 
   if (!themeId) {
     showError();
@@ -25,7 +23,7 @@ async function initializeThemePage() {
   }
 
   try {
-    const response = await fetch("/data/duas.json?v=19", {
+    const response = await fetch("../data/duas.json?v=18", {
       cache: "no-store"
     });
 
@@ -85,7 +83,7 @@ function updateThemeSeo(category, duaCount) {
   const description =
     `Découvrez ${duaCount} ${duaCount > 1 ? "douaas" : "douaa"} pour le thème ${category.label}, avec texte arabe, traduction française et sources.`;
   const canonical =
-    `https://douaagenerator.fr/themes/${encodeURIComponent(category.slug || category.id)}/`;
+    `https://douaagenerator.fr/theme/index.html?id=${encodeURIComponent(category.id)}`;
 
   document.title = title;
   updateMeta("description", description);
@@ -180,7 +178,7 @@ function createDuaCard(dua) {
 
       <a
         class="details-link"
-        href="/douaas/${encodeURIComponent(dua.slug || dua.id)}/"
+        href="../douaa.html?id=${encodeURIComponent(dua.id)}"
       >
         Voir la fiche complète
         <span aria-hidden="true">→</span>

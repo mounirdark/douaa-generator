@@ -2,230 +2,287 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://douaagenerator.fr/</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://douaagenerator.fr/bibliotheque/</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://douaagenerator.fr/guide-des-douaas/</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://douaagenerator.fr/a-propos/</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/themes/mariage/</loc>
+    <loc>https://douaagenerator.fr/theme/index.html?id=mariage</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/themes/couple/</loc>
+    <loc>https://douaagenerator.fr/theme/index.html?id=couple</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/themes/famille/</loc>
+    <loc>https://douaagenerator.fr/theme/index.html?id=famille</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/themes/parents/</loc>
+    <loc>https://douaagenerator.fr/theme/index.html?id=parents</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/themes/enfants/</loc>
+    <loc>https://douaagenerator.fr/theme/index.html?id=enfants</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/themes/grossesse/</loc>
+    <loc>https://douaagenerator.fr/theme/index.html?id=grossesse</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/themes/foyer/</loc>
+    <loc>https://douaagenerator.fr/theme/index.html?id=foyer</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/themes/travail/</loc>
+    <loc>https://douaagenerator.fr/theme/index.html?id=travail</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/themes/projet/</loc>
+    <loc>https://douaagenerator.fr/theme/index.html?id=projet</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/themes/etudes/</loc>
+    <loc>https://douaagenerator.fr/theme/index.html?id=etudes</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/themes/rizq/</loc>
+    <loc>https://douaagenerator.fr/theme/index.html?id=rizq</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/themes/dettes/</loc>
+    <loc>https://douaagenerator.fr/theme/index.html?id=dettes</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/themes/commerce/</loc>
+    <loc>https://douaagenerator.fr/theme/index.html?id=commerce</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/themes/guerison/</loc>
+    <loc>https://douaagenerator.fr/theme/index.html?id=guerison</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/themes/stress/</loc>
+    <loc>https://douaagenerator.fr/theme/index.html?id=stress</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/themes/tristesse/</loc>
+    <loc>https://douaagenerator.fr/theme/index.html?id=tristesse</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/themes/patience/</loc>
+    <loc>https://douaagenerator.fr/theme/index.html?id=patience</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/themes/injustice/</loc>
+    <loc>https://douaagenerator.fr/theme/index.html?id=injustice</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/themes/protection/</loc>
+    <loc>https://douaagenerator.fr/theme/index.html?id=protection</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/themes/guidance/</loc>
+    <loc>https://douaagenerator.fr/theme/index.html?id=guidance</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/themes/foi/</loc>
+    <loc>https://douaagenerator.fr/theme/index.html?id=foi</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/themes/repentir/</loc>
+    <loc>https://douaagenerator.fr/theme/index.html?id=repentir</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/themes/gratitude/</loc>
+    <loc>https://douaagenerator.fr/theme/index.html?id=gratitude</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/themes/deces/</loc>
+    <loc>https://douaagenerator.fr/theme/index.html?id=deces</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/themes/audela/</loc>
+    <loc>https://douaagenerator.fr/theme/index.html?id=audela</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/douaas/musa-28-24/</loc>
+    <loc>https://douaagenerator.fr/douaa.html?id=musa_28_24</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/douaas/quran-25-74/</loc>
+    <loc>https://douaagenerator.fr/douaa.html?id=quran_25_74</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/douaas/quran-30-21-general/</loc>
+    <loc>https://douaagenerator.fr/douaa.html?id=quran_30_21_general</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/douaas/parents-17-24/</loc>
+    <loc>https://douaagenerator.fr/douaa.html?id=parents_17_24</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/douaas/quran-14-40/</loc>
+    <loc>https://douaagenerator.fr/douaa.html?id=quran_14_40</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/douaas/quran-3-38/</loc>
+    <loc>https://douaagenerator.fr/douaa.html?id=quran_3_38</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/douaas/quran-21-89/</loc>
+    <loc>https://douaagenerator.fr/douaa.html?id=quran_21_89</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/douaas/family-protection-general/</loc>
+    <loc>https://douaagenerator.fr/douaa.html?id=family_protection_general</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/douaas/musa-ease-20-25-28/</loc>
+    <loc>https://douaagenerator.fr/douaa.html?id=musa_ease_20_25_28</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/douaas/knowledge-20-114/</loc>
+    <loc>https://douaagenerator.fr/douaa.html?id=knowledge_20_114</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/douaas/work-long-general/</loc>
+    <loc>https://douaagenerator.fr/douaa.html?id=work_long_general</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/douaas/halal-sufficiency/</loc>
+    <loc>https://douaagenerator.fr/douaa.html?id=halal_sufficiency</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/douaas/beneficial-rizq/</loc>
+    <loc>https://douaagenerator.fr/douaa.html?id=beneficial_rizq</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/douaas/debt-anxiety/</loc>
+    <loc>https://douaagenerator.fr/douaa.html?id=debt_anxiety</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/douaas/ayyub-21-83/</loc>
+    <loc>https://douaagenerator.fr/douaa.html?id=ayyub_21_83</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/douaas/healing-prophetic/</loc>
+    <loc>https://douaagenerator.fr/douaa.html?id=healing_prophetic</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/douaas/yunus-21-87/</loc>
+    <loc>https://douaagenerator.fr/douaa.html?id=yunus_21_87</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/douaas/hasbunallah-3-173/</loc>
+    <loc>https://douaagenerator.fr/douaa.html?id=hasbunallah_3_173</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/douaas/patience-2-250/</loc>
+    <loc>https://douaagenerator.fr/douaa.html?id=patience_2_250</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/douaas/protection-words/</loc>
+    <loc>https://douaagenerator.fr/douaa.html?id=protection_words</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/douaas/guidance-3-8/</loc>
+    <loc>https://douaagenerator.fr/douaa.html?id=guidance_3_8</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/douaas/firm-heart/</loc>
+    <loc>https://douaagenerator.fr/douaa.html?id=firm_heart</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/douaas/repentance-adam-7-23/</loc>
+    <loc>https://douaagenerator.fr/douaa.html?id=repentance_adam_7_23</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/douaas/sayyid-istighfar-meaning/</loc>
+    <loc>https://douaagenerator.fr/douaa.html?id=sayyid_istighfar_meaning</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/douaas/gratitude-27-19/</loc>
+    <loc>https://douaagenerator.fr/douaa.html?id=gratitude_27_19</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/douaas/deceased-general/</loc>
+    <loc>https://douaagenerator.fr/douaa.html?id=deceased_general</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/douaas/akhirah-2-201/</loc>
+    <loc>https://douaagenerator.fr/douaa.html?id=akhirah_2_201</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://douaagenerator.fr/douaas/paradise-general/</loc>
+    <loc>https://douaagenerator.fr/douaa.html?id=paradise_general</loc>
+    <lastmod>2026-07-23</lastmod>
     <priority>0.7</priority>
   </url>
 </urlset>
