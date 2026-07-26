@@ -24,8 +24,8 @@ async function initializeThemePage() {
 
   try {
     const [duaResponse, contentResponse] = await Promise.all([
-      fetch("../data/duas.json?v=19", { cache: "no-store" }),
-      fetch("../data/theme-content.json?v=19", { cache: "no-store" })
+      fetch("../data/duas.json?v=20", { cache: "no-store" }),
+      fetch("../data/themes.json?v=20", { cache: "no-store" })
     ]);
 
     if (!duaResponse.ok) {
@@ -45,20 +45,20 @@ async function initializeThemePage() {
       (dua) => Array.isArray(dua.categories) && dua.categories.includes(themeId)
     );
 
-    renderTheme(category, duas, themeContent[themeId]);
+    renderTheme(category, duas, themeContent[themeId] ? { ...themeContent[themeId], id: themeId } : null, database.duas);
   } catch (error) {
     console.error("Erreur thème :", error);
     showError();
   }
 }
 
-function renderTheme(category, duas, content) {
+function renderTheme(category, duas, content, allDuas = []) {
   themeElements.icon.textContent = category.icon || "✦";
   themeElements.title.textContent = content?.pageTitle || category.label;
   themeElements.description.textContent = content?.summary || category.description || "";
 
   const displayedCount = content?.duaGroups
-    ? content.duaGroups.reduce((total, group) => total + group.duas.length, 0)
+    ? content.duaGroups.reduce((total, group) => total + (group.duaIds?.length || 0), 0)
     : duas.length;
 
   themeElements.count.textContent =
@@ -67,7 +67,7 @@ function renderTheme(category, duas, content) {
   updateThemeSeo(category, displayedCount, content);
 
   themeElements.list.innerHTML = content
-    ? createRichThemePage(content)
+    ? createRichThemePage(content, allDuas)
     : duas.length
       ? duas.map(createDuaCard).join("")
       : `
@@ -85,30 +85,35 @@ function renderTheme(category, duas, content) {
   themeElements.cta.classList.remove("hidden");
 }
 
-function createRichThemePage(content) {
+function createRichThemePage(content, allDuas) {
+  const labels = content.labels || {};
+  const duaMap = new Map(allDuas.map((dua) => [dua.id, dua]));
+
   return `
     ${createQuickNavigation(content.quickLinks || [])}
 
-    <section class="panel theme-introduction">
-      <p class="eyebrow">Comprendre le mariage</p>
-      <h2>${escapeHtml(content.introduction.title)}</h2>
-      ${content.introduction.paragraphs.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("")}
-    </section>
+    ${content.introduction ? `
+      <section class="panel theme-introduction">
+        <p class="eyebrow">${escapeHtml(labels.introductionEyebrow || "Comprendre le thème")}</p>
+        <h2>${escapeHtml(content.introduction.title || "Introduction")}</h2>
+        ${(content.introduction.paragraphs || []).map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("")}
+      </section>
+    ` : ""}
 
-    <section id="douaas-mariage" class="rich-theme-section">
+    <section id="douaas" class="rich-theme-section">
       <div class="rich-section-heading">
-        <p class="eyebrow">Réponse directe à votre recherche</p>
-        <h2>🤲 Les douaas du mariage</h2>
-        <p>${escapeHtml(content.duaIntroduction)}</p>
+        <p class="eyebrow">${escapeHtml(labels.duasEyebrow || "Réponse directe à votre recherche")}</p>
+        <h2>${escapeHtml(labels.duasTitle || "🤲 Les douaas")}</h2>
+        ${content.duaIntroduction ? `<p>${escapeHtml(content.duaIntroduction)}</p>` : ""}
       </div>
-      ${content.duaGroups.map(createDuaGroup).join("")}
+      ${(content.duaGroups || []).map((group) => createDuaGroup(group, duaMap, content.id)).join("")}
     </section>
 
-    ${createTextSection("coran", "📖", "Ce que dit le Coran", content.quran)}
-    ${createTextSection("sunna", "🕌", "Ce que dit la Sunna", content.sunnah)}
-    ${createAdviceSection(content.advice)}
-    ${createFaqSection(content.faq)}
-    ${createRelatedSection(content.related)}
+    ${createTextSection("coran", labels.quranEyebrow || "Pour approfondir", labels.quranTitle || "📖 Ce que dit le Coran", content.quran || [])}
+    ${createTextSection("sunna", labels.sunnahEyebrow || "Pour approfondir", labels.sunnahTitle || "🕌 Ce que dit la Sunna", content.sunnah || [])}
+    ${createAdviceSection(content.advice || [], labels)}
+    ${createFaqSection(content.faq || [], labels)}
+    ${createRelatedSection(content.related || [], labels)}
   `;
 }
 
@@ -127,24 +132,28 @@ function createQuickNavigation(links) {
   `;
 }
 
-function createDuaGroup(group) {
+function createDuaGroup(group, duaMap, themeId) {
+  const duas = (group.duaIds || []).map((id) => duaMap.get(id)).filter(Boolean);
+  if (!duas.length) return "";
+
   return `
     <section id="${escapeHtml(group.id)}" class="dua-situation-group">
       <div class="dua-situation-heading">
         <span aria-hidden="true">${escapeHtml(group.icon || "🤲")}</span>
         <div>
           <h3>${escapeHtml(group.title)}</h3>
-          <p>${escapeHtml(group.description)}</p>
+          ${group.description ? `<p>${escapeHtml(group.description)}</p>` : ""}
         </div>
       </div>
       <div class="marriage-dua-grid">
-        ${group.duas.map(createInlineDuaCard).join("")}
+        ${duas.map((dua) => createInlineDuaCard(dua, themeId)).join("")}
       </div>
     </section>
   `;
 }
 
-function createInlineDuaCard(dua) {
+function createInlineDuaCard(dua, themeId) {
+  const note = dua.themeNotes?.[themeId] || dua.context || "";
   const copyText = [dua.arabic, dua.transliteration, dua.french, dua.source]
     .filter(Boolean)
     .join("\n\n");
@@ -154,29 +163,29 @@ function createInlineDuaCard(dua) {
       <div class="theme-dua-heading">
         <div>
           <p class="step-label">${escapeHtml(dua.type || "Invocation")}</p>
-          <h4>${escapeHtml(dua.title)}</h4>
+          <h4>${escapeHtml(dua.title || "Invocation")}</h4>
         </div>
         <button class="copy-dua-button" type="button" data-copy="${escapeAttribute(copyText)}" aria-label="Copier cette douaa">
           Copier
         </button>
       </div>
 
-      ${dua.note ? `<p class="dua-context-note">${escapeHtml(dua.note)}</p>` : ""}
-
-      <p class="theme-dua-arabic" dir="rtl" lang="ar">${escapeHtml(dua.arabic)}</p>
-      <p class="theme-dua-transliteration"><strong>Phonétique :</strong> ${escapeHtml(dua.transliteration)}</p>
-      <p class="theme-dua-french"><strong>Traduction :</strong> ${escapeHtml(dua.french)}</p>
-      <p class="theme-dua-source"><strong>Source :</strong> ${escapeHtml(dua.source)}</p>
+      ${note ? `<p class="dua-context-note">${escapeHtml(note)}</p>` : ""}
+      ${dua.arabic ? `<p class="theme-dua-arabic" dir="rtl" lang="ar">${escapeHtml(dua.arabic)}</p>` : ""}
+      ${dua.transliteration ? `<p class="theme-dua-transliteration"><strong>Phonétique :</strong> ${escapeHtml(dua.transliteration)}</p>` : ""}
+      ${dua.french ? `<p class="theme-dua-french"><strong>Traduction :</strong> ${escapeHtml(dua.french)}</p>` : ""}
+      ${dua.source ? `<p class="theme-dua-source"><strong>Source :</strong> ${escapeHtml(dua.source)}</p>` : ""}
     </article>
   `;
 }
 
-function createTextSection(id, icon, title, items) {
+function createTextSection(id, eyebrow, title, items) {
+  if (!items.length) return "";
   return `
     <section id="${id}" class="rich-theme-section">
       <div class="rich-section-heading">
-        <p class="eyebrow">Pour approfondir</p>
-        <h2>${icon} ${title}</h2>
+        <p class="eyebrow">${escapeHtml(eyebrow)}</p>
+        <h2>${escapeHtml(title)}</h2>
       </div>
       <div class="teaching-grid">
         ${items.map((item) => `
@@ -192,13 +201,14 @@ function createTextSection(id, icon, title, items) {
   `;
 }
 
-function createAdviceSection(items) {
+function createAdviceSection(items, labels = {}) {
+  if (!items.length) return "";
   return `
     <section id="conseils" class="rich-theme-section">
       <div class="rich-section-heading">
-        <p class="eyebrow">Mettre les enseignements en pratique</p>
-        <h2>💡 Conseils pour avancer vers un mariage béni</h2>
-        <p>Ces conseils sont une synthèse pratique des textes cités sur cette page. Ils ne remplacent pas l’accompagnement d’une personne compétente lorsqu’une situation est complexe.</p>
+        <p class="eyebrow">${escapeHtml(labels.adviceEyebrow || "Mettre les enseignements en pratique")}</p>
+        <h2>${escapeHtml(labels.adviceTitle || "💡 Conseils pratiques")}</h2>
+        <p>${escapeHtml(labels.adviceIntroduction || "Ces conseils sont une synthèse pratique des textes cités sur cette page. Ils ne remplacent pas l’accompagnement d’une personne compétente lorsqu’une situation est complexe.")}</p>
       </div>
       <div class="advice-list">
         ${items.map((item, index) => `
@@ -216,13 +226,14 @@ function createAdviceSection(items) {
   `;
 }
 
-function createFaqSection(items) {
+function createFaqSection(items, labels = {}) {
+  if (!items.length) return "";
   return `
     <section id="faq" class="rich-theme-section">
       <div class="rich-section-heading">
-        <p class="eyebrow">Questions recherchées sur le mariage en Islam</p>
-        <h2>❓ Questions fréquentes</h2>
-        <p>Des réponses simples aux interrogations qui reviennent le plus souvent autour des douaas, de l’istikhâra et du choix du conjoint.</p>
+        <p class="eyebrow">${escapeHtml(labels.faqEyebrow || "Questions fréquentes")}</p>
+        <h2>${escapeHtml(labels.faqTitle || "❓ Questions fréquentes")}</h2>
+        ${labels.faqIntroduction ? `<p>${escapeHtml(labels.faqIntroduction)}</p>` : ""}
       </div>
       <div class="faq-list">
         ${items.map((item, index) => `
@@ -242,11 +253,12 @@ function createFaqSection(items) {
   `;
 }
 
-function createRelatedSection(items) {
+function createRelatedSection(items, labels = {}) {
+  if (!items.length) return "";
   return `
     <section id="voir-aussi" class="panel related-themes-panel">
-      <p class="eyebrow">Continuer votre lecture</p>
-      <h2>📚 Voir aussi</h2>
+      <p class="eyebrow">${escapeHtml(labels.relatedEyebrow || "Continuer votre lecture")}</p>
+      <h2>${escapeHtml(labels.relatedTitle || "📚 Voir aussi")}</h2>
       <div class="related-theme-links">
         ${items.map((item) => `
           <a href="./index.html?id=${encodeURIComponent(item.id)}">${escapeHtml(item.label)} <span aria-hidden="true">→</span></a>

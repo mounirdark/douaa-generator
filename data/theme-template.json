@@ -1,0 +1,41 @@
+{
+  "identifiant-du-theme": {
+    "pageTitle": "Titre du thème",
+    "summary": "Résumé court affiché sous le titre.",
+    "seoTitle": "Titre SEO de la page",
+    "seoDescription": "Description SEO de la page.",
+    "labels": {
+      "introductionEyebrow": "Comprendre le thème",
+      "duasEyebrow": "Réponse directe à votre recherche",
+      "duasTitle": "🤲 Les douaas du thème",
+      "quranTitle": "📖 Ce que dit le Coran",
+      "sunnahTitle": "🕌 Ce que dit la Sunna",
+      "adviceTitle": "💡 Conseils pratiques",
+      "faqTitle": "❓ Questions fréquentes",
+      "relatedTitle": "📚 Voir aussi"
+    },
+    "quickLinks": [
+      { "label": "Première situation", "target": "premiere-situation" },
+      { "label": "Questions fréquentes", "target": "faq" }
+    ],
+    "introduction": {
+      "title": "Titre de l’introduction",
+      "paragraphs": ["Premier paragraphe.", "Deuxième paragraphe."]
+    },
+    "duaIntroduction": "Introduction courte avant les groupes de douaas.",
+    "duaGroups": [
+      {
+        "id": "premiere-situation",
+        "icon": "🤲",
+        "title": "Douaas pour une situation précise",
+        "description": "Présentation courte de la situation.",
+        "duaIds": ["identifiant_dune_douaa_dans_duas_json"]
+      }
+    ],
+    "quran": [],
+    "sunnah": [],
+    "advice": [],
+    "faq": [],
+    "related": []
+  }
+}

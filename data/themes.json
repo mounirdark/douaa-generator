@@ -1,0 +1,267 @@
+{
+  "mariage": {
+    "pageTitle": "Mariage en Islam",
+    "summary": "Douaas pour se marier, faire l’istikhâra, demander la baraka dans le couple et construire un foyer fondé sur l’affection, la miséricorde et la foi.",
+    "seoTitle": "Douaa mariage : invocations pour se marier et préserver son couple",
+    "seoDescription": "Découvrez les douaas du mariage en arabe, phonétique et français : trouver un époux ou une épouse, istikhâra, baraka, couple, descendance et félicitations.",
+    "quickLinks": [
+      {
+        "label": "Trouver un époux ou une épouse",
+        "target": "trouver-conjoint"
+      },
+      {
+        "label": "Faire l’istikhâra",
+        "target": "avant-mariage"
+      },
+      {
+        "label": "Préserver son couple",
+        "target": "vie-couple"
+      },
+      {
+        "label": "Demander une descendance",
+        "target": "descendance"
+      },
+      {
+        "label": "Questions fréquentes",
+        "target": "faq"
+      }
+    ],
+    "introduction": {
+      "title": "Le mariage, une union fondée sur la tranquillité et la miséricorde",
+      "paragraphs": [
+        "En Islam, le mariage n’est pas seulement une célébration : c’est un engagement dans lequel chacun cherche à protéger l’autre, à agir avec bienveillance et à construire un foyer qui rapproche d’Allah. Le Coran présente l’affection, la miséricorde et la tranquillité comme des signes placés entre les époux.",
+        "Cette page commence volontairement par les invocations, afin que vous trouviez rapidement la douaa correspondant à votre situation. Certaines sont directement rapportées du Coran ou de la Sunna. D’autres sont des invocations générales dont le sens convient au mariage ; leur nature est indiquée clairement afin de ne pas attribuer au Prophète ﷺ une formule qu’il n’a pas enseignée.",
+        "L’invocation accompagne les démarches licites : se renseigner sur le caractère et la religion d’une personne, consulter des proches de confiance, accomplir l’istikhâra lorsqu’un choix concret se présente, puis avancer avec confiance en Allah. Aucune formule ne garantit à elle seule un mariage ni un résultat précis."
+      ]
+    },
+    "duaIntroduction": "Retrouvez ici les principales invocations liées au mariage. Elles sont regroupées selon le besoin : chercher un conjoint, prendre une décision, demander la sérénité du foyer, traverser une difficulté ou demander une descendance.",
+    "duaGroups": [
+      {
+        "id": "trouver-conjoint",
+        "icon": "♡",
+        "title": "Douaa pour trouver un époux ou une épouse pieuse",
+        "description": "Il n’existe pas de formule prophétique unique garantissant le mariage. Ces invocations coraniques permettent de demander à Allah tout bien et une famille qui réjouit le cœur.",
+        "duaIds": [
+          "musa_28_24",
+          "quran_25_74"
+        ]
+      },
+      {
+        "id": "avant-mariage",
+        "icon": "✦",
+        "title": "Douaa avant le mariage et prière d’istikhâra",
+        "description": "L’istikhâra se fait lorsqu’une possibilité concrète et licite se présente. Après deux unités de prière surérogatoire, on récite l’invocation enseignée par le Prophète ﷺ en nommant l’affaire concernée.",
+        "duaIds": [
+          "linvocation_complete_de_listikhara"
+        ]
+      },
+      {
+        "id": "vie-couple",
+        "icon": "♥",
+        "title": "Douaas pour la baraka, l’affection et la paix dans le couple",
+        "description": "Ces invocations demandent un foyer pieux, la sérénité et le bien. Lorsqu’une formule est une formulation générale et non un texte prophétique, cela est précisé.",
+        "duaIds": [
+          "quran_25_74",
+          "akhirah_2_201",
+          "demander_laffection_la_misericorde_et_la_serenite"
+        ]
+      },
+      {
+        "id": "difficultes-couple",
+        "icon": "☁",
+        "title": "Douaas en cas de difficultés ou de conflits conjugaux",
+        "description": "L’invocation doit s’accompagner d’efforts concrets : arrêter l’injustice, dialoguer avec respect et solliciter une médiation sage lorsque cela est nécessaire.",
+        "duaIds": [
+          "demander_a_allah_dameliorer_toute_sa_situation",
+          "guidance_3_8"
+        ]
+      },
+      {
+        "id": "descendance",
+        "icon": "❀",
+        "title": "Douaas pour demander une descendance pieuse",
+        "description": "Le Coran rapporte plusieurs invocations de prophètes demandant une descendance bonne et pieuse.",
+        "duaIds": [
+          "quran_3_38",
+          "quran_21_89"
+        ]
+      },
+      {
+        "id": "feliciter-maries",
+        "icon": "✧",
+        "title": "Douaa pour féliciter de jeunes mariés",
+        "description": "La Sunna rapporte une formule courte pour invoquer la bénédiction d’Allah en faveur des nouveaux époux.",
+        "duaIds": [
+          "linvocation_de_benediction_pour_les_maries"
+        ]
+      }
+    ],
+    "quran": [
+      {
+        "title": "Affection, miséricorde et tranquillité",
+        "quote": "Et parmi Ses signes, Il a créé de vous, pour vous, des épouses afin que vous trouviez auprès d’elles la tranquillité ; et Il a mis entre vous de l’affection et de la miséricorde.",
+        "explanation": "Le verset présente la sérénité, l’affection et la miséricorde comme des signes d’Allah. Ces qualités ne dispensent pas des efforts : elles orientent la manière dont les époux doivent prendre soin de leur lien.",
+        "source": "Coran, sourate Ar-Rûm (30), verset 21."
+      },
+      {
+        "title": "Vivre ensemble convenablement",
+        "quote": "Et comportez-vous convenablement envers elles.",
+        "explanation": "Le mariage implique un comportement reconnu comme bon : respect, équité, parole convenable et absence d’injustice. Le verset rappelle aussi que l’aversion ressentie envers une chose peut coexister avec un bien qu’Allah y a placé.",
+        "source": "Coran, sourate An-Nisâ’ (4), verset 19."
+      },
+      {
+        "title": "Les époux sont un vêtement l’un pour l’autre",
+        "quote": "Elles sont un vêtement pour vous et vous êtes un vêtement pour elles.",
+        "explanation": "L’image du vêtement évoque notamment la proximité, la protection et l’intimité. Elle invite chacun à préserver la dignité et les secrets de son conjoint.",
+        "source": "Coran, sourate Al-Baqara (2), verset 187."
+      },
+      {
+        "title": "Chercher une médiation en cas de rupture",
+        "quote": "Si vous craignez le désaccord entre les deux, envoyez alors un arbitre de sa famille à lui et un arbitre de sa famille à elle.",
+        "explanation": "Lorsque le conflit devient sérieux, le Coran indique la voie d’une médiation animée par la volonté de réconciliation. En présence de violence ou de danger, la priorité reste de se mettre en sécurité et de demander une aide compétente.",
+        "source": "Coran, sourate An-Nisâ’ (4), verset 35."
+      }
+    ],
+    "sunnah": [
+      {
+        "title": "Privilégier la religion dans le choix du conjoint",
+        "quote": "Choisis celle qui est attachée à la religion, puisses-tu réussir.",
+        "explanation": "Le hadith mentionne plusieurs motivations possibles dans le choix d’une épouse et recommande de donner la priorité à la religion. Le bon caractère, la compatibilité et la capacité à assumer les responsabilités du mariage doivent aussi être examinés sérieusement.",
+        "source": "Sahih al-Bukhari, hadith n° 5090 ; Sahih Muslim, hadith n° 1466."
+      },
+      {
+        "title": "La bonté envers sa famille",
+        "quote": "Le meilleur d’entre vous est celui qui est le meilleur envers sa famille, et je suis le meilleur d’entre vous envers ma famille.",
+        "explanation": "La qualité religieuse se manifeste aussi dans le foyer, là où le comportement est connu au quotidien. La douceur, le respect et la responsabilité ne sont pas secondaires.",
+        "source": "Jâmi‘ at-Tirmidhî, hadith n° 3895 ; classé authentique par at-Tirmidhî."
+      },
+      {
+        "title": "Ne pas réduire son conjoint à un défaut",
+        "quote": "Qu’un croyant ne déteste pas une croyante : s’il désapprouve chez elle un caractère, il en agréera un autre.",
+        "explanation": "Ce hadith enseigne un regard équilibré : reconnaître un défaut sans nier toutes les qualités de l’autre. Il ne demande pas d’accepter l’injustice ou la maltraitance.",
+        "source": "Sahih Muslim, hadith n° 1469."
+      },
+      {
+        "title": "L’istikhâra pour les décisions",
+        "quote": "Le Messager d’Allah ﷺ nous enseignait l’istikhâra pour toutes les affaires comme il nous enseignait une sourate du Coran.",
+        "explanation": "L’istikhâra est une demande de guidance adressée à Allah lorsqu’un choix licite et concret se présente. Le hadith ne conditionne pas sa réponse à l’apparition d’un rêve.",
+        "source": "Sahih al-Bukhari, hadith n° 6382."
+      }
+    ],
+    "advice": [
+      {
+        "title": "Demander un conjoint pieux sans chercher une formule magique",
+        "text": "Invoquez avec les textes authentiques ou avec vos propres mots licites. Demandez la foi, le bon caractère, la compatibilité et un mariage bénéfique. Évitez les affirmations du type « récitez ceci un nombre précis de fois et le mariage arrivera », lorsqu’aucune preuve fiable ne l’établit.",
+        "source": "Principe général de l’invocation ; Coran 25:74 et 28:24."
+      },
+      {
+        "title": "Se renseigner réellement sur la personne",
+        "text": "L’attirance ne suffit pas à évaluer un projet de vie. Renseignez-vous sur la pratique religieuse, le caractère, la manière de gérer les responsabilités, les attentes familiales et les projets de chacun, dans un cadre respectueux et licite.",
+        "source": "Sahih al-Bukhari 5090 ; Sahih Muslim 1466."
+      },
+      {
+        "title": "Faire l’istikhâra après avoir étudié une possibilité concrète",
+        "text": "L’istikhâra ne remplace ni l’information ni la consultation. Elle vient compléter les démarches : on examine la situation, on consulte des personnes fiables, puis on demande à Allah de faciliter le bien et d’écarter le mal.",
+        "source": "Sahih al-Bukhari 6382."
+      },
+      {
+        "title": "Construire le couple par le bon comportement",
+        "text": "La baraka du foyer ne repose pas uniquement sur les paroles récitées. Elle se recherche aussi par la justice, la douceur, la fidélité aux engagements, la protection des secrets, le pardon et l’arrêt de toute forme d’injustice.",
+        "source": "Coran 4:19, 2:187 et Jâmi‘ at-Tirmidhî 3895."
+      },
+      {
+        "title": "Ne pas rester seul face à un conflit grave",
+        "text": "Lorsque la discussion directe ne suffit plus, une médiation honnête peut aider. En cas de violence, de menace ou de contrôle dangereux, il faut d’abord se protéger et solliciter rapidement des proches sûrs et des professionnels compétents.",
+        "source": "Coran 4:35 ; conseil pratique de sécurité."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Quelle douaa réciter pour se marier ?",
+        "answer": "Il n’existe pas de douaa authentique unique garantissant le mariage. Vous pouvez réciter les invocations générales du Coran, notamment « Rabbi innī limā anzalta ilayya min khayrin faqīr » (28:24) et « Rabbanā hab lanā min azwājinā… » (25:74), puis demander clairement à Allah un conjoint pieux et un mariage bénéfique avec vos propres mots.",
+        "source": "Coran 28:24 et 25:74."
+      },
+      {
+        "question": "Peut-on demander à Allah d’épouser une personne précise ?",
+        "answer": "Il est possible de demander une chose licite à Allah. Il est toutefois plus prudent de lier sa demande au bien : demander qu’Allah facilite ce mariage s’il est bon pour votre religion et votre vie, et qu’Il vous en détourne s’il est mauvais. C’est précisément le sens de l’istikhâra.",
+        "source": "Sens de l’invocation d’istikhâra, Sahih al-Bukhari 6382."
+      },
+      {
+        "question": "Comment faire la prière d’istikhâra pour un mariage ?",
+        "answer": "Lorsqu’un projet concret existe, accomplissez deux unités de prière surérogatoire, puis récitez l’invocation d’istikhâra en pensant ou en mentionnant l’affaire concernée. Ensuite, poursuivez les démarches licites et observez ce qu’Allah facilite, tout en restant prêt à accepter une autre issue.",
+        "source": "Sahih al-Bukhari 6382 et 1166."
+      },
+      {
+        "question": "Faut-il obligatoirement voir un rêve après l’istikhâra ?",
+        "answer": "Non. Le hadith authentique enseignant l’istikhâra ne mentionne pas qu’un rêve est nécessaire. La personne demande à Allah de faciliter le bien, d’écarter le mal et de lui donner satisfaction dans ce qu’Il décrète.",
+        "source": "Sahih al-Bukhari 6382."
+      },
+      {
+        "question": "Quand réciter une douaa pour le mariage ?",
+        "answer": "Vous pouvez invoquer Allah à tout moment. Il est également recommandé de profiter des moments propices à l’invocation rapportés dans les textes, tout en restant constant et sans transformer une pratique libre en rituel chiffré non établi.",
+        "source": "Conseil général ; aucune heure exclusivement réservée à la douaa du mariage n’est établie."
+      },
+      {
+        "question": "Pourquoi mon mariage tarde-t-il malgré mes douaas ?",
+        "answer": "Le retard ne signifie pas qu’Allah vous a abandonné ni que votre invocation est inutile. Continuez à invoquer, à améliorer vos démarches et à élargir les causes licites. Évitez les promesses de résultat garanti et demandez à Allah le bien, même si celui-ci prend une forme ou un délai différent de ce que vous imaginiez.",
+        "source": "Synthèse de conseil : aucune personne ne peut promettre la date ou la forme de l’exaucement."
+      },
+      {
+        "question": "Quels critères privilégier pour choisir son conjoint en Islam ?",
+        "answer": "Les textes invitent à donner une place centrale à la religion et au caractère. Il faut aussi examiner avec sérieux la compatibilité, les attentes concernant la vie familiale, les responsabilités, les projets, la communication et les éventuels sujets non négociables.",
+        "source": "Sahih al-Bukhari 5090 ; Sahih Muslim 1466."
+      },
+      {
+        "question": "Quelle invocation dire pour féliciter des mariés ?",
+        "answer": "La formule rapportée est : « Bārakallāhu laka, wa bāraka ʿalayka, wa jamaʿa baynakumā fī khayr » : qu’Allah te bénisse, fasse descendre Sa bénédiction sur toi et vous réunisse tous les deux dans le bien.",
+        "source": "Sunan Abî Dâwûd 2130 ; Jâmi‘ at-Tirmidhî 1091."
+      },
+      {
+        "question": "Peut-on faire une douaa pour sauver son mariage ?",
+        "answer": "Oui, on peut demander à Allah la réconciliation, la guidance et l’amélioration du foyer. Cette invocation doit s’accompagner de l’arrêt des torts, d’un dialogue honnête et, si nécessaire, d’une médiation. Une personne exposée à la violence ne doit pas être invitée à rester en danger au nom de la patience.",
+        "source": "Coran 4:35 ; conseil pratique de sécurité."
+      }
+    ],
+    "related": [
+      {
+        "id": "famille",
+        "label": "Famille"
+      },
+      {
+        "id": "enfants",
+        "label": "Enfants"
+      },
+      {
+        "id": "patience",
+        "label": "Patience"
+      },
+      {
+        "id": "guidance",
+        "label": "Guidance"
+      },
+      {
+        "id": "protection",
+        "label": "Protection"
+      },
+      {
+        "id": "foi",
+        "label": "Foi et fermeté"
+      }
+    ],
+    "labels": {
+      "introductionEyebrow": "Comprendre le thème Mariage en Islam",
+      "duasEyebrow": "Réponse directe à votre recherche",
+      "duasTitle": "🤲 Les douaas",
+      "quranEyebrow": "Pour approfondir",
+      "quranTitle": "📖 Ce que dit le Coran",
+      "sunnahEyebrow": "Pour approfondir",
+      "sunnahTitle": "🕌 Ce que dit la Sunna",
+      "adviceEyebrow": "Mettre les enseignements en pratique",
+      "adviceTitle": "💡 Conseils pratiques",
+      "faqEyebrow": "Questions fréquentes",
+      "faqTitle": "❓ Questions fréquentes",
+      "relatedEyebrow": "Continuer votre lecture",
+      "relatedTitle": "📚 Voir aussi"
+    }
+  }
+}
