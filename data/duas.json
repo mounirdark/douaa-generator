@@ -989,6 +989,185 @@
       "applicationToday": [],
       "mistakesToAvoid": [],
       "reportedBenefits": []
+    },
+    {
+      "id": "protection_ayat_kursi",
+      "title": "Âyat al-Kursî : le verset du Trône",
+      "categories": [
+        "protection",
+        "foyer",
+        "foi"
+      ],
+      "situations": [
+        "quotidien",
+        "sommeil"
+      ],
+      "french": "Allah ! Point de divinité à part Lui, le Vivant, Celui qui subsiste par Lui-même. Ni somnolence ni sommeil ne Le saisissent. À Lui appartient tout ce qui est dans les cieux et sur la terre. Qui peut intercéder auprès de Lui sans Sa permission ? Il connaît leur passé et leur futur. Et, de Sa science, ils n’embrassent que ce qu’Il veut. Son Trône déborde les cieux et la terre, dont la garde ne Lui coûte aucune peine. Et Il est le Très-Haut, le Très-Grand.",
+      "arabic": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ",
+      "source": "Coran, sourate Al-Baqara (2), verset 255. Sa récitation avant de dormir est rapportée dans Sahih al-Bukhari, hadith n° 2311.",
+      "type": "Verset du Coran",
+      "context": "À réciter notamment avant de dormir. Le hadith de Bukhari rapporte qu’une protection d’Allah demeure alors jusqu’au matin.",
+      "transliteration": "Allāhu lā ilāha illā Huwa al-Ḥayyu al-Qayyūm. Lā ta’khudhuhu sinatun wa lā nawm…"
+    },
+    {
+      "id": "protection_ikhlas",
+      "title": "Sourate Al-Ikhlâs",
+      "categories": [
+        "protection",
+        "foi"
+      ],
+      "situations": [
+        "matin-soir",
+        "sommeil"
+      ],
+      "french": "Dis : « Il est Allah, Unique. Allah, Celui dont toute créature dépend. Il n’a pas engendré et n’a pas été engendré. Et nul n’est égal à Lui. »",
+      "arabic": "قُلْ هُوَ اللَّهُ أَحَدٌ ۝ اللَّهُ الصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ",
+      "transliteration": "Qul huwa Allāhu aḥad. Allāhu ṣ-Ṣamad. Lam yalid wa lam yūlad. Wa lam yakun lahu kufuwan aḥad.",
+      "source": "Coran, sourate Al-Ikhlâs (112). À réciter avec Al-Falaq et An-Nâs trois fois le matin et le soir : Sunan Abi Dawud, hadith n° 5082 ; Jâmi‘ at-Tirmidhî, hadith n° 3575.",
+      "type": "Sourate du Coran",
+      "context": "À réciter avec les deux sourates protectrices le matin et le soir, et avant de dormir."
+    },
+    {
+      "id": "protection_falaq",
+      "title": "Sourate Al-Falaq : chercher refuge contre les maux créés",
+      "categories": [
+        "protection"
+      ],
+      "situations": [
+        "matin-soir",
+        "mauvais-oeil"
+      ],
+      "french": "Dis : « Je cherche protection auprès du Seigneur de l’aube naissante, contre le mal des êtres qu’Il a créés, contre le mal de l’obscurité quand elle s’approfondit, contre le mal de celles qui soufflent sur les nœuds, et contre le mal de l’envieux quand il envie. »",
+      "arabic": "قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ ۝ مِنْ شَرِّ مَا خَلَقَ ۝ وَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ ۝ وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ ۝ وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ",
+      "transliteration": "Qul aʿūdhu bi-Rabbi l-falaq. Min sharri mā khalaq. Wa min sharri ghāsiqin idhā waqab. Wa min sharri n-naffāthāti fi l-ʿuqad. Wa min sharri ḥāsidin idhā ḥasad.",
+      "source": "Coran, sourate Al-Falaq (113).",
+      "type": "Sourate du Coran",
+      "context": "L’une des deux sourates appelées Al-Mu‘awwidhatayn, récitées pour chercher refuge auprès d’Allah."
+    },
+    {
+      "id": "protection_nas",
+      "title": "Sourate An-Nâs : chercher refuge contre les suggestions mauvaises",
+      "categories": [
+        "protection",
+        "foi"
+      ],
+      "situations": [
+        "matin-soir",
+        "mauvais-oeil"
+      ],
+      "french": "Dis : « Je cherche protection auprès du Seigneur des hommes, le Souverain des hommes, le Dieu des hommes, contre le mal du mauvais conseiller furtif, qui souffle le mal dans les poitrines des hommes, qu’il soit parmi les djinns ou parmi les hommes. »",
+      "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ ۝ مَلِكِ النَّاسِ ۝ إِلَٰهِ النَّاسِ ۝ مِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِ ۝ الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ ۝ مِنَ الْجِنَّةِ وَالنَّاسِ",
+      "transliteration": "Qul aʿūdhu bi-Rabbi n-nās. Maliki n-nās. Ilāhi n-nās. Min sharri l-waswāsi l-khannās. Alladhī yuwaswisu fī ṣudūri n-nās. Mina l-jinnati wa n-nās.",
+      "source": "Coran, sourate An-Nâs (114).",
+      "type": "Sourate du Coran",
+      "context": "L’une des deux sourates protectrices. Le Prophète ﷺ les utilisait pour chercher protection."
+    },
+    {
+      "id": "protection_bismillah_no_harm",
+      "title": "Invocation du matin et du soir contre le mal soudain",
+      "categories": [
+        "protection"
+      ],
+      "situations": [
+        "matin-soir"
+      ],
+      "french": "Au nom d’Allah, avec le Nom duquel rien ne peut nuire sur terre ni dans le ciel, et Il est Celui qui entend tout, Celui qui sait tout.",
+      "arabic": "بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ",
+      "transliteration": "Bismi-llāhi lladhī lā yaḍurru maʿa ismihi shay’un fi l-arḍi wa lā fi s-samā’, wa Huwa s-Samīʿu l-ʿAlīm.",
+      "source": "Sunan Abi Dawud, hadith n° 5088 ; Jâmi‘ at-Tirmidhî, hadith n° 3388. À dire trois fois le matin et trois fois le soir.",
+      "type": "Invocation prophétique",
+      "context": "Fait partie des adhkâr authentiquement rapportés du matin et du soir."
+    },
+    {
+      "id": "protection_afiyah_morning",
+      "title": "Demander la protection et le bien-être ici-bas et dans l’au-delà",
+      "categories": [
+        "protection",
+        "famille",
+        "foyer"
+      ],
+      "situations": [
+        "matin-soir",
+        "famille"
+      ],
+      "french": "Ô Allah, je Te demande le pardon et le bien-être dans ce monde et dans l’au-delà. Ô Allah, je Te demande le pardon et le bien-être dans ma religion, ma vie d’ici-bas, ma famille et mes biens. Ô Allah, couvre mes défauts et apaise mes craintes. Ô Allah, protège-moi devant moi, derrière moi, à ma droite, à ma gauche et au-dessus de moi. Et je cherche refuge auprès de Ta grandeur contre le fait d’être saisi par-dessous moi.",
+      "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي الدُّنْيَا وَالْآخِرَةِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي دِينِي وَدُنْيَايَ وَأَهْلِي وَمَالِي، اللَّهُمَّ اسْتُرْ عَوْرَاتِي وَآمِنْ رَوْعَاتِي، اللَّهُمَّ احْفَظْنِي مِنْ بَيْنِ يَدَيَّ وَمِنْ خَلْفِي وَعَنْ يَمِينِي وَعَنْ شِمَالِي وَمِنْ فَوْقِي، وَأَعُوذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِي",
+      "transliteration": "Allāhumma innī as’aluka l-ʿafwa wa l-ʿāfiyata fi d-dunyā wa l-ākhirah…",
+      "source": "Sunan Abi Dawud, hadith n° 5074 ; Sunan Ibn Majah, hadith n° 3871.",
+      "type": "Invocation prophétique",
+      "context": "Invocation complète du matin et du soir demandant protection pour la foi, la famille, les biens et contre les peurs."
+    },
+    {
+      "id": "protection_leaving_home",
+      "title": "Invocation en quittant la maison",
+      "categories": [
+        "protection",
+        "foyer",
+        "voyage"
+      ],
+      "situations": [
+        "deplacements"
+      ],
+      "french": "Au nom d’Allah. Je place ma confiance en Allah. Il n’y a de force ni de puissance qu’en Allah.",
+      "arabic": "بِسْمِ اللَّهِ، تَوَكَّلْتُ عَلَى اللَّهِ، لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ",
+      "transliteration": "Bismi-llāh, tawakkaltu ʿala-llāh, lā ḥawla wa lā quwwata illā bi-llāh.",
+      "source": "Sunan Abi Dawud, hadith n° 5095 ; Jâmi‘ at-Tirmidhî, hadith n° 3426.",
+      "type": "Invocation prophétique",
+      "context": "À dire en sortant de chez soi. Le hadith mentionne alors la guidance, la suffisance et la protection."
+    },
+    {
+      "id": "protection_new_place",
+      "title": "Invocation lorsqu’on arrive dans un lieu",
+      "categories": [
+        "protection",
+        "voyage",
+        "foyer"
+      ],
+      "situations": [
+        "deplacements"
+      ],
+      "french": "Je cherche protection par les paroles parfaites d’Allah contre le mal de ce qu’Il a créé.",
+      "arabic": "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ",
+      "transliteration": "Aʿūdhu bikalimāti-llāhi t-tāmmāti min sharri mā khalaq.",
+      "source": "Sahih Muslim, hadith n° 2708.",
+      "type": "Invocation prophétique",
+      "context": "À dire lorsqu’on fait halte ou que l’on arrive dans un lieu. Cette formule existe déjà dans la bibliothèque sous une forme courte et est ici documentée précisément."
+    },
+    {
+      "id": "protection_children",
+      "title": "Invocation de protection pour les enfants",
+      "categories": [
+        "protection",
+        "enfants",
+        "famille"
+      ],
+      "situations": [
+        "famille",
+        "mauvais-oeil"
+      ],
+      "french": "Je vous place sous la protection des paroles parfaites d’Allah contre tout démon, toute créature nuisible et tout mauvais œil.",
+      "arabic": "أُعِيذُكُمَا بِكَلِمَاتِ اللَّهِ التَّامَّةِ مِنْ كُلِّ شَيْطَانٍ وَهَامَّةٍ، وَمِنْ كُلِّ عَيْنٍ لَامَّةٍ",
+      "transliteration": "Uʿīdhukumā bikalimāti-llāhi t-tāmmati min kulli shayṭānin wa hāmmah, wa min kulli ʿaynin lāmmah.",
+      "source": "Sahih al-Bukhari, hadith n° 3371.",
+      "type": "Invocation prophétique",
+      "context": "Le Prophète ﷺ prononçait cette invocation pour Al-Hasan et Al-Husayn. La forme grammaticale peut être adaptée à un seul enfant ou à plusieurs."
+    },
+    {
+      "id": "protection_sudden_trial",
+      "title": "Chercher refuge contre la disparition des bienfaits et les épreuves soudaines",
+      "categories": [
+        "protection",
+        "gratitude"
+      ],
+      "situations": [
+        "epreuves"
+      ],
+      "french": "Ô Allah, je cherche refuge auprès de Toi contre la disparition de Ton bienfait, la perte du bien-être que Tu accordes, la soudaineté de Ta punition et tout ce qui provoque Ta colère.",
+      "arabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ زَوَالِ نِعْمَتِكَ، وَتَحَوُّلِ عَافِيَتِكَ، وَفُجَاءَةِ نِقْمَتِكَ، وَجَمِيعِ سَخَطِكَ",
+      "transliteration": "Allāhumma innī aʿūdhu bika min zawāli niʿmatik, wa taḥawwuli ʿāfiyatik, wa fujā’ati niqmatik, wa jamīʿi sakhaṭik.",
+      "source": "Sahih Muslim, hadith n° 2739.",
+      "type": "Invocation prophétique",
+      "context": "À réciter pour demander à Allah la préservation de Ses bienfaits et la protection contre les épreuves soudaines."
     }
   ]
 }

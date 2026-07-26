@@ -24,8 +24,8 @@ async function initializeThemePage() {
 
   try {
     const [duaResponse, contentResponse] = await Promise.all([
-      fetch("../data/duas.json?v=20", { cache: "no-store" }),
-      fetch("../data/themes.json?v=20", { cache: "no-store" })
+      fetch("../data/duas.json?v=21", { cache: "no-store" }),
+      fetch("../data/themes.json?v=21", { cache: "no-store" })
     ]);
 
     if (!duaResponse.ok) {

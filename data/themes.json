@@ -263,5 +263,260 @@
       "relatedEyebrow": "Continuer votre lecture",
       "relatedTitle": "📚 Voir aussi"
     }
+  },
+  "protection": {
+    "pageTitle": "Protection en Islam : douaas contre le mal",
+    "summary": "Invocations authentiques de protection pour le matin et le soir, le sommeil, la maison, les enfants, les déplacements, le mauvais œil et les épreuves.",
+    "seoTitle": "Douaa protection : invocations contre le mal, mauvais œil et peur",
+    "seoDescription": "Douaas de protection en arabe, phonétique et français : matin et soir, mauvais œil, enfants, maison, sommeil et déplacements, avec sources authentiques.",
+    "quickLinks": [
+      {
+        "label": "Protection du matin et du soir",
+        "target": "matin-soir"
+      },
+      {
+        "label": "Protection avant de dormir",
+        "target": "sommeil"
+      },
+      {
+        "label": "Protection des enfants",
+        "target": "famille"
+      },
+      {
+        "label": "Mauvais œil et ruqya",
+        "target": "mauvais-oeil"
+      },
+      {
+        "label": "Questions fréquentes",
+        "target": "faq"
+      }
+    ],
+    "introduction": {
+      "title": "Chercher refuge auprès d’Allah sans tomber dans la peur ni les superstitions",
+      "paragraphs": [
+        "La protection en Islam repose d’abord sur le tawhîd, la confiance en Allah, la prière et les invocations authentiques. Le Coran et la Sunna enseignent des paroles simples à réciter régulièrement, notamment le matin, le soir, avant de dormir, en quittant la maison ou pour protéger les enfants.",
+        "Cette page commence directement par les douaas afin que vous puissiez trouver rapidement la formule adaptée à votre situation. Les fréquences indiquées ne sont mentionnées que lorsqu’elles sont rapportées dans une source. Il ne faut pas inventer de nombres de répétitions ni promettre qu’une formule produira automatiquement un résultat précis.",
+        "Les invocations n’empêchent pas de prendre les causes concrètes : verrouiller son logement, consulter un médecin en cas de symptômes, demander de l’aide face à une menace et éviter les personnes qui exploitent la peur du mauvais œil ou de la sorcellerie. La ruqya licite est une récitation et une invocation adressées à Allah ; elle ne repose ni sur des talismans, ni sur des pratiques obscures."
+      ]
+    },
+    "duaIntroduction": "Les invocations suivantes proviennent du Coran ou de hadiths référencés. Elles sont regroupées selon le moment et le besoin pour faciliter leur lecture quotidienne.",
+    "duaGroups": [
+      {
+        "id": "matin-soir",
+        "icon": "☀",
+        "title": "Douaas de protection du matin et du soir",
+        "description": "Les adhkâr du matin et du soir constituent une pratique régulière. Respectez les répétitions authentiquement rapportées sans leur attribuer de promesse non établie.",
+        "duaIds": [
+          "protection_ikhlas",
+          "protection_falaq",
+          "protection_nas",
+          "protection_bismillah_no_harm",
+          "protection_afiyah_morning"
+        ]
+      },
+      {
+        "id": "sommeil",
+        "icon": "☾",
+        "title": "Protection avant de dormir",
+        "description": "Avant le sommeil, la Sunna rapporte notamment la récitation d’Âyat al-Kursî et des trois dernières sourates du Coran.",
+        "duaIds": [
+          "protection_ayat_kursi",
+          "protection_ikhlas",
+          "protection_falaq",
+          "protection_nas"
+        ]
+      },
+      {
+        "id": "famille",
+        "icon": "⌂",
+        "title": "Douaas pour protéger les enfants, la famille et le foyer",
+        "description": "On peut invoquer pour ses enfants et demander à Allah le bien-être de sa famille, tout en prenant les mesures ordinaires de sécurité et de soin.",
+        "duaIds": [
+          "protection_children",
+          "protection_afiyah_morning",
+          "family_protection_general"
+        ]
+      },
+      {
+        "id": "mauvais-oeil",
+        "icon": "◉",
+        "title": "Douaas contre le mauvais œil et pour la ruqya",
+        "description": "Le mauvais œil est mentionné dans des hadiths authentiques. La réponse islamique consiste à chercher refuge auprès d’Allah par le Coran et les invocations licites, sans obsession ni accusation sans preuve.",
+        "duaIds": [
+          "protection_falaq",
+          "protection_nas",
+          "protection_children",
+          "protection_new_place"
+        ]
+      },
+      {
+        "id": "deplacements",
+        "icon": "→",
+        "title": "Protection en quittant la maison ou en arrivant dans un lieu",
+        "description": "Ces invocations accompagnent les déplacements et rappellent que la confiance en Allah va de pair avec la prudence.",
+        "duaIds": [
+          "protection_leaving_home",
+          "protection_new_place"
+        ]
+      },
+      {
+        "id": "epreuves",
+        "icon": "⬡",
+        "title": "Protection contre les épreuves soudaines",
+        "description": "Le croyant remercie Allah pour Ses bienfaits et Lui demande de les préserver, sans vivre dans l’angoisse permanente de les perdre.",
+        "duaIds": [
+          "protection_sudden_trial",
+          "debt_anxiety"
+        ]
+      }
+    ],
+    "quran": [
+      {
+        "title": "Les deux sourates de protection",
+        "quote": "Dis : « Je cherche protection auprès du Seigneur de l’aube naissante… » ; « Je cherche protection auprès du Seigneur des hommes… »",
+        "explanation": "Al-Falaq et An-Nâs apprennent au croyant à chercher refuge auprès d’Allah contre les maux visibles et invisibles, l’envie et les suggestions mauvaises.",
+        "source": "Coran, sourates Al-Falaq (113) et An-Nâs (114)."
+      },
+      {
+        "title": "Allah suffit à celui qui place sa confiance en Lui",
+        "quote": "Et quiconque place sa confiance en Allah, Il lui suffit.",
+        "explanation": "Le tawakkul n’est pas l’abandon des précautions. Il consiste à utiliser les moyens licites tout en sachant que la protection et l’issue appartiennent à Allah.",
+        "source": "Coran, sourate At-Talâq (65), verset 3."
+      },
+      {
+        "title": "Le verset du Trône",
+        "quote": "Son Trône déborde les cieux et la terre, dont la garde ne Lui coûte aucune peine.",
+        "explanation": "Âyat al-Kursî rappelle la souveraineté, la science et la puissance parfaites d’Allah. Sa récitation avant le sommeil est associée à une protection rapportée dans un hadith authentique.",
+        "source": "Coran 2:255 ; Sahih al-Bukhari 2311."
+      },
+      {
+        "title": "Le refuge contre les suggestions de Satan",
+        "quote": "Et si jamais le Diable t’incite à faire le mal, cherche refuge auprès d’Allah. Car Il entend tout et sait tout.",
+        "explanation": "Le Coran oriente immédiatement vers Allah face aux suggestions mauvaises. La demande de refuge s’accompagne de l’éloignement des causes qui nourrissent la tentation.",
+        "source": "Coran, sourate Fussilat (41), verset 36."
+      }
+    ],
+    "sunnah": [
+      {
+        "title": "Les trois dernières sourates matin et soir",
+        "quote": "Récite “Dis : Il est Allah, Unique” et les deux sourates protectrices trois fois le matin et le soir ; elles te suffiront contre toute chose.",
+        "explanation": "Ce hadith établit une pratique quotidienne claire : Al-Ikhlâs, Al-Falaq et An-Nâs, trois fois le matin et trois fois le soir.",
+        "source": "Sunan Abi Dawud 5082 ; Jâmi‘ at-Tirmidhî 3575."
+      },
+      {
+        "title": "Âyat al-Kursî avant de dormir",
+        "quote": "Un protecteur envoyé par Allah restera auprès de toi et aucun démon ne s’approchera de toi jusqu’au matin.",
+        "explanation": "Cette parole figure dans le récit où le Prophète ﷺ confirma l’information donnée à Abû Hurayra au sujet d’Âyat al-Kursî.",
+        "source": "Sahih al-Bukhari, hadith 2311."
+      },
+      {
+        "title": "Protéger les enfants",
+        "quote": "Je vous place sous la protection des paroles parfaites d’Allah contre tout démon, toute créature nuisible et tout mauvais œil.",
+        "explanation": "Le Prophète ﷺ employait cette invocation pour ses petits-fils Al-Hasan et Al-Husayn.",
+        "source": "Sahih al-Bukhari, hadith 3371."
+      },
+      {
+        "title": "La réalité du mauvais œil",
+        "quote": "Le mauvais œil est une réalité.",
+        "explanation": "Le hadith reconnaît le mauvais œil, mais il ne justifie ni la suspicion permanente, ni l’accusation de personnes sans preuve. La ruqya licite et les invocations restent adressées à Allah seul.",
+        "source": "Sahih Muslim, hadith 2188."
+      }
+    ],
+    "advice": [
+      {
+        "title": "Installer une routine simple matin et soir",
+        "text": "Commencez par les textes les mieux établis : Al-Ikhlâs, Al-Falaq et An-Nâs trois fois, puis les invocations authentiques que vous pouvez maintenir avec régularité. Une routine courte et constante vaut mieux qu’une liste très longue abandonnée rapidement.",
+        "source": "Sunan Abi Dawud 5082 ; Jâmi‘ at-Tirmidhî 3575."
+      },
+      {
+        "title": "Ne pas inventer de nombres ou de garanties",
+        "text": "Une répétition précise devient une pratique religieuse lorsqu’elle est attribuée à la Sunna. N’affirmez donc pas qu’une invocation doit être répétée 7, 41 ou 100 fois pour obtenir une protection particulière sans preuve fiable.",
+        "source": "Règle éditoriale fondée sur le suivi des textes rapportés."
+      },
+      {
+        "title": "Associer invocation et précautions concrètes",
+        "text": "Fermer une porte, consulter un professionnel de santé, signaler une menace ou protéger ses données ne contredit pas le tawakkul. Ces moyens font partie de la responsabilité humaine, tandis que le cœur s’en remet à Allah.",
+        "source": "Coran 65:3 ; conseil pratique."
+      },
+      {
+        "title": "Éviter les talismans et les pratiques opaques",
+        "text": "La protection islamique ne nécessite pas d’objet mystérieux, de carré de chiffres, de nom incompréhensible ni de paiement excessif à une personne qui prétend connaître l’invisible. La ruqya licite utilise des paroles compréhensibles et ne contient pas de polythéisme.",
+        "source": "Sahih Muslim 2200 : permission des ruqyas dépourvues de polythéisme."
+      },
+      {
+        "title": "Ne pas attribuer chaque difficulté au mauvais œil",
+        "text": "Une maladie, une fatigue, un conflit ou un échec peuvent avoir des causes ordinaires. Invoquez Allah, mais examinez aussi les causes médicales, psychologiques, relationnelles ou matérielles avant de conclure à une cause invisible.",
+        "source": "Conseil pratique de prudence ; aucune accusation sans preuve."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Quelle est la meilleure douaa de protection contre le mal ?",
+        "answer": "Il n’existe pas une formule unique pour toutes les situations. Parmi les textes les plus importants figurent Al-Falaq, An-Nâs, Âyat al-Kursî, les trois dernières sourates matin et soir, et « Aʿūdhu bikalimāti-llāhi t-tāmmāti min sharri mā khalaq ». Choisissez la formule correspondant au moment indiqué dans la Sunna.",
+        "source": "Coran 2:255, sourates 112 à 114 ; Sahih Muslim 2708 ; Abi Dawud 5082."
+      },
+      {
+        "question": "Quelles sourates réciter pour se protéger ?",
+        "answer": "Al-Ikhlâs, Al-Falaq et An-Nâs sont récitées trois fois le matin et le soir. Al-Falaq et An-Nâs sont particulièrement désignées comme les deux sourates de refuge. Âyat al-Kursî est également récitée avant de dormir.",
+        "source": "Abi Dawud 5082 ; at-Tirmidhî 3575 ; al-Bukhari 2311."
+      },
+      {
+        "question": "Quelle douaa réciter contre le mauvais œil ?",
+        "answer": "On peut réciter Al-Falaq et An-Nâs, pratiquer une ruqya licite et employer l’invocation de protection par les paroles parfaites d’Allah. Pour les enfants, la formule rapportée dans Sahih al-Bukhari 3371 est particulièrement adaptée. Évitez d’accuser une personne précise sans preuve.",
+        "source": "Sahih al-Bukhari 3371 ; Sahih Muslim 2188 ; sourates 113 et 114."
+      },
+      {
+        "question": "Comment protéger ses enfants en Islam ?",
+        "answer": "Le Prophète ﷺ plaçait Al-Hasan et Al-Husayn sous la protection des paroles parfaites d’Allah contre tout démon, toute créature nuisible et tout mauvais œil. Cette invocation accompagne les soins, la surveillance, l’éducation et toutes les précautions nécessaires à leur sécurité.",
+        "source": "Sahih al-Bukhari 3371."
+      },
+      {
+        "question": "Que réciter avant de dormir pour être protégé ?",
+        "answer": "La Sunna rapporte notamment Âyat al-Kursî ainsi que la récitation d’Al-Ikhlâs, Al-Falaq et An-Nâs avant le sommeil. Les deux derniers versets d’Al-Baqara récités la nuit sont également rapportés comme suffisants.",
+        "source": "Sahih al-Bukhari 2311 et 5009 ; pratique des trois sourates rapportée dans Sahih al-Bukhari 5017."
+      },
+      {
+        "question": "Peut-on écouter une sourate au lieu de la réciter ?",
+        "answer": "Écouter le Coran est une bonne œuvre, mais les pratiques citées sur cette page parlent de récitation par la personne. Pour appliquer précisément ces adhkâr, il convient donc de les réciter soi-même dans la mesure de ses capacités.",
+        "source": "Formulation des hadiths relatifs à la récitation ; distinction pratique."
+      },
+      {
+        "question": "La ruqya est-elle autorisée en Islam ?",
+        "answer": "Oui, lorsqu’elle ne comporte aucun polythéisme et qu’elle utilise le Coran, des invocations authentiques ou des paroles licites dont le sens est compris. Il faut se méfier des talismans, des formules inconnues, des prétentions à connaître l’invisible et des abus financiers.",
+        "source": "Sahih Muslim, hadith 2200."
+      },
+      {
+        "question": "Faut-il répéter une douaa de protection un nombre précis de fois ?",
+        "answer": "Uniquement lorsqu’un nombre est établi par une source fiable. Par exemple, les trois dernières sourates et « Bismi-llāhi lladhī lā yaḍurru… » sont rapportées trois fois matin et soir. Pour une invocation sans nombre établi, ne transformez pas une préférence personnelle en règle religieuse.",
+        "source": "Abi Dawud 5082 et 5088 ; at-Tirmidhî 3388 et 3575."
+      },
+      {
+        "question": "Les douaas de protection remplacent-elles les soins médicaux ?",
+        "answer": "Non. L’invocation et la recherche de soins sont complémentaires. Une douleur, une angoisse ou un trouble persistant nécessite une évaluation adaptée. Il ne faut pas attribuer automatiquement des symptômes au mauvais œil ou à la sorcellerie.",
+        "source": "Conseil pratique de sécurité et de santé."
+      }
+    ],
+    "related": [
+      {
+        "label": "Famille",
+        "href": "../theme/index.html?id=famille"
+      },
+      {
+        "label": "Enfants",
+        "href": "../theme/index.html?id=enfants"
+      },
+      {
+        "label": "Foyer et maison",
+        "href": "../theme/index.html?id=foyer"
+      },
+      {
+        "label": "Stress et anxiété",
+        "href": "../theme/index.html?id=stress"
+      },
+      {
+        "label": "Foi et fermeté",
+        "href": "../theme/index.html?id=foi"
+      }
+    ]
   }
 }
