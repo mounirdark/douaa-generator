@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Composez gratuitement une invocation personnalisée à partir de thèmes comme le mariage, la famille, le travail, la santé, la protection ou le pardon.">
   <title>Douaa Generator — Générateur d’invocations personnalisées</title>
-  <link rel="stylesheet" href="./style.css?v=18">
+  <link rel="stylesheet" href="./style.css?v=19">
 
   <link rel="canonical" href="https://douaagenerator.fr/">
   <meta property="og:locale" content="fr_FR">
@@ -29,7 +29,7 @@
   }
   </script>
 </head>
-<body>
+<body class="home-page">
   <div class="page-background"></div>
   <header class="site-header">
   <nav class="site-nav" aria-label="Navigation principale">
@@ -45,26 +45,53 @@
 </header>
 
   <header class="hero">
-    <div class="hero-symbol" aria-hidden="true">☾</div>
-    <p class="eyebrow">Invocations personnalisées</p>
-    <h1>Douaa Generator</h1>
-    <p class="hero-description">
-      Choisissez les sujets qui vous tiennent à cœur et composez une invocation structurée avec louange, salawat, douas, clôture, istighfar, tawakkul et yaqîn.
-    </p>
+    <div class="hero-copy">
+      <p class="eyebrow"><span aria-hidden="true"></span> Un moment pour se recentrer</p>
+      <h1>Des mots pour<br><em>ce qui habite</em><br>votre cœur.</h1>
+      <p class="hero-description">
+        Composez une invocation personnelle, structurée avec soin et accompagnée de ses sources.
+      </p>
+      <a class="hero-cta" href="#selection-title">
+        Commencer mon invocation <span aria-hidden="true">↓</span>
+      </a>
+      <div class="trust-points" aria-label="Nos engagements">
+        <span><i aria-hidden="true">✓</i> Sans inscription</span>
+        <span><i aria-hidden="true">✓</i> Sources indiquées</span>
+        <span><i aria-hidden="true">✓</i> Entièrement privé</span>
+      </div>
+    </div>
+
+    <div class="hero-art" aria-hidden="true">
+      <div class="gradient-orb orb-one"></div>
+      <div class="gradient-orb orb-two"></div>
+      <div class="ornament ornament-one"></div>
+      <div class="ornament ornament-two"></div>
+      <div class="hero-art-card">
+        <span class="art-kicker">Un rappel pour le cœur</span>
+        <span class="arabic-mark" lang="ar" dir="rtl">ادْعُونِي أَسْتَجِبْ لَكُمْ</span>
+        <span class="art-divider"></span>
+        <p>« Invoquez-Moi,<br>Je vous répondrai. »</p>
+        <small>Coran · 40:60</small>
+      </div>
+      <span class="floating-pill pill-one">Intention</span>
+      <span class="floating-pill pill-two">Confiance</span>
+      <span class="art-star star-one">✦</span>
+      <span class="art-star star-two">✧</span>
+    </div>
   </header>
 
   <main class="container">
     <section class="panel selection-panel" aria-labelledby="selection-title">
       <div class="panel-heading">
         <div>
-          <p class="step-label">Étape 1</p>
+          <p class="step-label"><span>01</span> Votre intention</p>
           <h2 id="selection-title">Choisissez vos intentions</h2>
         </div>
         <span id="selectionCount" class="selection-count">0 sélection</span>
       </div>
 
       <p class="panel-description">
-        Vous pouvez sélectionner plusieurs catégories. Une invocation sera choisie pour chacune d’elles.
+        Prenez votre temps. Vous pouvez choisir une ou plusieurs intentions ; une invocation adaptée sera proposée pour chacune.
       </p>
 
       <div id="categoriesGrid" class="categories-grid"></div>
@@ -118,7 +145,7 @@
     <p>Qu’Allah accepte nos invocations, nous pardonne et nous guide vers ce qu’Il aime.</p>
   </footer>
 
-  <script src="./menu.js?v=18"></script>
-  <script src="./app.js?v=18"></script>
+  <script src="./menu.js?v=19"></script>
+  <script src="./app.js?v=19"></script>
 </body>
 </html>
