@@ -518,5 +518,2325 @@
         "href": "../theme/index.html?id=foi"
       }
     ]
-  }
+  },
+  "audela": {
+      "pageTitle": "L’au-delà en Islam : douaas pour le Paradis",
+      "summary": "Invocations pour demander le Paradis, le bien ici-bas et dans l’au-delà, et chercher refuge contre le Feu.",
+      "seoTitle": "Douaa pour le Paradis et la protection contre le Feu",
+      "seoDescription": "Invocations pour demander le Paradis, le bien ici-bas et dans l’au-delà, et chercher refuge contre le Feu.",
+      "quickLinks": [
+        {
+          "label": "Les douaas",
+          "target": "douaas"
+        },
+        {
+          "label": "Ce que dit le Coran",
+          "target": "coran"
+        },
+        {
+          "label": "Questions fréquentes",
+          "target": "faq"
+        }
+      ],
+      "introduction": {
+        "title": "L’au-delà en Islam : douaas pour le Paradis",
+        "paragraphs": [
+          "Invocations pour demander le Paradis, le bien ici-bas et dans l’au-delà, et chercher refuge contre le Feu.",
+          "Cette page distingue les versets du Coran, les hadiths authentiques et les formulations générales. Aucune formule ne garantit à elle seule un résultat précis.",
+          "L’invocation accompagne les actes responsables, les démarches licites et, lorsque nécessaire, le recours à des personnes compétentes."
+        ]
+      },
+      "duaIntroduction": "Les invocations sont regroupées depuis la bibliothèque. Consultez la nature et la source de chaque texte.",
+      "duaGroups": [
+        {
+          "id": "douaas",
+          "icon": "✦",
+          "title": "Douaas : L’au-delà en Islam ",
+          "description": "Textes en arabe, phonétique et français, avec leur source.",
+          "duaIds": [
+            "akhirah_2_201",
+            "paradise_general"
+          ]
+        }
+      ],
+      "quran": [
+        {
+          "title": "La réussite véritable",
+          "quote": "Quiconque est écarté du Feu et admis au Paradis a certes réussi.",
+          "explanation": "Le verset replace la réussite ultime au-delà des seuls résultats terrestres.",
+          "source": "Coran 3:185."
+        }
+      ],
+      "sunnah": [
+        {
+          "title": "Un chemin vers le Paradis",
+          "quote": "Allah facilite un chemin vers le Paradis à celui qui recherche la science.",
+          "explanation": "La recherche sincère de la connaissance fait partie des causes citées dans la Sunna.",
+          "source": "Sahih Muslim 2699."
+        }
+      ],
+      "advice": [
+        {
+          "title": "Associer la douaa aux bonnes actions",
+          "text": "Invoquez avec confiance tout en accomplissant les démarches licites adaptées à votre situation.",
+          "source": "Coran 3:185. Sahih Muslim 2699."
+        },
+        {
+          "title": "Éviter les promesses sans preuve",
+          "text": "Ne transformez pas une formule libre en rituel obligatoire et n’attribuez aucun résultat garanti à une récitation.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quelle douaa réciter pour le thème « L’au-delà en Islam  » ?",
+          "answer": "Choisissez parmi les invocations référencées sur cette page selon votre situation et lisez leur traduction afin d’en comprendre le sens.",
+          "source": "Sources indiquées sur chaque fiche."
+        },
+        {
+          "question": "Existe-t-il un nombre obligatoire de répétitions ?",
+          "answer": "Uniquement lorsqu’un nombre est explicitement établi dans une source authentique. Sinon, aucun chiffre ne doit être présenté comme une règle religieuse.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        },
+        {
+          "question": "La douaa remplace-t-elle les démarches concrètes ?",
+          "answer": "Non. L’invocation accompagne les actes responsables, les conseils fiables et les aides professionnelles nécessaires.",
+          "source": "Sahih Muslim 2664."
+        }
+      ],
+      "related": [
+        {
+          "id": "foi",
+          "label": "Foi"
+        },
+        {
+          "id": "repentir",
+          "label": "Repentir"
+        },
+        {
+          "id": "gratitude",
+          "label": "Gratitude"
+        }
+      ],
+      "labels": {
+        "introductionEyebrow": "Comprendre ce thème",
+        "duasEyebrow": "Réponse directe à votre recherche",
+        "duasTitle": "🤲 Les douaas",
+        "quranEyebrow": "Sources coraniques",
+        "quranTitle": "📖 Ce que dit le Coran",
+        "sunnahEyebrow": "Hadiths authentiques",
+        "sunnahTitle": "🕌 Ce que dit la Sunna",
+        "adviceEyebrow": "Mettre les enseignements en pratique",
+        "adviceTitle": "💡 Conseils pratiques",
+        "faqEyebrow": "Questions fréquentes",
+        "faqTitle": "❓ Questions fréquentes",
+        "relatedEyebrow": "Continuer votre lecture",
+        "relatedTitle": "📚 Voir aussi"
+      }
+    },
+    "commerce": {
+      "pageTitle": "Commerce en Islam : douaas et règles de baraka",
+      "summary": "Invocations pour une subsistance licite et repères authentiques sur l’honnêteté, les contrats et la baraka dans le commerce.",
+      "seoTitle": "Douaa pour le commerce, la baraka et une vente licite",
+      "seoDescription": "Invocations pour une subsistance licite et repères authentiques sur l’honnêteté, les contrats et la baraka dans le commerce.",
+      "quickLinks": [
+        {
+          "label": "Les douaas",
+          "target": "douaas"
+        },
+        {
+          "label": "Ce que dit le Coran",
+          "target": "coran"
+        },
+        {
+          "label": "Questions fréquentes",
+          "target": "faq"
+        }
+      ],
+      "introduction": {
+        "title": "Commerce en Islam : douaas et règles de baraka",
+        "paragraphs": [
+          "Invocations pour une subsistance licite et repères authentiques sur l’honnêteté, les contrats et la baraka dans le commerce.",
+          "Cette page distingue les versets du Coran, les hadiths authentiques et les formulations générales. Aucune formule ne garantit à elle seule un résultat précis.",
+          "L’invocation accompagne les actes responsables, les démarches licites et, lorsque nécessaire, le recours à des personnes compétentes."
+        ]
+      },
+      "duaIntroduction": "Les invocations sont regroupées depuis la bibliothèque. Consultez la nature et la source de chaque texte.",
+      "duaGroups": [
+        {
+          "id": "douaas",
+          "icon": "✦",
+          "title": "Douaas : Commerce en Islam ",
+          "description": "Textes en arabe, phonétique et français, avec leur source.",
+          "duaIds": [
+            "halal_sufficiency",
+            "beneficial_rizq",
+            "work_long_general"
+          ]
+        }
+      ],
+      "quran": [
+        {
+          "title": "Mesures équitables",
+          "quote": "Malheur à ceux qui diminuent les mesures.",
+          "explanation": "Le Coran condamne celui qui exige pleinement son droit tout en diminuant celui d’autrui.",
+          "source": "Coran 83:1-3."
+        }
+      ],
+      "sunnah": [
+        {
+          "title": "Vérité et clarté",
+          "quote": "Si les deux parties disent vrai et expliquent les défauts, leur vente est bénie.",
+          "explanation": "La dissimulation peut donner un gain immédiat tout en retirant la baraka.",
+          "source": "Sahih al-Bukhari 2079 ; Sahih Muslim 1532."
+        }
+      ],
+      "advice": [
+        {
+          "title": "Associer la douaa aux bonnes actions",
+          "text": "Invoquez avec confiance tout en accomplissant les démarches licites adaptées à votre situation.",
+          "source": "Coran 83:1-3. Sahih al-Bukhari 2079 ; Sahih Muslim 1532."
+        },
+        {
+          "title": "Éviter les promesses sans preuve",
+          "text": "Ne transformez pas une formule libre en rituel obligatoire et n’attribuez aucun résultat garanti à une récitation.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quelle douaa réciter pour le thème « Commerce en Islam  » ?",
+          "answer": "Choisissez parmi les invocations référencées sur cette page selon votre situation et lisez leur traduction afin d’en comprendre le sens.",
+          "source": "Sources indiquées sur chaque fiche."
+        },
+        {
+          "question": "Existe-t-il un nombre obligatoire de répétitions ?",
+          "answer": "Uniquement lorsqu’un nombre est explicitement établi dans une source authentique. Sinon, aucun chiffre ne doit être présenté comme une règle religieuse.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        },
+        {
+          "question": "La douaa remplace-t-elle les démarches concrètes ?",
+          "answer": "Non. L’invocation accompagne les actes responsables, les conseils fiables et les aides professionnelles nécessaires.",
+          "source": "Sahih Muslim 2664."
+        }
+      ],
+      "related": [
+        {
+          "id": "rizq",
+          "label": "Rizq"
+        },
+        {
+          "id": "travail",
+          "label": "Travail"
+        },
+        {
+          "id": "dettes",
+          "label": "Dettes"
+        }
+      ],
+      "labels": {
+        "introductionEyebrow": "Comprendre ce thème",
+        "duasEyebrow": "Réponse directe à votre recherche",
+        "duasTitle": "🤲 Les douaas",
+        "quranEyebrow": "Sources coraniques",
+        "quranTitle": "📖 Ce que dit le Coran",
+        "sunnahEyebrow": "Hadiths authentiques",
+        "sunnahTitle": "🕌 Ce que dit la Sunna",
+        "adviceEyebrow": "Mettre les enseignements en pratique",
+        "adviceTitle": "💡 Conseils pratiques",
+        "faqEyebrow": "Questions fréquentes",
+        "faqTitle": "❓ Questions fréquentes",
+        "relatedEyebrow": "Continuer votre lecture",
+        "relatedTitle": "📚 Voir aussi"
+      }
+    },
+    "couple": {
+      "pageTitle": "Couple en Islam : affection, respect et réconciliation",
+      "summary": "Douaas et enseignements authentiques pour cultiver l’affection, la miséricorde, la justice et rechercher une réconciliation saine.",
+      "seoTitle": "Douaa pour le couple, l’amour et la réconciliation",
+      "seoDescription": "Douaas et enseignements authentiques pour cultiver l’affection, la miséricorde, la justice et rechercher une réconciliation saine.",
+      "quickLinks": [
+        {
+          "label": "Les douaas",
+          "target": "douaas"
+        },
+        {
+          "label": "Ce que dit le Coran",
+          "target": "coran"
+        },
+        {
+          "label": "Questions fréquentes",
+          "target": "faq"
+        }
+      ],
+      "introduction": {
+        "title": "Couple en Islam : affection, respect et réconciliation",
+        "paragraphs": [
+          "Douaas et enseignements authentiques pour cultiver l’affection, la miséricorde, la justice et rechercher une réconciliation saine.",
+          "Cette page distingue les versets du Coran, les hadiths authentiques et les formulations générales. Aucune formule ne garantit à elle seule un résultat précis.",
+          "L’invocation accompagne les actes responsables, les démarches licites et, lorsque nécessaire, le recours à des personnes compétentes."
+        ]
+      },
+      "duaIntroduction": "Les invocations sont regroupées depuis la bibliothèque. Consultez la nature et la source de chaque texte.",
+      "duaGroups": [
+        {
+          "id": "douaas",
+          "icon": "✦",
+          "title": "Douaas : Couple en Islam ",
+          "description": "Textes en arabe, phonétique et français, avec leur source.",
+          "duaIds": [
+            "quran_25_74",
+            "quran_30_21_general"
+          ]
+        }
+      ],
+      "quran": [
+        {
+          "title": "Affection et miséricorde",
+          "quote": "Il a placé entre vous affection et miséricorde.",
+          "explanation": "Ces qualités orientent la vie conjugale et demandent des efforts concrets.",
+          "source": "Coran 30:21."
+        }
+      ],
+      "sunnah": [
+        {
+          "title": "Regarder aussi les qualités",
+          "quote": "S’il désapprouve chez elle un caractère, il en agréera un autre.",
+          "explanation": "Le hadith invite à ne pas réduire son conjoint à un défaut, sans justifier la maltraitance.",
+          "source": "Sahih Muslim 1469."
+        }
+      ],
+      "advice": [
+        {
+          "title": "Associer la douaa aux bonnes actions",
+          "text": "Invoquez avec confiance tout en accomplissant les démarches licites adaptées à votre situation.",
+          "source": "Coran 30:21. Sahih Muslim 1469."
+        },
+        {
+          "title": "Éviter les promesses sans preuve",
+          "text": "Ne transformez pas une formule libre en rituel obligatoire et n’attribuez aucun résultat garanti à une récitation.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quelle douaa réciter pour le thème « Couple en Islam  » ?",
+          "answer": "Choisissez parmi les invocations référencées sur cette page selon votre situation et lisez leur traduction afin d’en comprendre le sens.",
+          "source": "Sources indiquées sur chaque fiche."
+        },
+        {
+          "question": "Existe-t-il un nombre obligatoire de répétitions ?",
+          "answer": "Uniquement lorsqu’un nombre est explicitement établi dans une source authentique. Sinon, aucun chiffre ne doit être présenté comme une règle religieuse.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        },
+        {
+          "question": "La douaa remplace-t-elle les démarches concrètes ?",
+          "answer": "Non. L’invocation accompagne les actes responsables, les conseils fiables et les aides professionnelles nécessaires.",
+          "source": "Sahih Muslim 2664."
+        }
+      ],
+      "related": [
+        {
+          "id": "mariage",
+          "label": "Mariage"
+        },
+        {
+          "id": "famille",
+          "label": "Famille"
+        },
+        {
+          "id": "foyer",
+          "label": "Foyer"
+        }
+      ],
+      "labels": {
+        "introductionEyebrow": "Comprendre ce thème",
+        "duasEyebrow": "Réponse directe à votre recherche",
+        "duasTitle": "🤲 Les douaas",
+        "quranEyebrow": "Sources coraniques",
+        "quranTitle": "📖 Ce que dit le Coran",
+        "sunnahEyebrow": "Hadiths authentiques",
+        "sunnahTitle": "🕌 Ce que dit la Sunna",
+        "adviceEyebrow": "Mettre les enseignements en pratique",
+        "adviceTitle": "💡 Conseils pratiques",
+        "faqEyebrow": "Questions fréquentes",
+        "faqTitle": "❓ Questions fréquentes",
+        "relatedEyebrow": "Continuer votre lecture",
+        "relatedTitle": "📚 Voir aussi"
+      }
+    },
+    "deces": {
+      "pageTitle": "Décès en Islam : douaa pour un défunt",
+      "summary": "Invocation funéraire authentique et repères pour demander le pardon et la miséricorde en faveur d’un défunt.",
+      "seoTitle": "Douaa pour un mort : arabe, phonétique et traduction",
+      "seoDescription": "Invocation funéraire authentique et repères pour demander le pardon et la miséricorde en faveur d’un défunt.",
+      "quickLinks": [
+        {
+          "label": "Les douaas",
+          "target": "douaas"
+        },
+        {
+          "label": "Ce que dit le Coran",
+          "target": "coran"
+        },
+        {
+          "label": "Questions fréquentes",
+          "target": "faq"
+        }
+      ],
+      "introduction": {
+        "title": "Décès en Islam : douaa pour un défunt",
+        "paragraphs": [
+          "Invocation funéraire authentique et repères pour demander le pardon et la miséricorde en faveur d’un défunt.",
+          "Cette page distingue les versets du Coran, les hadiths authentiques et les formulations générales. Aucune formule ne garantit à elle seule un résultat précis.",
+          "L’invocation accompagne les actes responsables, les démarches licites et, lorsque nécessaire, le recours à des personnes compétentes."
+        ]
+      },
+      "duaIntroduction": "Les invocations sont regroupées depuis la bibliothèque. Consultez la nature et la source de chaque texte.",
+      "duaGroups": [
+        {
+          "id": "douaas",
+          "icon": "✦",
+          "title": "Douaas : Décès en Islam ",
+          "description": "Textes en arabe, phonétique et français, avec leur source.",
+          "duaIds": [
+            "deceased_general"
+          ]
+        }
+      ],
+      "quran": [
+        {
+          "title": "Nous retournons à Allah",
+          "quote": "Nous appartenons à Allah et c’est vers Lui que nous retournons.",
+          "explanation": "Cette parole rappelle l’origine, la destination et la patience face à l’épreuve.",
+          "source": "Coran 2:156."
+        }
+      ],
+      "sunnah": [
+        {
+          "title": "Les œuvres qui continuent",
+          "quote": "Les œuvres cessent sauf trois, dont un enfant pieux qui invoque pour le défunt.",
+          "explanation": "Le hadith mentionne notamment l’invocation d’un enfant vertueux.",
+          "source": "Sahih Muslim 1631."
+        }
+      ],
+      "advice": [
+        {
+          "title": "Associer la douaa aux bonnes actions",
+          "text": "Invoquez avec confiance tout en accomplissant les démarches licites adaptées à votre situation.",
+          "source": "Coran 2:156. Sahih Muslim 1631."
+        },
+        {
+          "title": "Éviter les promesses sans preuve",
+          "text": "Ne transformez pas une formule libre en rituel obligatoire et n’attribuez aucun résultat garanti à une récitation.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quelle douaa réciter pour le thème « Décès en Islam  » ?",
+          "answer": "Choisissez parmi les invocations référencées sur cette page selon votre situation et lisez leur traduction afin d’en comprendre le sens.",
+          "source": "Sources indiquées sur chaque fiche."
+        },
+        {
+          "question": "Existe-t-il un nombre obligatoire de répétitions ?",
+          "answer": "Uniquement lorsqu’un nombre est explicitement établi dans une source authentique. Sinon, aucun chiffre ne doit être présenté comme une règle religieuse.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        },
+        {
+          "question": "La douaa remplace-t-elle les démarches concrètes ?",
+          "answer": "Non. L’invocation accompagne les actes responsables, les conseils fiables et les aides professionnelles nécessaires.",
+          "source": "Sahih Muslim 2664."
+        }
+      ],
+      "related": [
+        {
+          "id": "patience",
+          "label": "Patience"
+        },
+        {
+          "id": "tristesse",
+          "label": "Tristesse"
+        },
+        {
+          "id": "audela",
+          "label": "Audela"
+        }
+      ],
+      "labels": {
+        "introductionEyebrow": "Comprendre ce thème",
+        "duasEyebrow": "Réponse directe à votre recherche",
+        "duasTitle": "🤲 Les douaas",
+        "quranEyebrow": "Sources coraniques",
+        "quranTitle": "📖 Ce que dit le Coran",
+        "sunnahEyebrow": "Hadiths authentiques",
+        "sunnahTitle": "🕌 Ce que dit la Sunna",
+        "adviceEyebrow": "Mettre les enseignements en pratique",
+        "adviceTitle": "💡 Conseils pratiques",
+        "faqEyebrow": "Questions fréquentes",
+        "faqTitle": "❓ Questions fréquentes",
+        "relatedEyebrow": "Continuer votre lecture",
+        "relatedTitle": "📚 Voir aussi"
+      }
+    },
+    "dettes": {
+      "pageTitle": "Dettes en Islam : douaas et démarches pour rembourser",
+      "summary": "Invocations authentiques contre le poids des dettes et conseils fondés sur les textes pour protéger les droits et éviter l’injustice.",
+      "seoTitle": "Douaa contre les dettes et l’angoisse financière",
+      "seoDescription": "Invocations authentiques contre le poids des dettes et conseils fondés sur les textes pour protéger les droits et éviter l’injustice.",
+      "quickLinks": [
+        {
+          "label": "Les douaas",
+          "target": "douaas"
+        },
+        {
+          "label": "Ce que dit le Coran",
+          "target": "coran"
+        },
+        {
+          "label": "Questions fréquentes",
+          "target": "faq"
+        }
+      ],
+      "introduction": {
+        "title": "Dettes en Islam : douaas et démarches pour rembourser",
+        "paragraphs": [
+          "Invocations authentiques contre le poids des dettes et conseils fondés sur les textes pour protéger les droits et éviter l’injustice.",
+          "Cette page distingue les versets du Coran, les hadiths authentiques et les formulations générales. Aucune formule ne garantit à elle seule un résultat précis.",
+          "L’invocation accompagne les actes responsables, les démarches licites et, lorsque nécessaire, le recours à des personnes compétentes."
+        ]
+      },
+      "duaIntroduction": "Les invocations sont regroupées depuis la bibliothèque. Consultez la nature et la source de chaque texte.",
+      "duaGroups": [
+        {
+          "id": "douaas",
+          "icon": "✦",
+          "title": "Douaas : Dettes en Islam ",
+          "description": "Textes en arabe, phonétique et français, avec leur source.",
+          "duaIds": [
+            "debt_anxiety",
+            "halal_sufficiency"
+          ]
+        }
+      ],
+      "quran": [
+        {
+          "title": "Accorder un délai",
+          "quote": "Si le débiteur est en difficulté, accordez un délai jusqu’à l’aisance.",
+          "explanation": "Le Coran appelle à la compassion envers la personne réellement empêchée.",
+          "source": "Coran 2:280."
+        }
+      ],
+      "sunnah": [
+        {
+          "title": "Le retard du riche est une injustice",
+          "quote": "Le retard de paiement de celui qui en a les moyens est une injustice.",
+          "explanation": "La capacité de payer crée une responsabilité immédiate.",
+          "source": "Sahih al-Bukhari 2287 ; Sahih Muslim 1564."
+        }
+      ],
+      "advice": [
+        {
+          "title": "Associer la douaa aux bonnes actions",
+          "text": "Invoquez avec confiance tout en accomplissant les démarches licites adaptées à votre situation.",
+          "source": "Coran 2:280. Sahih al-Bukhari 2287 ; Sahih Muslim 1564."
+        },
+        {
+          "title": "Éviter les promesses sans preuve",
+          "text": "Ne transformez pas une formule libre en rituel obligatoire et n’attribuez aucun résultat garanti à une récitation.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quelle douaa réciter pour le thème « Dettes en Islam  » ?",
+          "answer": "Choisissez parmi les invocations référencées sur cette page selon votre situation et lisez leur traduction afin d’en comprendre le sens.",
+          "source": "Sources indiquées sur chaque fiche."
+        },
+        {
+          "question": "Existe-t-il un nombre obligatoire de répétitions ?",
+          "answer": "Uniquement lorsqu’un nombre est explicitement établi dans une source authentique. Sinon, aucun chiffre ne doit être présenté comme une règle religieuse.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        },
+        {
+          "question": "La douaa remplace-t-elle les démarches concrètes ?",
+          "answer": "Non. L’invocation accompagne les actes responsables, les conseils fiables et les aides professionnelles nécessaires.",
+          "source": "Sahih Muslim 2664."
+        }
+      ],
+      "related": [
+        {
+          "id": "rizq",
+          "label": "Rizq"
+        },
+        {
+          "id": "travail",
+          "label": "Travail"
+        },
+        {
+          "id": "commerce",
+          "label": "Commerce"
+        }
+      ],
+      "labels": {
+        "introductionEyebrow": "Comprendre ce thème",
+        "duasEyebrow": "Réponse directe à votre recherche",
+        "duasTitle": "🤲 Les douaas",
+        "quranEyebrow": "Sources coraniques",
+        "quranTitle": "📖 Ce que dit le Coran",
+        "sunnahEyebrow": "Hadiths authentiques",
+        "sunnahTitle": "🕌 Ce que dit la Sunna",
+        "adviceEyebrow": "Mettre les enseignements en pratique",
+        "adviceTitle": "💡 Conseils pratiques",
+        "faqEyebrow": "Questions fréquentes",
+        "faqTitle": "❓ Questions fréquentes",
+        "relatedEyebrow": "Continuer votre lecture",
+        "relatedTitle": "📚 Voir aussi"
+      }
+    },
+    "enfants": {
+      "pageTitle": "Enfants en Islam : douaas pour la protection et la foi",
+      "summary": "Invocations authentiques pour demander une descendance pieuse, protéger les enfants et les accompagner avec miséricorde.",
+      "seoTitle": "Douaa pour les enfants : protection, foi et réussite",
+      "seoDescription": "Invocations authentiques pour demander une descendance pieuse, protéger les enfants et les accompagner avec miséricorde.",
+      "quickLinks": [
+        {
+          "label": "Les douaas",
+          "target": "douaas"
+        },
+        {
+          "label": "Ce que dit le Coran",
+          "target": "coran"
+        },
+        {
+          "label": "Questions fréquentes",
+          "target": "faq"
+        }
+      ],
+      "introduction": {
+        "title": "Enfants en Islam : douaas pour la protection et la foi",
+        "paragraphs": [
+          "Invocations authentiques pour demander une descendance pieuse, protéger les enfants et les accompagner avec miséricorde.",
+          "Cette page distingue les versets du Coran, les hadiths authentiques et les formulations générales. Aucune formule ne garantit à elle seule un résultat précis.",
+          "L’invocation accompagne les actes responsables, les démarches licites et, lorsque nécessaire, le recours à des personnes compétentes."
+        ]
+      },
+      "duaIntroduction": "Les invocations sont regroupées depuis la bibliothèque. Consultez la nature et la source de chaque texte.",
+      "duaGroups": [
+        {
+          "id": "douaas",
+          "icon": "✦",
+          "title": "Douaas : Enfants en Islam ",
+          "description": "Textes en arabe, phonétique et français, avec leur source.",
+          "duaIds": [
+            "quran_25_74",
+            "quran_14_40",
+            "quran_3_38",
+            "quran_21_89",
+            "protection_children"
+          ]
+        }
+      ],
+      "quran": [
+        {
+          "title": "Préserver la prière",
+          "quote": "Fais que j’accomplisse la prière, ainsi qu’une partie de ma descendance.",
+          "explanation": "Ibrahim demande la constance dans l’adoration pour lui et sa descendance.",
+          "source": "Coran 14:40."
+        }
+      ],
+      "sunnah": [
+        {
+          "title": "Protection de Hasan et Husayn",
+          "quote": "Le Prophète ﷺ protégeait Hasan et Husayn par les paroles parfaites d’Allah.",
+          "explanation": "Cette invocation est rapportée explicitement pour les enfants.",
+          "source": "Sahih al-Bukhari 3371."
+        }
+      ],
+      "advice": [
+        {
+          "title": "Associer la douaa aux bonnes actions",
+          "text": "Invoquez avec confiance tout en accomplissant les démarches licites adaptées à votre situation.",
+          "source": "Coran 14:40. Sahih al-Bukhari 3371."
+        },
+        {
+          "title": "Éviter les promesses sans preuve",
+          "text": "Ne transformez pas une formule libre en rituel obligatoire et n’attribuez aucun résultat garanti à une récitation.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quelle douaa réciter pour le thème « Enfants en Islam  » ?",
+          "answer": "Choisissez parmi les invocations référencées sur cette page selon votre situation et lisez leur traduction afin d’en comprendre le sens.",
+          "source": "Sources indiquées sur chaque fiche."
+        },
+        {
+          "question": "Existe-t-il un nombre obligatoire de répétitions ?",
+          "answer": "Uniquement lorsqu’un nombre est explicitement établi dans une source authentique. Sinon, aucun chiffre ne doit être présenté comme une règle religieuse.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        },
+        {
+          "question": "La douaa remplace-t-elle les démarches concrètes ?",
+          "answer": "Non. L’invocation accompagne les actes responsables, les conseils fiables et les aides professionnelles nécessaires.",
+          "source": "Sahih Muslim 2664."
+        }
+      ],
+      "related": [
+        {
+          "id": "famille",
+          "label": "Famille"
+        },
+        {
+          "id": "parents",
+          "label": "Parents"
+        },
+        {
+          "id": "protection",
+          "label": "Protection"
+        }
+      ],
+      "labels": {
+        "introductionEyebrow": "Comprendre ce thème",
+        "duasEyebrow": "Réponse directe à votre recherche",
+        "duasTitle": "🤲 Les douaas",
+        "quranEyebrow": "Sources coraniques",
+        "quranTitle": "📖 Ce que dit le Coran",
+        "sunnahEyebrow": "Hadiths authentiques",
+        "sunnahTitle": "🕌 Ce que dit la Sunna",
+        "adviceEyebrow": "Mettre les enseignements en pratique",
+        "adviceTitle": "💡 Conseils pratiques",
+        "faqEyebrow": "Questions fréquentes",
+        "faqTitle": "❓ Questions fréquentes",
+        "relatedEyebrow": "Continuer votre lecture",
+        "relatedTitle": "📚 Voir aussi"
+      }
+    },
+    "famille": {
+      "pageTitle": "Famille en Islam : douaas pour la paix et la protection",
+      "summary": "Invocations pour la foi, la miséricorde et la protection de la famille, avec des repères sur les responsabilités du foyer.",
+      "seoTitle": "Douaa pour la famille, la paix du foyer et la protection",
+      "seoDescription": "Invocations pour la foi, la miséricorde et la protection de la famille, avec des repères sur les responsabilités du foyer.",
+      "quickLinks": [
+        {
+          "label": "Les douaas",
+          "target": "douaas"
+        },
+        {
+          "label": "Ce que dit le Coran",
+          "target": "coran"
+        },
+        {
+          "label": "Questions fréquentes",
+          "target": "faq"
+        }
+      ],
+      "introduction": {
+        "title": "Famille en Islam : douaas pour la paix et la protection",
+        "paragraphs": [
+          "Invocations pour la foi, la miséricorde et la protection de la famille, avec des repères sur les responsabilités du foyer.",
+          "Cette page distingue les versets du Coran, les hadiths authentiques et les formulations générales. Aucune formule ne garantit à elle seule un résultat précis.",
+          "L’invocation accompagne les actes responsables, les démarches licites et, lorsque nécessaire, le recours à des personnes compétentes."
+        ]
+      },
+      "duaIntroduction": "Les invocations sont regroupées depuis la bibliothèque. Consultez la nature et la source de chaque texte.",
+      "duaGroups": [
+        {
+          "id": "douaas",
+          "icon": "✦",
+          "title": "Douaas : Famille en Islam ",
+          "description": "Textes en arabe, phonétique et français, avec leur source.",
+          "duaIds": [
+            "quran_25_74",
+            "parents_17_24",
+            "quran_14_40",
+            "family_protection_general",
+            "gratitude_27_19",
+            "protection_children"
+          ]
+        }
+      ],
+      "quran": [
+        {
+          "title": "Protéger sa famille",
+          "quote": "Préservez vos personnes et vos familles d’un Feu.",
+          "explanation": "Le verset appelle à une responsabilité spirituelle fondée sur l’enseignement et l’exemple.",
+          "source": "Coran 66:6."
+        }
+      ],
+      "sunnah": [
+        {
+          "title": "Chacun est responsable",
+          "quote": "Chacun est un berger et sera interrogé sur ce qui lui a été confié.",
+          "explanation": "La responsabilité familiale n’est pas seulement matérielle.",
+          "source": "Sahih al-Bukhari 7138 ; Sahih Muslim 1829."
+        }
+      ],
+      "advice": [
+        {
+          "title": "Associer la douaa aux bonnes actions",
+          "text": "Invoquez avec confiance tout en accomplissant les démarches licites adaptées à votre situation.",
+          "source": "Coran 66:6. Sahih al-Bukhari 7138 ; Sahih Muslim 1829."
+        },
+        {
+          "title": "Éviter les promesses sans preuve",
+          "text": "Ne transformez pas une formule libre en rituel obligatoire et n’attribuez aucun résultat garanti à une récitation.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quelle douaa réciter pour le thème « Famille en Islam  » ?",
+          "answer": "Choisissez parmi les invocations référencées sur cette page selon votre situation et lisez leur traduction afin d’en comprendre le sens.",
+          "source": "Sources indiquées sur chaque fiche."
+        },
+        {
+          "question": "Existe-t-il un nombre obligatoire de répétitions ?",
+          "answer": "Uniquement lorsqu’un nombre est explicitement établi dans une source authentique. Sinon, aucun chiffre ne doit être présenté comme une règle religieuse.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        },
+        {
+          "question": "La douaa remplace-t-elle les démarches concrètes ?",
+          "answer": "Non. L’invocation accompagne les actes responsables, les conseils fiables et les aides professionnelles nécessaires.",
+          "source": "Sahih Muslim 2664."
+        }
+      ],
+      "related": [
+        {
+          "id": "enfants",
+          "label": "Enfants"
+        },
+        {
+          "id": "parents",
+          "label": "Parents"
+        },
+        {
+          "id": "foyer",
+          "label": "Foyer"
+        }
+      ],
+      "labels": {
+        "introductionEyebrow": "Comprendre ce thème",
+        "duasEyebrow": "Réponse directe à votre recherche",
+        "duasTitle": "🤲 Les douaas",
+        "quranEyebrow": "Sources coraniques",
+        "quranTitle": "📖 Ce que dit le Coran",
+        "sunnahEyebrow": "Hadiths authentiques",
+        "sunnahTitle": "🕌 Ce que dit la Sunna",
+        "adviceEyebrow": "Mettre les enseignements en pratique",
+        "adviceTitle": "💡 Conseils pratiques",
+        "faqEyebrow": "Questions fréquentes",
+        "faqTitle": "❓ Questions fréquentes",
+        "relatedEyebrow": "Continuer votre lecture",
+        "relatedTitle": "📚 Voir aussi"
+      }
+    },
+    "foi": {
+      "pageTitle": "Foi en Islam : douaas pour rester ferme",
+      "summary": "Invocations pour demander la guidance, la fermeté du cœur, la science et le repentir, avec des enseignements authentiques.",
+      "seoTitle": "Douaa pour renforcer sa foi et affermir son cœur",
+      "seoDescription": "Invocations pour demander la guidance, la fermeté du cœur, la science et le repentir, avec des enseignements authentiques.",
+      "quickLinks": [
+        {
+          "label": "Les douaas",
+          "target": "douaas"
+        },
+        {
+          "label": "Ce que dit le Coran",
+          "target": "coran"
+        },
+        {
+          "label": "Questions fréquentes",
+          "target": "faq"
+        }
+      ],
+      "introduction": {
+        "title": "Foi en Islam : douaas pour rester ferme",
+        "paragraphs": [
+          "Invocations pour demander la guidance, la fermeté du cœur, la science et le repentir, avec des enseignements authentiques.",
+          "Cette page distingue les versets du Coran, les hadiths authentiques et les formulations générales. Aucune formule ne garantit à elle seule un résultat précis.",
+          "L’invocation accompagne les actes responsables, les démarches licites et, lorsque nécessaire, le recours à des personnes compétentes."
+        ]
+      },
+      "duaIntroduction": "Les invocations sont regroupées depuis la bibliothèque. Consultez la nature et la source de chaque texte.",
+      "duaGroups": [
+        {
+          "id": "douaas",
+          "icon": "✦",
+          "title": "Douaas : Foi en Islam ",
+          "description": "Textes en arabe, phonétique et français, avec leur source.",
+          "duaIds": [
+            "guidance_3_8",
+            "firm_heart",
+            "knowledge_20_114",
+            "quran_14_40",
+            "repentance_adam_7_23"
+          ]
+        }
+      ],
+      "quran": [
+        {
+          "title": "Ne pas dévier après la guidance",
+          "quote": "Ne laisse pas nos cœurs dévier après nous avoir guidés.",
+          "explanation": "Cette invocation enseigne l’humilité même après avoir reçu la guidance.",
+          "source": "Coran 3:8."
+        }
+      ],
+      "sunnah": [
+        {
+          "title": "Croire puis rester droit",
+          "quote": "Dis : je crois en Allah, puis reste droit.",
+          "explanation": "Le hadith résume l’engagement dans la foi et la constance.",
+          "source": "Sahih Muslim 38."
+        }
+      ],
+      "advice": [
+        {
+          "title": "Associer la douaa aux bonnes actions",
+          "text": "Invoquez avec confiance tout en accomplissant les démarches licites adaptées à votre situation.",
+          "source": "Coran 3:8. Sahih Muslim 38."
+        },
+        {
+          "title": "Éviter les promesses sans preuve",
+          "text": "Ne transformez pas une formule libre en rituel obligatoire et n’attribuez aucun résultat garanti à une récitation.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quelle douaa réciter pour le thème « Foi en Islam  » ?",
+          "answer": "Choisissez parmi les invocations référencées sur cette page selon votre situation et lisez leur traduction afin d’en comprendre le sens.",
+          "source": "Sources indiquées sur chaque fiche."
+        },
+        {
+          "question": "Existe-t-il un nombre obligatoire de répétitions ?",
+          "answer": "Uniquement lorsqu’un nombre est explicitement établi dans une source authentique. Sinon, aucun chiffre ne doit être présenté comme une règle religieuse.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        },
+        {
+          "question": "La douaa remplace-t-elle les démarches concrètes ?",
+          "answer": "Non. L’invocation accompagne les actes responsables, les conseils fiables et les aides professionnelles nécessaires.",
+          "source": "Sahih Muslim 2664."
+        }
+      ],
+      "related": [
+        {
+          "id": "guidance",
+          "label": "Guidance"
+        },
+        {
+          "id": "repentir",
+          "label": "Repentir"
+        },
+        {
+          "id": "patience",
+          "label": "Patience"
+        }
+      ],
+      "labels": {
+        "introductionEyebrow": "Comprendre ce thème",
+        "duasEyebrow": "Réponse directe à votre recherche",
+        "duasTitle": "🤲 Les douaas",
+        "quranEyebrow": "Sources coraniques",
+        "quranTitle": "📖 Ce que dit le Coran",
+        "sunnahEyebrow": "Hadiths authentiques",
+        "sunnahTitle": "🕌 Ce que dit la Sunna",
+        "adviceEyebrow": "Mettre les enseignements en pratique",
+        "adviceTitle": "💡 Conseils pratiques",
+        "faqEyebrow": "Questions fréquentes",
+        "faqTitle": "❓ Questions fréquentes",
+        "relatedEyebrow": "Continuer votre lecture",
+        "relatedTitle": "📚 Voir aussi"
+      }
+    },
+    "foyer": {
+      "pageTitle": "Foyer en Islam : douaas pour la maison",
+      "summary": "Invocations authentiques en entrant, en sortant et pour protéger la maison, sans superstition ni promesse infondée.",
+      "seoTitle": "Douaa pour la maison et la protection du foyer",
+      "seoDescription": "Invocations authentiques en entrant, en sortant et pour protéger la maison, sans superstition ni promesse infondée.",
+      "quickLinks": [
+        {
+          "label": "Les douaas",
+          "target": "douaas"
+        },
+        {
+          "label": "Ce que dit le Coran",
+          "target": "coran"
+        },
+        {
+          "label": "Questions fréquentes",
+          "target": "faq"
+        }
+      ],
+      "introduction": {
+        "title": "Foyer en Islam : douaas pour la maison",
+        "paragraphs": [
+          "Invocations authentiques en entrant, en sortant et pour protéger la maison, sans superstition ni promesse infondée.",
+          "Cette page distingue les versets du Coran, les hadiths authentiques et les formulations générales. Aucune formule ne garantit à elle seule un résultat précis.",
+          "L’invocation accompagne les actes responsables, les démarches licites et, lorsque nécessaire, le recours à des personnes compétentes."
+        ]
+      },
+      "duaIntroduction": "Les invocations sont regroupées depuis la bibliothèque. Consultez la nature et la source de chaque texte.",
+      "duaGroups": [
+        {
+          "id": "douaas",
+          "icon": "✦",
+          "title": "Douaas : Foyer en Islam ",
+          "description": "Textes en arabe, phonétique et français, avec leur source.",
+          "duaIds": [
+            "protection_leaving_home",
+            "protection_new_place",
+            "protection_ayat_kursi",
+            "family_protection_general"
+          ]
+        }
+      ],
+      "quran": [
+        {
+          "title": "Des maisons de tranquillité",
+          "quote": "Allah vous a fait de vos maisons un lieu de repos.",
+          "explanation": "Le verset rappelle le bienfait du foyer et invite à la gratitude.",
+          "source": "Coran 16:80."
+        }
+      ],
+      "sunnah": [
+        {
+          "title": "Mentionner Allah en entrant",
+          "quote": "Celui qui mentionne Allah en entrant ne laisse au diable ni gîte ni repas.",
+          "explanation": "La mention d’Allah accompagne la vie quotidienne du foyer.",
+          "source": "Sahih Muslim 2018."
+        }
+      ],
+      "advice": [
+        {
+          "title": "Associer la douaa aux bonnes actions",
+          "text": "Invoquez avec confiance tout en accomplissant les démarches licites adaptées à votre situation.",
+          "source": "Coran 16:80. Sahih Muslim 2018."
+        },
+        {
+          "title": "Éviter les promesses sans preuve",
+          "text": "Ne transformez pas une formule libre en rituel obligatoire et n’attribuez aucun résultat garanti à une récitation.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quelle douaa réciter pour le thème « Foyer en Islam  » ?",
+          "answer": "Choisissez parmi les invocations référencées sur cette page selon votre situation et lisez leur traduction afin d’en comprendre le sens.",
+          "source": "Sources indiquées sur chaque fiche."
+        },
+        {
+          "question": "Existe-t-il un nombre obligatoire de répétitions ?",
+          "answer": "Uniquement lorsqu’un nombre est explicitement établi dans une source authentique. Sinon, aucun chiffre ne doit être présenté comme une règle religieuse.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        },
+        {
+          "question": "La douaa remplace-t-elle les démarches concrètes ?",
+          "answer": "Non. L’invocation accompagne les actes responsables, les conseils fiables et les aides professionnelles nécessaires.",
+          "source": "Sahih Muslim 2664."
+        }
+      ],
+      "related": [
+        {
+          "id": "protection",
+          "label": "Protection"
+        },
+        {
+          "id": "famille",
+          "label": "Famille"
+        },
+        {
+          "id": "enfants",
+          "label": "Enfants"
+        }
+      ],
+      "labels": {
+        "introductionEyebrow": "Comprendre ce thème",
+        "duasEyebrow": "Réponse directe à votre recherche",
+        "duasTitle": "🤲 Les douaas",
+        "quranEyebrow": "Sources coraniques",
+        "quranTitle": "📖 Ce que dit le Coran",
+        "sunnahEyebrow": "Hadiths authentiques",
+        "sunnahTitle": "🕌 Ce que dit la Sunna",
+        "adviceEyebrow": "Mettre les enseignements en pratique",
+        "adviceTitle": "💡 Conseils pratiques",
+        "faqEyebrow": "Questions fréquentes",
+        "faqTitle": "❓ Questions fréquentes",
+        "relatedEyebrow": "Continuer votre lecture",
+        "relatedTitle": "📚 Voir aussi"
+      }
+    },
+    "gratitude": {
+      "pageTitle": "Gratitude en Islam : douaas pour remercier Allah",
+      "summary": "Invocations coraniques de gratitude et enseignements authentiques pour reconnaître les bienfaits sans nier les difficultés.",
+      "seoTitle": "Douaa de gratitude pour remercier Allah",
+      "seoDescription": "Invocations coraniques de gratitude et enseignements authentiques pour reconnaître les bienfaits sans nier les difficultés.",
+      "quickLinks": [
+        {
+          "label": "Les douaas",
+          "target": "douaas"
+        },
+        {
+          "label": "Ce que dit le Coran",
+          "target": "coran"
+        },
+        {
+          "label": "Questions fréquentes",
+          "target": "faq"
+        }
+      ],
+      "introduction": {
+        "title": "Gratitude en Islam : douaas pour remercier Allah",
+        "paragraphs": [
+          "Invocations coraniques de gratitude et enseignements authentiques pour reconnaître les bienfaits sans nier les difficultés.",
+          "Cette page distingue les versets du Coran, les hadiths authentiques et les formulations générales. Aucune formule ne garantit à elle seule un résultat précis.",
+          "L’invocation accompagne les actes responsables, les démarches licites et, lorsque nécessaire, le recours à des personnes compétentes."
+        ]
+      },
+      "duaIntroduction": "Les invocations sont regroupées depuis la bibliothèque. Consultez la nature et la source de chaque texte.",
+      "duaGroups": [
+        {
+          "id": "douaas",
+          "icon": "✦",
+          "title": "Douaas : Gratitude en Islam ",
+          "description": "Textes en arabe, phonétique et français, avec leur source.",
+          "duaIds": [
+            "gratitude_27_19",
+            "sayyid_istighfar_meaning",
+            "protection_sudden_trial"
+          ]
+        }
+      ],
+      "quran": [
+        {
+          "title": "Si vous êtes reconnaissants",
+          "quote": "Si vous êtes reconnaissants, J’augmenterai pour vous.",
+          "explanation": "La gratitude est liée à l’augmentation des bienfaits selon la sagesse d’Allah.",
+          "source": "Coran 14:7."
+        }
+      ],
+      "sunnah": [
+        {
+          "title": "Un serviteur reconnaissant",
+          "quote": "Ne serais-je pas un serviteur reconnaissant ?",
+          "explanation": "Le Prophète ﷺ reliait son adoration à la gratitude.",
+          "source": "Sahih al-Bukhari 4837 ; Sahih Muslim 2819."
+        }
+      ],
+      "advice": [
+        {
+          "title": "Associer la douaa aux bonnes actions",
+          "text": "Invoquez avec confiance tout en accomplissant les démarches licites adaptées à votre situation.",
+          "source": "Coran 14:7. Sahih al-Bukhari 4837 ; Sahih Muslim 2819."
+        },
+        {
+          "title": "Éviter les promesses sans preuve",
+          "text": "Ne transformez pas une formule libre en rituel obligatoire et n’attribuez aucun résultat garanti à une récitation.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quelle douaa réciter pour le thème « Gratitude en Islam  » ?",
+          "answer": "Choisissez parmi les invocations référencées sur cette page selon votre situation et lisez leur traduction afin d’en comprendre le sens.",
+          "source": "Sources indiquées sur chaque fiche."
+        },
+        {
+          "question": "Existe-t-il un nombre obligatoire de répétitions ?",
+          "answer": "Uniquement lorsqu’un nombre est explicitement établi dans une source authentique. Sinon, aucun chiffre ne doit être présenté comme une règle religieuse.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        },
+        {
+          "question": "La douaa remplace-t-elle les démarches concrètes ?",
+          "answer": "Non. L’invocation accompagne les actes responsables, les conseils fiables et les aides professionnelles nécessaires.",
+          "source": "Sahih Muslim 2664."
+        }
+      ],
+      "related": [
+        {
+          "id": "foi",
+          "label": "Foi"
+        },
+        {
+          "id": "patience",
+          "label": "Patience"
+        },
+        {
+          "id": "repentir",
+          "label": "Repentir"
+        }
+      ],
+      "labels": {
+        "introductionEyebrow": "Comprendre ce thème",
+        "duasEyebrow": "Réponse directe à votre recherche",
+        "duasTitle": "🤲 Les douaas",
+        "quranEyebrow": "Sources coraniques",
+        "quranTitle": "📖 Ce que dit le Coran",
+        "sunnahEyebrow": "Hadiths authentiques",
+        "sunnahTitle": "🕌 Ce que dit la Sunna",
+        "adviceEyebrow": "Mettre les enseignements en pratique",
+        "adviceTitle": "💡 Conseils pratiques",
+        "faqEyebrow": "Questions fréquentes",
+        "faqTitle": "❓ Questions fréquentes",
+        "relatedEyebrow": "Continuer votre lecture",
+        "relatedTitle": "📚 Voir aussi"
+      }
+    },
+    "grossesse": {
+      "pageTitle": "Grossesse en Islam : douaas pour une descendance pieuse",
+      "summary": "Invocations coraniques pour demander une descendance bonne et vivre la grossesse avec confiance, sans formule magique.",
+      "seoTitle": "Douaa pour la grossesse et une descendance pieuse",
+      "seoDescription": "Invocations coraniques pour demander une descendance bonne et vivre la grossesse avec confiance, sans formule magique.",
+      "quickLinks": [
+        {
+          "label": "Les douaas",
+          "target": "douaas"
+        },
+        {
+          "label": "Ce que dit le Coran",
+          "target": "coran"
+        },
+        {
+          "label": "Questions fréquentes",
+          "target": "faq"
+        }
+      ],
+      "introduction": {
+        "title": "Grossesse en Islam : douaas pour une descendance pieuse",
+        "paragraphs": [
+          "Invocations coraniques pour demander une descendance bonne et vivre la grossesse avec confiance, sans formule magique.",
+          "Cette page distingue les versets du Coran, les hadiths authentiques et les formulations générales. Aucune formule ne garantit à elle seule un résultat précis.",
+          "L’invocation accompagne les actes responsables, les démarches licites et, lorsque nécessaire, le recours à des personnes compétentes."
+        ]
+      },
+      "duaIntroduction": "Les invocations sont regroupées depuis la bibliothèque. Consultez la nature et la source de chaque texte.",
+      "duaGroups": [
+        {
+          "id": "douaas",
+          "icon": "✦",
+          "title": "Douaas : Grossesse en Islam ",
+          "description": "Textes en arabe, phonétique et français, avec leur source.",
+          "duaIds": [
+            "quran_3_38",
+            "quran_21_89"
+          ]
+        }
+      ],
+      "quran": [
+        {
+          "title": "L’invocation de Zakariya",
+          "quote": "Accorde-moi, venant de Toi, une excellente descendance.",
+          "explanation": "Le Coran rapporte cette demande sincère d’une descendance bonne.",
+          "source": "Coran 3:38."
+        }
+      ],
+      "sunnah": [
+        {
+          "title": "La valeur de la vie prénatale",
+          "quote": "La création de chacun est rassemblée dans le ventre de sa mère.",
+          "explanation": "Le hadith rappelle les étapes de la création sans fournir de rituel spécifique à la grossesse.",
+          "source": "Sahih al-Bukhari 3208 ; Sahih Muslim 2643."
+        }
+      ],
+      "advice": [
+        {
+          "title": "Associer la douaa aux bonnes actions",
+          "text": "Invoquez avec confiance tout en accomplissant les démarches licites adaptées à votre situation.",
+          "source": "Coran 3:38. Sahih al-Bukhari 3208 ; Sahih Muslim 2643."
+        },
+        {
+          "title": "Éviter les promesses sans preuve",
+          "text": "Ne transformez pas une formule libre en rituel obligatoire et n’attribuez aucun résultat garanti à une récitation.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quelle douaa réciter pour le thème « Grossesse en Islam  » ?",
+          "answer": "Choisissez parmi les invocations référencées sur cette page selon votre situation et lisez leur traduction afin d’en comprendre le sens.",
+          "source": "Sources indiquées sur chaque fiche."
+        },
+        {
+          "question": "Existe-t-il un nombre obligatoire de répétitions ?",
+          "answer": "Uniquement lorsqu’un nombre est explicitement établi dans une source authentique. Sinon, aucun chiffre ne doit être présenté comme une règle religieuse.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        },
+        {
+          "question": "La douaa remplace-t-elle les démarches concrètes ?",
+          "answer": "Non. L’invocation accompagne les actes responsables, les conseils fiables et les aides professionnelles nécessaires.",
+          "source": "Sahih Muslim 2664."
+        }
+      ],
+      "related": [
+        {
+          "id": "enfants",
+          "label": "Enfants"
+        },
+        {
+          "id": "famille",
+          "label": "Famille"
+        },
+        {
+          "id": "protection",
+          "label": "Protection"
+        }
+      ],
+      "labels": {
+        "introductionEyebrow": "Comprendre ce thème",
+        "duasEyebrow": "Réponse directe à votre recherche",
+        "duasTitle": "🤲 Les douaas",
+        "quranEyebrow": "Sources coraniques",
+        "quranTitle": "📖 Ce que dit le Coran",
+        "sunnahEyebrow": "Hadiths authentiques",
+        "sunnahTitle": "🕌 Ce que dit la Sunna",
+        "adviceEyebrow": "Mettre les enseignements en pratique",
+        "adviceTitle": "💡 Conseils pratiques",
+        "faqEyebrow": "Questions fréquentes",
+        "faqTitle": "❓ Questions fréquentes",
+        "relatedEyebrow": "Continuer votre lecture",
+        "relatedTitle": "📚 Voir aussi"
+      }
+    },
+    "guerison": {
+      "pageTitle": "Guérison en Islam : douaas et soins",
+      "summary": "Invocations authentiques pour demander la guérison, accompagnées d’un rappel clair sur la recherche de soins médicaux.",
+      "seoTitle": "Douaa pour la guérison et la santé",
+      "seoDescription": "Invocations authentiques pour demander la guérison, accompagnées d’un rappel clair sur la recherche de soins médicaux.",
+      "quickLinks": [
+        {
+          "label": "Les douaas",
+          "target": "douaas"
+        },
+        {
+          "label": "Ce que dit le Coran",
+          "target": "coran"
+        },
+        {
+          "label": "Questions fréquentes",
+          "target": "faq"
+        }
+      ],
+      "introduction": {
+        "title": "Guérison en Islam : douaas et soins",
+        "paragraphs": [
+          "Invocations authentiques pour demander la guérison, accompagnées d’un rappel clair sur la recherche de soins médicaux.",
+          "Cette page distingue les versets du Coran, les hadiths authentiques et les formulations générales. Aucune formule ne garantit à elle seule un résultat précis.",
+          "L’invocation accompagne les actes responsables, les démarches licites et, lorsque nécessaire, le recours à des personnes compétentes."
+        ]
+      },
+      "duaIntroduction": "Les invocations sont regroupées depuis la bibliothèque. Consultez la nature et la source de chaque texte.",
+      "duaGroups": [
+        {
+          "id": "douaas",
+          "icon": "✦",
+          "title": "Douaas : Guérison en Islam ",
+          "description": "Textes en arabe, phonétique et français, avec leur source.",
+          "duaIds": [
+            "ayyub_21_83",
+            "healing_prophetic"
+          ]
+        }
+      ],
+      "quran": [
+        {
+          "title": "L’épreuve d’Ayyoub",
+          "quote": "Le mal m’a touché, et Tu es le plus Miséricordieux.",
+          "explanation": "Ayyoub expose son épreuve à Allah avec humilité et espérance.",
+          "source": "Coran 21:83."
+        }
+      ],
+      "sunnah": [
+        {
+          "title": "Demander la guérison",
+          "quote": "Ô Seigneur des hommes, éloigne le mal et guéris, car Tu es Celui qui guérit.",
+          "explanation": "Cette invocation prophétique accompagne la recherche de soins.",
+          "source": "Sahih al-Bukhari 5743 ; Sahih Muslim 2191."
+        }
+      ],
+      "advice": [
+        {
+          "title": "Associer la douaa aux bonnes actions",
+          "text": "Invoquez avec confiance tout en accomplissant les démarches licites adaptées à votre situation.",
+          "source": "Coran 21:83. Sahih al-Bukhari 5743 ; Sahih Muslim 2191."
+        },
+        {
+          "title": "Éviter les promesses sans preuve",
+          "text": "Ne transformez pas une formule libre en rituel obligatoire et n’attribuez aucun résultat garanti à une récitation.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quelle douaa réciter pour le thème « Guérison en Islam  » ?",
+          "answer": "Choisissez parmi les invocations référencées sur cette page selon votre situation et lisez leur traduction afin d’en comprendre le sens.",
+          "source": "Sources indiquées sur chaque fiche."
+        },
+        {
+          "question": "Existe-t-il un nombre obligatoire de répétitions ?",
+          "answer": "Uniquement lorsqu’un nombre est explicitement établi dans une source authentique. Sinon, aucun chiffre ne doit être présenté comme une règle religieuse.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        },
+        {
+          "question": "La douaa remplace-t-elle les démarches concrètes ?",
+          "answer": "Non. L’invocation accompagne les actes responsables, les conseils fiables et les aides professionnelles nécessaires.",
+          "source": "Sahih Muslim 2664."
+        }
+      ],
+      "related": [
+        {
+          "id": "patience",
+          "label": "Patience"
+        },
+        {
+          "id": "tristesse",
+          "label": "Tristesse"
+        },
+        {
+          "id": "protection",
+          "label": "Protection"
+        }
+      ],
+      "labels": {
+        "introductionEyebrow": "Comprendre ce thème",
+        "duasEyebrow": "Réponse directe à votre recherche",
+        "duasTitle": "🤲 Les douaas",
+        "quranEyebrow": "Sources coraniques",
+        "quranTitle": "📖 Ce que dit le Coran",
+        "sunnahEyebrow": "Hadiths authentiques",
+        "sunnahTitle": "🕌 Ce que dit la Sunna",
+        "adviceEyebrow": "Mettre les enseignements en pratique",
+        "adviceTitle": "💡 Conseils pratiques",
+        "faqEyebrow": "Questions fréquentes",
+        "faqTitle": "❓ Questions fréquentes",
+        "relatedEyebrow": "Continuer votre lecture",
+        "relatedTitle": "📚 Voir aussi"
+      }
+    },
+    "guidance": {
+      "pageTitle": "Guidance en Islam : douaas pour être guidé",
+      "summary": "Invocations coraniques et prophétiques pour demander la droiture, la fermeté du cœur et de bons choix.",
+      "seoTitle": "Douaa pour demander la guidance et la fermeté",
+      "seoDescription": "Invocations coraniques et prophétiques pour demander la droiture, la fermeté du cœur et de bons choix.",
+      "quickLinks": [
+        {
+          "label": "Les douaas",
+          "target": "douaas"
+        },
+        {
+          "label": "Ce que dit le Coran",
+          "target": "coran"
+        },
+        {
+          "label": "Questions fréquentes",
+          "target": "faq"
+        }
+      ],
+      "introduction": {
+        "title": "Guidance en Islam : douaas pour être guidé",
+        "paragraphs": [
+          "Invocations coraniques et prophétiques pour demander la droiture, la fermeté du cœur et de bons choix.",
+          "Cette page distingue les versets du Coran, les hadiths authentiques et les formulations générales. Aucune formule ne garantit à elle seule un résultat précis.",
+          "L’invocation accompagne les actes responsables, les démarches licites et, lorsque nécessaire, le recours à des personnes compétentes."
+        ]
+      },
+      "duaIntroduction": "Les invocations sont regroupées depuis la bibliothèque. Consultez la nature et la source de chaque texte.",
+      "duaGroups": [
+        {
+          "id": "douaas",
+          "icon": "✦",
+          "title": "Douaas : Guidance en Islam ",
+          "description": "Textes en arabe, phonétique et français, avec leur source.",
+          "duaIds": [
+            "guidance_3_8",
+            "firm_heart"
+          ]
+        }
+      ],
+      "quran": [
+        {
+          "title": "Demander la stabilité",
+          "quote": "Ne laisse pas nos cœurs dévier après nous avoir guidés.",
+          "explanation": "La guidance reçue n’empêche pas de continuer à demander la fermeté.",
+          "source": "Coran 3:8."
+        }
+      ],
+      "sunnah": [
+        {
+          "title": "Demander la guidance",
+          "quote": "Ô Allah, je Te demande la guidance, la piété, la chasteté et la suffisance.",
+          "explanation": "Cette invocation rassemble plusieurs qualités fondamentales.",
+          "source": "Sahih Muslim 2721."
+        }
+      ],
+      "advice": [
+        {
+          "title": "Associer la douaa aux bonnes actions",
+          "text": "Invoquez avec confiance tout en accomplissant les démarches licites adaptées à votre situation.",
+          "source": "Coran 3:8. Sahih Muslim 2721."
+        },
+        {
+          "title": "Éviter les promesses sans preuve",
+          "text": "Ne transformez pas une formule libre en rituel obligatoire et n’attribuez aucun résultat garanti à une récitation.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quelle douaa réciter pour le thème « Guidance en Islam  » ?",
+          "answer": "Choisissez parmi les invocations référencées sur cette page selon votre situation et lisez leur traduction afin d’en comprendre le sens.",
+          "source": "Sources indiquées sur chaque fiche."
+        },
+        {
+          "question": "Existe-t-il un nombre obligatoire de répétitions ?",
+          "answer": "Uniquement lorsqu’un nombre est explicitement établi dans une source authentique. Sinon, aucun chiffre ne doit être présenté comme une règle religieuse.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        },
+        {
+          "question": "La douaa remplace-t-elle les démarches concrètes ?",
+          "answer": "Non. L’invocation accompagne les actes responsables, les conseils fiables et les aides professionnelles nécessaires.",
+          "source": "Sahih Muslim 2664."
+        }
+      ],
+      "related": [
+        {
+          "id": "foi",
+          "label": "Foi"
+        },
+        {
+          "id": "projet",
+          "label": "Projet"
+        },
+        {
+          "id": "repentir",
+          "label": "Repentir"
+        }
+      ],
+      "labels": {
+        "introductionEyebrow": "Comprendre ce thème",
+        "duasEyebrow": "Réponse directe à votre recherche",
+        "duasTitle": "🤲 Les douaas",
+        "quranEyebrow": "Sources coraniques",
+        "quranTitle": "📖 Ce que dit le Coran",
+        "sunnahEyebrow": "Hadiths authentiques",
+        "sunnahTitle": "🕌 Ce que dit la Sunna",
+        "adviceEyebrow": "Mettre les enseignements en pratique",
+        "adviceTitle": "💡 Conseils pratiques",
+        "faqEyebrow": "Questions fréquentes",
+        "faqTitle": "❓ Questions fréquentes",
+        "relatedEyebrow": "Continuer votre lecture",
+        "relatedTitle": "📚 Voir aussi"
+      }
+    },
+    "injustice": {
+      "pageTitle": "Injustice en Islam : douaas et comportement dans l’épreuve",
+      "summary": "Invocations pour chercher le secours d’Allah face à l’injustice, sans renoncer aux démarches licites de protection.",
+      "seoTitle": "Douaa contre l’injustice et dans l’adversité",
+      "seoDescription": "Invocations pour chercher le secours d’Allah face à l’injustice, sans renoncer aux démarches licites de protection.",
+      "quickLinks": [
+        {
+          "label": "Les douaas",
+          "target": "douaas"
+        },
+        {
+          "label": "Ce que dit le Coran",
+          "target": "coran"
+        },
+        {
+          "label": "Questions fréquentes",
+          "target": "faq"
+        }
+      ],
+      "introduction": {
+        "title": "Injustice en Islam : douaas et comportement dans l’épreuve",
+        "paragraphs": [
+          "Invocations pour chercher le secours d’Allah face à l’injustice, sans renoncer aux démarches licites de protection.",
+          "Cette page distingue les versets du Coran, les hadiths authentiques et les formulations générales. Aucune formule ne garantit à elle seule un résultat précis.",
+          "L’invocation accompagne les actes responsables, les démarches licites et, lorsque nécessaire, le recours à des personnes compétentes."
+        ]
+      },
+      "duaIntroduction": "Les invocations sont regroupées depuis la bibliothèque. Consultez la nature et la source de chaque texte.",
+      "duaGroups": [
+        {
+          "id": "douaas",
+          "icon": "✦",
+          "title": "Douaas : Injustice en Islam ",
+          "description": "Textes en arabe, phonétique et français, avec leur source.",
+          "duaIds": [
+            "yunus_21_87",
+            "hasbunallah_3_173",
+            "patience_2_250"
+          ]
+        }
+      ],
+      "quran": [
+        {
+          "title": "Allah suffit comme Garant",
+          "quote": "Allah nous suffit et Il est le meilleur Garant.",
+          "explanation": "Cette parole exprime la confiance dans une situation de menace.",
+          "source": "Coran 3:173."
+        }
+      ],
+      "sunnah": [
+        {
+          "title": "L’injustice sera ténèbres",
+          "quote": "Gardez-vous de l’injustice, car elle sera ténèbres au Jour de la résurrection.",
+          "explanation": "Le hadith condamne clairement toute oppression.",
+          "source": "Sahih Muslim 2578."
+        }
+      ],
+      "advice": [
+        {
+          "title": "Associer la douaa aux bonnes actions",
+          "text": "Invoquez avec confiance tout en accomplissant les démarches licites adaptées à votre situation.",
+          "source": "Coran 3:173. Sahih Muslim 2578."
+        },
+        {
+          "title": "Éviter les promesses sans preuve",
+          "text": "Ne transformez pas une formule libre en rituel obligatoire et n’attribuez aucun résultat garanti à une récitation.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quelle douaa réciter pour le thème « Injustice en Islam  » ?",
+          "answer": "Choisissez parmi les invocations référencées sur cette page selon votre situation et lisez leur traduction afin d’en comprendre le sens.",
+          "source": "Sources indiquées sur chaque fiche."
+        },
+        {
+          "question": "Existe-t-il un nombre obligatoire de répétitions ?",
+          "answer": "Uniquement lorsqu’un nombre est explicitement établi dans une source authentique. Sinon, aucun chiffre ne doit être présenté comme une règle religieuse.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        },
+        {
+          "question": "La douaa remplace-t-elle les démarches concrètes ?",
+          "answer": "Non. L’invocation accompagne les actes responsables, les conseils fiables et les aides professionnelles nécessaires.",
+          "source": "Sahih Muslim 2664."
+        }
+      ],
+      "related": [
+        {
+          "id": "patience",
+          "label": "Patience"
+        },
+        {
+          "id": "tristesse",
+          "label": "Tristesse"
+        },
+        {
+          "id": "foi",
+          "label": "Foi"
+        }
+      ],
+      "labels": {
+        "introductionEyebrow": "Comprendre ce thème",
+        "duasEyebrow": "Réponse directe à votre recherche",
+        "duasTitle": "🤲 Les douaas",
+        "quranEyebrow": "Sources coraniques",
+        "quranTitle": "📖 Ce que dit le Coran",
+        "sunnahEyebrow": "Hadiths authentiques",
+        "sunnahTitle": "🕌 Ce que dit la Sunna",
+        "adviceEyebrow": "Mettre les enseignements en pratique",
+        "adviceTitle": "💡 Conseils pratiques",
+        "faqEyebrow": "Questions fréquentes",
+        "faqTitle": "❓ Questions fréquentes",
+        "relatedEyebrow": "Continuer votre lecture",
+        "relatedTitle": "📚 Voir aussi"
+      }
+    },
+    "parents": {
+      "pageTitle": "Parents en Islam : douaas et bienfaisance",
+      "summary": "Invocations coraniques pour ses parents et enseignements authentiques sur le respect, la gratitude et la miséricorde.",
+      "seoTitle": "Douaa pour ses parents en arabe et phonétique",
+      "seoDescription": "Invocations coraniques pour ses parents et enseignements authentiques sur le respect, la gratitude et la miséricorde.",
+      "quickLinks": [
+        {
+          "label": "Les douaas",
+          "target": "douaas"
+        },
+        {
+          "label": "Ce que dit le Coran",
+          "target": "coran"
+        },
+        {
+          "label": "Questions fréquentes",
+          "target": "faq"
+        }
+      ],
+      "introduction": {
+        "title": "Parents en Islam : douaas et bienfaisance",
+        "paragraphs": [
+          "Invocations coraniques pour ses parents et enseignements authentiques sur le respect, la gratitude et la miséricorde.",
+          "Cette page distingue les versets du Coran, les hadiths authentiques et les formulations générales. Aucune formule ne garantit à elle seule un résultat précis.",
+          "L’invocation accompagne les actes responsables, les démarches licites et, lorsque nécessaire, le recours à des personnes compétentes."
+        ]
+      },
+      "duaIntroduction": "Les invocations sont regroupées depuis la bibliothèque. Consultez la nature et la source de chaque texte.",
+      "duaGroups": [
+        {
+          "id": "douaas",
+          "icon": "✦",
+          "title": "Douaas : Parents en Islam ",
+          "description": "Textes en arabe, phonétique et français, avec leur source.",
+          "duaIds": [
+            "parents_17_24",
+            "gratitude_27_19"
+          ]
+        }
+      ],
+      "quran": [
+        {
+          "title": "Demander miséricorde",
+          "quote": "Seigneur, fais-leur miséricorde comme ils m’ont élevé petit.",
+          "explanation": "Le Coran enseigne une invocation tendre en faveur des parents.",
+          "source": "Coran 17:24."
+        }
+      ],
+      "sunnah": [
+        {
+          "title": "La mère puis le père",
+          "quote": "Ta mère, puis ta mère, puis ta mère, puis ton père.",
+          "explanation": "Le hadith souligne le droit considérable de la mère puis celui du père.",
+          "source": "Sahih al-Bukhari 5971 ; Sahih Muslim 2548."
+        }
+      ],
+      "advice": [
+        {
+          "title": "Associer la douaa aux bonnes actions",
+          "text": "Invoquez avec confiance tout en accomplissant les démarches licites adaptées à votre situation.",
+          "source": "Coran 17:24. Sahih al-Bukhari 5971 ; Sahih Muslim 2548."
+        },
+        {
+          "title": "Éviter les promesses sans preuve",
+          "text": "Ne transformez pas une formule libre en rituel obligatoire et n’attribuez aucun résultat garanti à une récitation.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quelle douaa réciter pour le thème « Parents en Islam  » ?",
+          "answer": "Choisissez parmi les invocations référencées sur cette page selon votre situation et lisez leur traduction afin d’en comprendre le sens.",
+          "source": "Sources indiquées sur chaque fiche."
+        },
+        {
+          "question": "Existe-t-il un nombre obligatoire de répétitions ?",
+          "answer": "Uniquement lorsqu’un nombre est explicitement établi dans une source authentique. Sinon, aucun chiffre ne doit être présenté comme une règle religieuse.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        },
+        {
+          "question": "La douaa remplace-t-elle les démarches concrètes ?",
+          "answer": "Non. L’invocation accompagne les actes responsables, les conseils fiables et les aides professionnelles nécessaires.",
+          "source": "Sahih Muslim 2664."
+        }
+      ],
+      "related": [
+        {
+          "id": "famille",
+          "label": "Famille"
+        },
+        {
+          "id": "enfants",
+          "label": "Enfants"
+        },
+        {
+          "id": "gratitude",
+          "label": "Gratitude"
+        }
+      ],
+      "labels": {
+        "introductionEyebrow": "Comprendre ce thème",
+        "duasEyebrow": "Réponse directe à votre recherche",
+        "duasTitle": "🤲 Les douaas",
+        "quranEyebrow": "Sources coraniques",
+        "quranTitle": "📖 Ce que dit le Coran",
+        "sunnahEyebrow": "Hadiths authentiques",
+        "sunnahTitle": "🕌 Ce que dit la Sunna",
+        "adviceEyebrow": "Mettre les enseignements en pratique",
+        "adviceTitle": "💡 Conseils pratiques",
+        "faqEyebrow": "Questions fréquentes",
+        "faqTitle": "❓ Questions fréquentes",
+        "relatedEyebrow": "Continuer votre lecture",
+        "relatedTitle": "📚 Voir aussi"
+      }
+    },
+    "patience": {
+      "pageTitle": "Patience en Islam : douaas dans l’épreuve",
+      "summary": "Invocations coraniques et prophétiques pour demander patience, fermeté et secours sans nier la douleur.",
+      "seoTitle": "Douaa pour la patience dans une épreuve",
+      "seoDescription": "Invocations coraniques et prophétiques pour demander patience, fermeté et secours sans nier la douleur.",
+      "quickLinks": [
+        {
+          "label": "Les douaas",
+          "target": "douaas"
+        },
+        {
+          "label": "Ce que dit le Coran",
+          "target": "coran"
+        },
+        {
+          "label": "Questions fréquentes",
+          "target": "faq"
+        }
+      ],
+      "introduction": {
+        "title": "Patience en Islam : douaas dans l’épreuve",
+        "paragraphs": [
+          "Invocations coraniques et prophétiques pour demander patience, fermeté et secours sans nier la douleur.",
+          "Cette page distingue les versets du Coran, les hadiths authentiques et les formulations générales. Aucune formule ne garantit à elle seule un résultat précis.",
+          "L’invocation accompagne les actes responsables, les démarches licites et, lorsque nécessaire, le recours à des personnes compétentes."
+        ]
+      },
+      "duaIntroduction": "Les invocations sont regroupées depuis la bibliothèque. Consultez la nature et la source de chaque texte.",
+      "duaGroups": [
+        {
+          "id": "douaas",
+          "icon": "✦",
+          "title": "Douaas : Patience en Islam ",
+          "description": "Textes en arabe, phonétique et français, avec leur source.",
+          "duaIds": [
+            "ayyub_21_83",
+            "yunus_21_87",
+            "patience_2_250"
+          ]
+        }
+      ],
+      "quran": [
+        {
+          "title": "Avec la difficulté vient la facilité",
+          "quote": "À côté de la difficulté est certes une facilité.",
+          "explanation": "Le verset nourrit l’espérance sans promettre l’absence d’épreuve.",
+          "source": "Coran 94:5-6."
+        }
+      ],
+      "sunnah": [
+        {
+          "title": "Le meilleur don",
+          "quote": "Nul ne reçoit un don meilleur et plus vaste que la patience.",
+          "explanation": "La patience est une qualité à demander et à exercer.",
+          "source": "Sahih al-Bukhari 1469 ; Sahih Muslim 1053."
+        }
+      ],
+      "advice": [
+        {
+          "title": "Associer la douaa aux bonnes actions",
+          "text": "Invoquez avec confiance tout en accomplissant les démarches licites adaptées à votre situation.",
+          "source": "Coran 94:5-6. Sahih al-Bukhari 1469 ; Sahih Muslim 1053."
+        },
+        {
+          "title": "Éviter les promesses sans preuve",
+          "text": "Ne transformez pas une formule libre en rituel obligatoire et n’attribuez aucun résultat garanti à une récitation.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quelle douaa réciter pour le thème « Patience en Islam  » ?",
+          "answer": "Choisissez parmi les invocations référencées sur cette page selon votre situation et lisez leur traduction afin d’en comprendre le sens.",
+          "source": "Sources indiquées sur chaque fiche."
+        },
+        {
+          "question": "Existe-t-il un nombre obligatoire de répétitions ?",
+          "answer": "Uniquement lorsqu’un nombre est explicitement établi dans une source authentique. Sinon, aucun chiffre ne doit être présenté comme une règle religieuse.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        },
+        {
+          "question": "La douaa remplace-t-elle les démarches concrètes ?",
+          "answer": "Non. L’invocation accompagne les actes responsables, les conseils fiables et les aides professionnelles nécessaires.",
+          "source": "Sahih Muslim 2664."
+        }
+      ],
+      "related": [
+        {
+          "id": "tristesse",
+          "label": "Tristesse"
+        },
+        {
+          "id": "injustice",
+          "label": "Injustice"
+        },
+        {
+          "id": "foi",
+          "label": "Foi"
+        }
+      ],
+      "labels": {
+        "introductionEyebrow": "Comprendre ce thème",
+        "duasEyebrow": "Réponse directe à votre recherche",
+        "duasTitle": "🤲 Les douaas",
+        "quranEyebrow": "Sources coraniques",
+        "quranTitle": "📖 Ce que dit le Coran",
+        "sunnahEyebrow": "Hadiths authentiques",
+        "sunnahTitle": "🕌 Ce que dit la Sunna",
+        "adviceEyebrow": "Mettre les enseignements en pratique",
+        "adviceTitle": "💡 Conseils pratiques",
+        "faqEyebrow": "Questions fréquentes",
+        "faqTitle": "❓ Questions fréquentes",
+        "relatedEyebrow": "Continuer votre lecture",
+        "relatedTitle": "📚 Voir aussi"
+      }
+    },
+    "projet": {
+      "pageTitle": "Projet en Islam : douaas pour la facilité et la réussite",
+      "summary": "Invocations pour demander la facilité, la science et le bien dans un projet, avec réflexion, consultation et confiance.",
+      "seoTitle": "Douaa pour réussir un projet et demander la facilité",
+      "seoDescription": "Invocations pour demander la facilité, la science et le bien dans un projet, avec réflexion, consultation et confiance.",
+      "quickLinks": [
+        {
+          "label": "Les douaas",
+          "target": "douaas"
+        },
+        {
+          "label": "Ce que dit le Coran",
+          "target": "coran"
+        },
+        {
+          "label": "Questions fréquentes",
+          "target": "faq"
+        }
+      ],
+      "introduction": {
+        "title": "Projet en Islam : douaas pour la facilité et la réussite",
+        "paragraphs": [
+          "Invocations pour demander la facilité, la science et le bien dans un projet, avec réflexion, consultation et confiance.",
+          "Cette page distingue les versets du Coran, les hadiths authentiques et les formulations générales. Aucune formule ne garantit à elle seule un résultat précis.",
+          "L’invocation accompagne les actes responsables, les démarches licites et, lorsque nécessaire, le recours à des personnes compétentes."
+        ]
+      },
+      "duaIntroduction": "Les invocations sont regroupées depuis la bibliothèque. Consultez la nature et la source de chaque texte.",
+      "duaGroups": [
+        {
+          "id": "douaas",
+          "icon": "✦",
+          "title": "Douaas : Projet en Islam ",
+          "description": "Textes en arabe, phonétique et français, avec leur source.",
+          "duaIds": [
+            "musa_28_24",
+            "musa_ease_20_25_28",
+            "knowledge_20_114",
+            "work_long_general"
+          ]
+        }
+      ],
+      "quran": [
+        {
+          "title": "Consulter puis se décider",
+          "quote": "Consulte-les à propos des affaires ; puis, une fois décidé, place ta confiance en Allah.",
+          "explanation": "Le verset unit consultation, décision et confiance.",
+          "source": "Coran 3:159."
+        }
+      ],
+      "sunnah": [
+        {
+          "title": "L’istikhara pour les affaires",
+          "quote": "Le Prophète ﷺ enseignait l’istikhara pour les affaires.",
+          "explanation": "La prière de consultation accompagne un choix licite et concret.",
+          "source": "Sahih al-Bukhari 6382."
+        }
+      ],
+      "advice": [
+        {
+          "title": "Associer la douaa aux bonnes actions",
+          "text": "Invoquez avec confiance tout en accomplissant les démarches licites adaptées à votre situation.",
+          "source": "Coran 3:159. Sahih al-Bukhari 6382."
+        },
+        {
+          "title": "Éviter les promesses sans preuve",
+          "text": "Ne transformez pas une formule libre en rituel obligatoire et n’attribuez aucun résultat garanti à une récitation.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quelle douaa réciter pour le thème « Projet en Islam  » ?",
+          "answer": "Choisissez parmi les invocations référencées sur cette page selon votre situation et lisez leur traduction afin d’en comprendre le sens.",
+          "source": "Sources indiquées sur chaque fiche."
+        },
+        {
+          "question": "Existe-t-il un nombre obligatoire de répétitions ?",
+          "answer": "Uniquement lorsqu’un nombre est explicitement établi dans une source authentique. Sinon, aucun chiffre ne doit être présenté comme une règle religieuse.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        },
+        {
+          "question": "La douaa remplace-t-elle les démarches concrètes ?",
+          "answer": "Non. L’invocation accompagne les actes responsables, les conseils fiables et les aides professionnelles nécessaires.",
+          "source": "Sahih Muslim 2664."
+        }
+      ],
+      "related": [
+        {
+          "id": "guidance",
+          "label": "Guidance"
+        },
+        {
+          "id": "travail",
+          "label": "Travail"
+        },
+        {
+          "id": "rizq",
+          "label": "Rizq"
+        }
+      ],
+      "labels": {
+        "introductionEyebrow": "Comprendre ce thème",
+        "duasEyebrow": "Réponse directe à votre recherche",
+        "duasTitle": "🤲 Les douaas",
+        "quranEyebrow": "Sources coraniques",
+        "quranTitle": "📖 Ce que dit le Coran",
+        "sunnahEyebrow": "Hadiths authentiques",
+        "sunnahTitle": "🕌 Ce que dit la Sunna",
+        "adviceEyebrow": "Mettre les enseignements en pratique",
+        "adviceTitle": "💡 Conseils pratiques",
+        "faqEyebrow": "Questions fréquentes",
+        "faqTitle": "❓ Questions fréquentes",
+        "relatedEyebrow": "Continuer votre lecture",
+        "relatedTitle": "📚 Voir aussi"
+      }
+    },
+    "repentir": {
+      "pageTitle": "Repentir en Islam : douaas pour demander pardon",
+      "summary": "Invocations authentiques de repentir, conditions d’un retour sincère et encouragement à ne jamais désespérer.",
+      "seoTitle": "Douaa de repentir et demande de pardon",
+      "seoDescription": "Invocations authentiques de repentir, conditions d’un retour sincère et encouragement à ne jamais désespérer.",
+      "quickLinks": [
+        {
+          "label": "Les douaas",
+          "target": "douaas"
+        },
+        {
+          "label": "Ce que dit le Coran",
+          "target": "coran"
+        },
+        {
+          "label": "Questions fréquentes",
+          "target": "faq"
+        }
+      ],
+      "introduction": {
+        "title": "Repentir en Islam : douaas pour demander pardon",
+        "paragraphs": [
+          "Invocations authentiques de repentir, conditions d’un retour sincère et encouragement à ne jamais désespérer.",
+          "Cette page distingue les versets du Coran, les hadiths authentiques et les formulations générales. Aucune formule ne garantit à elle seule un résultat précis.",
+          "L’invocation accompagne les actes responsables, les démarches licites et, lorsque nécessaire, le recours à des personnes compétentes."
+        ]
+      },
+      "duaIntroduction": "Les invocations sont regroupées depuis la bibliothèque. Consultez la nature et la source de chaque texte.",
+      "duaGroups": [
+        {
+          "id": "douaas",
+          "icon": "✦",
+          "title": "Douaas : Repentir en Islam ",
+          "description": "Textes en arabe, phonétique et français, avec leur source.",
+          "duaIds": [
+            "repentance_adam_7_23",
+            "sayyid_istighfar_meaning",
+            "yunus_21_87"
+          ]
+        }
+      ],
+      "quran": [
+        {
+          "title": "Ne pas désespérer",
+          "quote": "Ne désespérez pas de la miséricorde d’Allah.",
+          "explanation": "Le verset ouvre la porte du retour tout en appelant à revenir sincèrement.",
+          "source": "Coran 39:53."
+        }
+      ],
+      "sunnah": [
+        {
+          "title": "Allah se réjouit du repentir",
+          "quote": "Allah se réjouit davantage du repentir de Son serviteur.",
+          "explanation": "Le hadith encourage à revenir à Allah sans remettre le repentir à plus tard.",
+          "source": "Sahih Muslim 2747."
+        }
+      ],
+      "advice": [
+        {
+          "title": "Associer la douaa aux bonnes actions",
+          "text": "Invoquez avec confiance tout en accomplissant les démarches licites adaptées à votre situation.",
+          "source": "Coran 39:53. Sahih Muslim 2747."
+        },
+        {
+          "title": "Éviter les promesses sans preuve",
+          "text": "Ne transformez pas une formule libre en rituel obligatoire et n’attribuez aucun résultat garanti à une récitation.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quelle douaa réciter pour le thème « Repentir en Islam  » ?",
+          "answer": "Choisissez parmi les invocations référencées sur cette page selon votre situation et lisez leur traduction afin d’en comprendre le sens.",
+          "source": "Sources indiquées sur chaque fiche."
+        },
+        {
+          "question": "Existe-t-il un nombre obligatoire de répétitions ?",
+          "answer": "Uniquement lorsqu’un nombre est explicitement établi dans une source authentique. Sinon, aucun chiffre ne doit être présenté comme une règle religieuse.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        },
+        {
+          "question": "La douaa remplace-t-elle les démarches concrètes ?",
+          "answer": "Non. L’invocation accompagne les actes responsables, les conseils fiables et les aides professionnelles nécessaires.",
+          "source": "Sahih Muslim 2664."
+        }
+      ],
+      "related": [
+        {
+          "id": "foi",
+          "label": "Foi"
+        },
+        {
+          "id": "gratitude",
+          "label": "Gratitude"
+        },
+        {
+          "id": "guidance",
+          "label": "Guidance"
+        }
+      ],
+      "labels": {
+        "introductionEyebrow": "Comprendre ce thème",
+        "duasEyebrow": "Réponse directe à votre recherche",
+        "duasTitle": "🤲 Les douaas",
+        "quranEyebrow": "Sources coraniques",
+        "quranTitle": "📖 Ce que dit le Coran",
+        "sunnahEyebrow": "Hadiths authentiques",
+        "sunnahTitle": "🕌 Ce que dit la Sunna",
+        "adviceEyebrow": "Mettre les enseignements en pratique",
+        "adviceTitle": "💡 Conseils pratiques",
+        "faqEyebrow": "Questions fréquentes",
+        "faqTitle": "❓ Questions fréquentes",
+        "relatedEyebrow": "Continuer votre lecture",
+        "relatedTitle": "📚 Voir aussi"
+      }
+    },
+    "rizq": {
+      "pageTitle": "Rizq en Islam : douaas pour une subsistance licite",
+      "summary": "Invocations pour demander une bonne subsistance, accompagnées de repères sur le travail, la confiance et le licite.",
+      "seoTitle": "Douaa pour le rizq et une subsistance licite",
+      "seoDescription": "Invocations pour demander une bonne subsistance, accompagnées de repères sur le travail, la confiance et le licite.",
+      "quickLinks": [
+        {
+          "label": "Les douaas",
+          "target": "douaas"
+        },
+        {
+          "label": "Ce que dit le Coran",
+          "target": "coran"
+        },
+        {
+          "label": "Questions fréquentes",
+          "target": "faq"
+        }
+      ],
+      "introduction": {
+        "title": "Rizq en Islam : douaas pour une subsistance licite",
+        "paragraphs": [
+          "Invocations pour demander une bonne subsistance, accompagnées de repères sur le travail, la confiance et le licite.",
+          "Cette page distingue les versets du Coran, les hadiths authentiques et les formulations générales. Aucune formule ne garantit à elle seule un résultat précis.",
+          "L’invocation accompagne les actes responsables, les démarches licites et, lorsque nécessaire, le recours à des personnes compétentes."
+        ]
+      },
+      "duaIntroduction": "Les invocations sont regroupées depuis la bibliothèque. Consultez la nature et la source de chaque texte.",
+      "duaGroups": [
+        {
+          "id": "douaas",
+          "icon": "✦",
+          "title": "Douaas : Rizq en Islam ",
+          "description": "Textes en arabe, phonétique et français, avec leur source.",
+          "duaIds": [
+            "musa_28_24",
+            "halal_sufficiency",
+            "beneficial_rizq"
+          ]
+        }
+      ],
+      "quran": [
+        {
+          "title": "Une issue et une subsistance",
+          "quote": "Allah lui donnera une issue favorable et lui accordera Ses dons par des voies inattendues.",
+          "explanation": "Le verset relie la conscience d’Allah, l’issue et la confiance.",
+          "source": "Coran 65:2-3."
+        }
+      ],
+      "sunnah": [
+        {
+          "title": "Manger du travail de ses mains",
+          "quote": "Nul n’a mangé meilleure nourriture que celle gagnée par le travail de ses mains.",
+          "explanation": "Le hadith valorise le travail licite et digne.",
+          "source": "Sahih al-Bukhari 2072."
+        }
+      ],
+      "advice": [
+        {
+          "title": "Associer la douaa aux bonnes actions",
+          "text": "Invoquez avec confiance tout en accomplissant les démarches licites adaptées à votre situation.",
+          "source": "Coran 65:2-3. Sahih al-Bukhari 2072."
+        },
+        {
+          "title": "Éviter les promesses sans preuve",
+          "text": "Ne transformez pas une formule libre en rituel obligatoire et n’attribuez aucun résultat garanti à une récitation.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quelle douaa réciter pour le thème « Rizq en Islam  » ?",
+          "answer": "Choisissez parmi les invocations référencées sur cette page selon votre situation et lisez leur traduction afin d’en comprendre le sens.",
+          "source": "Sources indiquées sur chaque fiche."
+        },
+        {
+          "question": "Existe-t-il un nombre obligatoire de répétitions ?",
+          "answer": "Uniquement lorsqu’un nombre est explicitement établi dans une source authentique. Sinon, aucun chiffre ne doit être présenté comme une règle religieuse.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        },
+        {
+          "question": "La douaa remplace-t-elle les démarches concrètes ?",
+          "answer": "Non. L’invocation accompagne les actes responsables, les conseils fiables et les aides professionnelles nécessaires.",
+          "source": "Sahih Muslim 2664."
+        }
+      ],
+      "related": [
+        {
+          "id": "travail",
+          "label": "Travail"
+        },
+        {
+          "id": "commerce",
+          "label": "Commerce"
+        },
+        {
+          "id": "dettes",
+          "label": "Dettes"
+        }
+      ],
+      "labels": {
+        "introductionEyebrow": "Comprendre ce thème",
+        "duasEyebrow": "Réponse directe à votre recherche",
+        "duasTitle": "🤲 Les douaas",
+        "quranEyebrow": "Sources coraniques",
+        "quranTitle": "📖 Ce que dit le Coran",
+        "sunnahEyebrow": "Hadiths authentiques",
+        "sunnahTitle": "🕌 Ce que dit la Sunna",
+        "adviceEyebrow": "Mettre les enseignements en pratique",
+        "adviceTitle": "💡 Conseils pratiques",
+        "faqEyebrow": "Questions fréquentes",
+        "faqTitle": "❓ Questions fréquentes",
+        "relatedEyebrow": "Continuer votre lecture",
+        "relatedTitle": "📚 Voir aussi"
+      }
+    },
+    "tristesse": {
+      "pageTitle": "Tristesse en Islam : douaas dans la détresse",
+      "summary": "Invocations authentiques dans la tristesse et l’angoisse, avec un rappel sur l’aide humaine et médicale lorsque nécessaire.",
+      "seoTitle": "Douaa contre la tristesse, l’angoisse et la détresse",
+      "seoDescription": "Invocations authentiques dans la tristesse et l’angoisse, avec un rappel sur l’aide humaine et médicale lorsque nécessaire.",
+      "quickLinks": [
+        {
+          "label": "Les douaas",
+          "target": "douaas"
+        },
+        {
+          "label": "Ce que dit le Coran",
+          "target": "coran"
+        },
+        {
+          "label": "Questions fréquentes",
+          "target": "faq"
+        }
+      ],
+      "introduction": {
+        "title": "Tristesse en Islam : douaas dans la détresse",
+        "paragraphs": [
+          "Invocations authentiques dans la tristesse et l’angoisse, avec un rappel sur l’aide humaine et médicale lorsque nécessaire.",
+          "Cette page distingue les versets du Coran, les hadiths authentiques et les formulations générales. Aucune formule ne garantit à elle seule un résultat précis.",
+          "L’invocation accompagne les actes responsables, les démarches licites et, lorsque nécessaire, le recours à des personnes compétentes."
+        ]
+      },
+      "duaIntroduction": "Les invocations sont regroupées depuis la bibliothèque. Consultez la nature et la source de chaque texte.",
+      "duaGroups": [
+        {
+          "id": "douaas",
+          "icon": "✦",
+          "title": "Douaas : Tristesse en Islam ",
+          "description": "Textes en arabe, phonétique et français, avec leur source.",
+          "duaIds": [
+            "debt_anxiety",
+            "ayyub_21_83",
+            "yunus_21_87"
+          ]
+        }
+      ],
+      "quran": [
+        {
+          "title": "Ne t’afflige pas",
+          "quote": "Ne t’afflige pas, car Allah est avec nous.",
+          "explanation": "Le verset rappelle la présence et le secours d’Allah dans un moment de danger.",
+          "source": "Coran 9:40."
+        }
+      ],
+      "sunnah": [
+        {
+          "title": "Chercher refuge contre l’angoisse",
+          "quote": "Le Prophète ﷺ cherchait refuge contre l’angoisse et la tristesse.",
+          "explanation": "Cette invocation reconnaît le poids réel de ces états.",
+          "source": "Sahih al-Bukhari 6369."
+        }
+      ],
+      "advice": [
+        {
+          "title": "Associer la douaa aux bonnes actions",
+          "text": "Invoquez avec confiance tout en accomplissant les démarches licites adaptées à votre situation.",
+          "source": "Coran 9:40. Sahih al-Bukhari 6369."
+        },
+        {
+          "title": "Éviter les promesses sans preuve",
+          "text": "Ne transformez pas une formule libre en rituel obligatoire et n’attribuez aucun résultat garanti à une récitation.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quelle douaa réciter pour le thème « Tristesse en Islam  » ?",
+          "answer": "Choisissez parmi les invocations référencées sur cette page selon votre situation et lisez leur traduction afin d’en comprendre le sens.",
+          "source": "Sources indiquées sur chaque fiche."
+        },
+        {
+          "question": "Existe-t-il un nombre obligatoire de répétitions ?",
+          "answer": "Uniquement lorsqu’un nombre est explicitement établi dans une source authentique. Sinon, aucun chiffre ne doit être présenté comme une règle religieuse.",
+          "source": "Sahih al-Bukhari 2697 ; Sahih Muslim 1718."
+        },
+        {
+          "question": "La douaa remplace-t-elle les démarches concrètes ?",
+          "answer": "Non. L’invocation accompagne les actes responsables, les conseils fiables et les aides professionnelles nécessaires.",
+          "source": "Sahih Muslim 2664."
+        }
+      ],
+      "related": [
+        {
+          "id": "stress",
+          "label": "Stress"
+        },
+        {
+          "id": "patience",
+          "label": "Patience"
+        },
+        {
+          "id": "guerison",
+          "label": "Guerison"
+        }
+      ],
+      "labels": {
+        "introductionEyebrow": "Comprendre ce thème",
+        "duasEyebrow": "Réponse directe à votre recherche",
+        "duasTitle": "🤲 Les douaas",
+        "quranEyebrow": "Sources coraniques",
+        "quranTitle": "📖 Ce que dit le Coran",
+        "sunnahEyebrow": "Hadiths authentiques",
+        "sunnahTitle": "🕌 Ce que dit la Sunna",
+        "adviceEyebrow": "Mettre les enseignements en pratique",
+        "adviceTitle": "💡 Conseils pratiques",
+        "faqEyebrow": "Questions fréquentes",
+        "faqTitle": "❓ Questions fréquentes",
+        "relatedEyebrow": "Continuer votre lecture",
+        "relatedTitle": "📚 Voir aussi"
+      }
+    }
 }

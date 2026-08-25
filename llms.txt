@@ -1,0 +1,16 @@
+# Douaa Generator
+
+> Site francophone consacré aux invocations musulmanes, avec textes en arabe, phonétique, traduction française et références.
+
+## Pages principales
+
+- https://douaagenerator.fr/ : générateur d’invocations personnalisées
+- https://douaagenerator.fr/bibliotheque/ : bibliothèque des thèmes et des fiches
+- https://douaagenerator.fr/guide-des-douaas/ : guide pédagogique des invocations
+- https://douaagenerator.fr/priere-de-consultation/ : guide de la prière d’Istikhara
+- https://douaagenerator.fr/a-propos/ : mission et politique éditoriale
+- https://douaagenerator.fr/sitemap.xml : liste des pages indexables
+
+## Politique éditoriale
+
+Les contenus distinguent les versets du Coran, les invocations rapportées dans les recueils de hadiths et les formulations générales. Une formulation personnelle n’est pas présentée comme une parole révélée ou prophétique. Le site est pédagogique et ne remplace pas l’avis d’une personne qualifiée pour une question religieuse précise.

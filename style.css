@@ -2951,3 +2951,115 @@ a:focus-visible,
   font-size: 0.78rem;
   text-align: right;
 }
+
+.static-seo-content {
+  margin-top: 26px;
+}
+
+.static-seo-content h2,
+.static-seo-content h3 {
+  color: var(--primary-dark);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.static-seo-content blockquote {
+  margin: 18px 0;
+  padding: 16px 20px;
+  border-left: 3px solid var(--gold);
+  color: var(--primary-dark);
+  background: var(--gold-soft);
+}
+
+.detail-static-arabic {
+  margin: 22px 0;
+  color: var(--primary-dark);
+  font-family: "Noto Naskh Arabic", "Geeza Pro", serif;
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  line-height: 2;
+  text-align: right;
+}
+
+/* Complément éditorial bienveillant des pages thématiques */
+.gentle-reminder-section {
+  position: relative;
+  overflow: hidden;
+  margin-top: 30px;
+  border-color: rgba(167, 124, 61, 0.24);
+  background:
+    radial-gradient(circle at 92% 12%, rgba(216, 189, 140, 0.26), transparent 34%),
+    linear-gradient(145deg, rgba(255, 253, 247, 0.98), rgba(231, 238, 233, 0.9));
+}
+
+.gentle-reminder-section::after {
+  position: absolute;
+  right: -38px;
+  bottom: -58px;
+  width: 170px;
+  height: 170px;
+  border: 1px solid rgba(50, 79, 67, 0.1);
+  border-radius: 50%;
+  content: "";
+}
+
+.gentle-reminder-heading {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.gentle-reminder-heading > span {
+  display: grid;
+  flex: 0 0 46px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  place-items: center;
+  color: var(--gold);
+  background: var(--primary-dark);
+  font-size: 1.25rem;
+}
+
+.gentle-reminder-heading h2 {
+  margin: 4px 0 0;
+}
+
+.gentle-reminder-copy {
+  position: relative;
+  z-index: 1;
+  max-width: 78ch;
+  margin-top: 22px;
+}
+
+.gentle-reminder-copy p {
+  margin: 0 0 14px;
+  line-height: 1.75;
+}
+
+.gentle-reminder-action {
+  position: relative;
+  z-index: 1;
+  margin: 24px 0 18px;
+  padding: 18px 20px;
+  border-left: 3px solid var(--gold);
+  border-radius: 0 14px 14px 0;
+  background: rgba(255, 255, 252, 0.72);
+}
+
+.gentle-reminder-action p {
+  margin: 0;
+}
+
+.gentle-reminder-action .step-label {
+  margin-bottom: 6px;
+  color: var(--primary);
+}
+
+@media (max-width: 620px) {
+  .gentle-reminder-heading > span {
+    flex-basis: 40px;
+    width: 40px;
+    height: 40px;
+  }
+}

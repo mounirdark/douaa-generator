@@ -152,6 +152,7 @@ function renderDetailPage() {
   renderRelatedDuas();
   renderBackToThemeLink();
   setDetailLanguage("fr");
+  document.getElementById("staticDuaSummary")?.remove();
 }
 
 

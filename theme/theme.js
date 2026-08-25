@@ -24,9 +24,10 @@ async function initializeThemePage() {
   }
 
   try {
-    const [duaResponse, contentResponse] = await Promise.all([
+    const [duaResponse, contentResponse, reminderResponse] = await Promise.all([
       fetch("/data/duas.json?v=22", { cache: "no-store" }),
-      fetch("/data/themes.json?v=22", { cache: "no-store" })
+      fetch("/data/themes.json?v=22", { cache: "no-store" }),
+      fetch("/data/theme-reminders.json?v=24", { cache: "no-store" })
     ]);
 
     if (!duaResponse.ok) {
@@ -35,6 +36,7 @@ async function initializeThemePage() {
 
     const database = await duaResponse.json();
     const themeContent = contentResponse.ok ? await contentResponse.json() : {};
+    const themeReminders = reminderResponse.ok ? await reminderResponse.json() : {};
     const category = database.categories.find((item) => item.id === themeId);
 
     if (!category) {
@@ -46,21 +48,27 @@ async function initializeThemePage() {
       (dua) => Array.isArray(dua.categories) && dua.categories.includes(themeId)
     );
 
-    renderTheme(category, duas, themeContent[themeId] ? { ...themeContent[themeId], id: themeId } : null, database.duas);
+    const reminder = themeReminders[themeId] || null;
+    const content = themeContent[themeId]
+      ? { ...themeContent[themeId], id: themeId, reminder }
+      : null;
+
+    renderTheme(category, duas, content, database.duas, reminder);
   } catch (error) {
     console.error("Erreur thème :", error);
     showError();
   }
 }
 
-function renderTheme(category, duas, content, allDuas = []) {
+function renderTheme(category, duas, content, allDuas = [], reminder = null) {
+  const verifiedDuas = duas.filter(isVerifiedDua);
   themeElements.icon.textContent = category.icon || "✦";
   themeElements.title.textContent = content?.pageTitle || category.label;
   themeElements.description.textContent = content?.summary || category.description || "";
 
   const displayedCount = content?.duaGroups
-    ? content.duaGroups.reduce((total, group) => total + (group.duaIds?.length || 0), 0)
-    : duas.length;
+    ? getRichThemeDuaIds(content, allDuas).length
+    : verifiedDuas.length;
 
   themeElements.count.textContent =
     `${displayedCount} ${displayedCount > 1 ? "douaas" : "douaa"}`;
@@ -69,8 +77,8 @@ function renderTheme(category, duas, content, allDuas = []) {
 
   themeElements.list.innerHTML = content
     ? createRichThemePage(content, allDuas)
-    : duas.length
-      ? duas.map(createDuaCard).join("")
+    : verifiedDuas.length
+      ? `${verifiedDuas.map(createDuaCard).join("")}${createReminderSection(reminder)}`
       : `
         <section class="panel empty-theme-panel">
           <h2>Aucune douaa disponible</h2>
@@ -81,6 +89,8 @@ function renderTheme(category, duas, content, allDuas = []) {
   bindFaqButtons();
   bindCopyButtons();
 
+  document.getElementById("staticThemeSummary")?.remove();
+
   themeElements.loading.classList.add("hidden");
   themeElements.header.classList.remove("hidden");
   themeElements.cta.classList.remove("hidden");
@@ -89,9 +99,19 @@ function renderTheme(category, duas, content, allDuas = []) {
 function createRichThemePage(content, allDuas) {
   const labels = content.labels || {};
   const duaMap = new Map(allDuas.map((dua) => [dua.id, dua]));
+  const groupedIds = new Set((content.duaGroups || []).flatMap((group) => group.duaIds || []));
+  const verifiedGroupedCount = [...groupedIds]
+    .map((id) => duaMap.get(id))
+    .filter((dua) => dua && isVerifiedDua(dua)).length;
+  const supplementalDuas = allDuas
+    .filter((dua) => dua.categories?.includes(content.id) && !groupedIds.has(dua.id) && isVerifiedDua(dua))
+    .slice(0, Math.max(0, 10 - verifiedGroupedCount));
+  const quickLinks = content.reminder
+    ? [...(content.quickLinks || []), { label: "Rappel bienveillant", target: "rappel-bienveillant" }]
+    : content.quickLinks || [];
 
   return `
-    ${createQuickNavigation(content.quickLinks || [])}
+    ${createQuickNavigation(quickLinks)}
 
     ${content.introduction ? `
       <section class="panel theme-introduction">
@@ -108,13 +128,62 @@ function createRichThemePage(content, allDuas) {
         ${content.duaIntroduction ? `<p>${escapeHtml(content.duaIntroduction)}</p>` : ""}
       </div>
       ${(content.duaGroups || []).map((group) => createDuaGroup(group, duaMap, content.id)).join("")}
+      ${supplementalDuas.length ? createDuaGroup({
+        id: "douaas-complementaires",
+        icon: "✦",
+        title: "D’autres invocations authentiques pour ce thème",
+        description: "Ces invocations coraniques ou prophétiques complètent la sélection. Leur sens général est pertinent pour ce thème, sans prétendre qu’elles lui sont exclusivement réservées.",
+        duaIds: supplementalDuas.map((dua) => dua.id)
+      }, duaMap, content.id) : ""}
     </section>
 
     ${createTextSection("coran", labels.quranEyebrow || "Pour approfondir", labels.quranTitle || "📖 Ce que dit le Coran", content.quran || [])}
     ${createTextSection("sunna", labels.sunnahEyebrow || "Pour approfondir", labels.sunnahTitle || "🕌 Ce que dit la Sunna", content.sunnah || [])}
+    ${createReminderSection(content.reminder)}
     ${createAdviceSection(content.advice || [], labels)}
     ${createFaqSection(content.faq || [], labels)}
     ${createRelatedSection(content.related || [], labels)}
+  `;
+}
+
+function getRichThemeDuaIds(content, allDuas) {
+  const groupedIds = new Set((content.duaGroups || []).flatMap((group) => group.duaIds || []));
+  const duaMap = new Map(allDuas.map((dua) => [dua.id, dua]));
+  const verifiedGroupedCount = [...groupedIds]
+    .map((id) => duaMap.get(id))
+    .filter((dua) => dua && isVerifiedDua(dua)).length;
+  allDuas
+    .filter((dua) => dua.categories?.includes(content.id) && !groupedIds.has(dua.id) && isVerifiedDua(dua))
+    .slice(0, Math.max(0, 10 - verifiedGroupedCount))
+    .forEach((dua) => groupedIds.add(dua.id));
+  return [...groupedIds];
+}
+
+function isVerifiedDua(dua) {
+  return !/(formulation générale|inspiré du coran)/i.test(dua.source || "");
+}
+
+function createReminderSection(reminder) {
+  if (!reminder?.paragraphs?.length) return "";
+
+  return `
+    <section id="rappel-bienveillant" class="panel gentle-reminder-section">
+      <div class="gentle-reminder-heading">
+        <span aria-hidden="true">☾</span>
+        <div>
+          <p class="eyebrow">Un rappel bienveillant</p>
+          <h2>${escapeHtml(reminder.title)}</h2>
+        </div>
+      </div>
+      <div class="gentle-reminder-copy">
+        ${reminder.paragraphs.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("")}
+      </div>
+      <div class="gentle-reminder-action">
+        <p class="step-label">Un pas simple aujourd’hui</p>
+        <p>${escapeHtml(reminder.action)}</p>
+      </div>
+      <p class="teaching-source"><strong>Références :</strong> ${escapeHtml(reminder.source)}</p>
+    </section>
   `;
 }
 
