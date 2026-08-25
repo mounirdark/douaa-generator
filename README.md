@@ -10,6 +10,8 @@ Site public : [douaagenerator.fr](https://douaagenerator.fr/)
 - Affichage en français, arabe et phonétique.
 - Bibliothèque organisée par thèmes.
 - Fiches détaillées avec traduction, contexte et source.
+- Favoris conservés localement dans le navigateur, sans création de compte.
+- Copie et partage des invocations depuis chaque fiche.
 - Guides pédagogiques, dont la prière de consultation (Istikhara).
 - Pages statiques optimisées pour le référencement naturel.
 - Interface responsive, accessible au clavier et sans inscription.
@@ -44,6 +46,7 @@ douaa-generator/
 ├── guide-des-douaas/             # Guide général
 ├── priere-de-consultation/       # Guide SEO sur l’Istikhara
 ├── a-propos/                     # Mission et politique éditoriale
+├── favoris/                      # Favoris enregistrés sur l’appareil
 ├── sitemap.xml                   # URL destinées aux moteurs de recherche
 └── robots.txt                    # Directives d’exploration
 ```
@@ -67,6 +70,8 @@ Lorsqu’une invocation est ajoutée ou corrigée, vérifier les pages qui utili
 3. formulation personnelle ou générale.
 
 Une formulation générale ne doit jamais être présentée comme un verset ou une parole prophétique.
+
+Les favoris utilisent uniquement le stockage local du navigateur (`localStorage`). Ils ne sont ni synchronisés entre les appareils ni transmis à un serveur.
 
 ## Référencement naturel
 

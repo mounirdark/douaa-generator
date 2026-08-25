@@ -1236,6 +1236,100 @@ a:focus-visible,
   margin-top: 28px;
 }
 
+.favorite-button.is-favorite {
+  border-color: rgba(167, 124, 61, 0.45);
+  color: var(--primary-dark);
+  background: var(--gold-soft);
+}
+
+.favorites-library-link {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin: 22px 0;
+  padding: 16px 18px;
+  border: 1px solid rgba(167, 124, 61, 0.24);
+  border-radius: 16px;
+  color: var(--primary-dark);
+  background: linear-gradient(135deg, rgba(244, 234, 216, 0.82), rgba(255, 255, 252, 0.92));
+  text-decoration: none;
+  transition: transform 160ms ease, border-color 160ms ease;
+}
+
+.favorites-library-link:hover {
+  transform: translateY(-1px);
+  border-color: rgba(167, 124, 61, 0.48);
+}
+
+.favorites-library-link > span:nth-child(2) {
+  display: grid;
+  flex: 1;
+  gap: 3px;
+}
+
+.favorites-library-link small {
+  color: var(--text-soft);
+}
+
+.favorites-library-icon {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  place-items: center;
+  color: #fff;
+  background: var(--primary-dark);
+}
+
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.favorite-dua-card {
+  display: grid;
+  gap: 9px;
+  padding: 20px;
+  border: 1px solid var(--border-soft);
+  border-radius: 16px;
+  color: inherit;
+  background: var(--surface-solid);
+  text-decoration: none;
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.favorite-dua-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(50, 79, 67, 0.35);
+  box-shadow: var(--shadow-soft);
+}
+
+.favorite-dua-card strong {
+  color: var(--primary-dark);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+}
+
+.favorite-dua-card span,
+.favorite-dua-card small {
+  color: var(--text-soft);
+}
+
+.favorites-empty {
+  padding: 28px;
+  border: 1px dashed var(--border);
+  border-radius: 16px;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .favorites-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .detail-state-panel {
   text-align: center;
 }

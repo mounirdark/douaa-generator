@@ -75,7 +75,7 @@ function buildPage(dua) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="${escapeHtml(description)}">
   <title>${escapeHtml(title)}</title>
-  <link rel="stylesheet" href="/style.min.css?v=27">
+  <link rel="stylesheet" href="/style.min.css?v=28">
 
   <link rel="canonical" href="${url}">
   <meta property="og:locale" content="fr_FR">
@@ -138,6 +138,8 @@ function buildPage(dua) {
         <a class="secondary-button" href="/recherche/">Rechercher une douaa</a>
       </nav>
       <div class="detail-actions">
+        <button id="favoriteDuaBtn" class="secondary-button favorite-button" type="button" aria-pressed="false">☆ Ajouter aux favoris</button>
+        <button id="copyDuaBtn" class="secondary-button" type="button">Copier la douaa</button>
         <button id="shareDuaBtn" class="secondary-button" type="button">Partager cette douaa</button>
         <a class="primary-button compact detail-return-button" href="/">Générer une autre invocation</a>
       </div>
@@ -165,7 +167,7 @@ function buildPage(dua) {
   </main>
 
   <script src="/menu.min.js?v=25"></script>
-  <script src="/douaa.min.js?v=25"></script>
+  <script src="/douaa.min.js?v=26"></script>
 </body>
 </html>
 `;

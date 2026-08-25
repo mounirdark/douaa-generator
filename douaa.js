@@ -31,6 +31,8 @@ const detailElements = {
   relatedSection: document.getElementById("relatedSection"),
   related: document.getElementById("relatedDuas"),
   languageButtons: document.querySelectorAll("[data-detail-lang]"),
+  favoriteButton: document.getElementById("favoriteDuaBtn"),
+  copyButton: document.getElementById("copyDuaBtn"),
   shareButton: document.getElementById("shareDuaBtn"),
   shareMessage: document.getElementById("shareMessage"),
   backToThemeLink: document.getElementById("backToThemeLink")
@@ -82,7 +84,9 @@ function bindDetailEvents() {
     });
   });
 
-  detailElements.shareButton.addEventListener("click", shareCurrentDua);
+  detailElements.favoriteButton?.addEventListener("click", toggleCurrentDuaFavorite);
+  detailElements.copyButton?.addEventListener("click", copyCurrentDua);
+  detailElements.shareButton?.addEventListener("click", shareCurrentDua);
 }
 
 function renderDetailPage() {
@@ -151,6 +155,7 @@ function renderDetailPage() {
 
   renderRelatedDuas();
   renderBackToThemeLink();
+  updateFavoriteButton();
   setDetailLanguage("fr");
   document.getElementById("staticDuaSummary")?.remove();
 }
@@ -400,6 +405,86 @@ function getDetailUrl(id) {
     : `/douaa.html?id=${encodeURIComponent(id)}`;
 }
 
+const FAVORITES_STORAGE_KEY = "douaaGeneratorFavorites";
+
+function readFavorites() {
+  try {
+    const favorites = JSON.parse(localStorage.getItem(FAVORITES_STORAGE_KEY) || "[]");
+    return Array.isArray(favorites) ? favorites : [];
+  } catch (error) {
+    console.warn("Favoris illisibles :", error);
+    return [];
+  }
+}
+
+function writeFavorites(favorites) {
+  localStorage.setItem(FAVORITES_STORAGE_KEY, JSON.stringify(favorites));
+}
+
+function updateFavoriteButton() {
+  if (!detailElements.favoriteButton || !currentDua) return;
+
+  const isFavorite = readFavorites().some((favorite) => favorite.id === currentDua.id);
+  detailElements.favoriteButton.classList.toggle("is-favorite", isFavorite);
+  detailElements.favoriteButton.setAttribute("aria-pressed", String(isFavorite));
+  detailElements.favoriteButton.textContent = isFavorite ? "★ Dans mes favoris" : "☆ Ajouter aux favoris";
+}
+
+function toggleCurrentDuaFavorite() {
+  if (!currentDua) return;
+
+  const favorites = readFavorites();
+  const favoriteIndex = favorites.findIndex((favorite) => favorite.id === currentDua.id);
+
+  if (favoriteIndex >= 0) {
+    favorites.splice(favoriteIndex, 1);
+    showActionMessage("Douaa retirée de vos favoris.");
+  } else {
+    favorites.push({ id: currentDua.id, url: getDetailUrl(currentDua.id) });
+    showActionMessage("Douaa ajoutée à vos favoris.");
+  }
+
+  writeFavorites(favorites);
+  updateFavoriteButton();
+}
+
+async function copyCurrentDua() {
+  if (!currentDua) return;
+
+  const content = [
+    detailElements.title.textContent,
+    detailElements.text.textContent,
+    currentDua.source || "",
+    window.location.href
+  ].filter(Boolean).join("\n\n");
+
+  try {
+    await copyText(content);
+    showActionMessage("La douaa a été copiée.");
+  } catch (error) {
+    console.error("Copie impossible :", error);
+    showActionMessage("La copie n’a pas pu être effectuée.");
+  }
+}
+
+async function copyText(text) {
+  if (navigator.clipboard?.writeText) {
+    await navigator.clipboard.writeText(text);
+    return;
+  }
+
+  const textarea = document.createElement("textarea");
+  textarea.value = text;
+  textarea.setAttribute("readonly", "");
+  textarea.style.position = "fixed";
+  textarea.style.opacity = "0";
+  document.body.appendChild(textarea);
+  textarea.select();
+  const copied = document.execCommand("copy");
+  textarea.remove();
+  if (!copied) throw new Error("Commande de copie refusée");
+}
+
 async function shareCurrentDua() {
   const shareData = {
     title: detailElements.title.textContent,
@@ -413,13 +498,18 @@ async function shareCurrentDua() {
       return;
     }
 
-    await navigator.clipboard.writeText(window.location.href);
-    showTemporaryMessage(detailElements.shareMessage);
+    await copyText(window.location.href);
+    showActionMessage("Le lien a été copié.");
   } catch (error) {
     if (error.name !== "AbortError") {
       console.error("Partage impossible :", error);
     }
   }
+}
+
+function showActionMessage(message) {
+  detailElements.shareMessage.textContent = message;
+  showTemporaryMessage(detailElements.shareMessage);
 }
 
 function showDetailError() {

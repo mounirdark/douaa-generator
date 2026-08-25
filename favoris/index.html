@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,follow">
+  <meta name="description" content="Retrouvez les douaas enregistrées dans vos favoris sur cet appareil.">
+  <title>Mes favoris — Douaa Generator</title>
+  <link rel="stylesheet" href="../style.min.css?v=28">
+</head>
+<body>
+  <div class="page-background"></div>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Navigation principale">
+      <a class="site-brand" href="../index.html"><span class="site-brand-symbol" aria-hidden="true">☾</span><span>Douaa Generator</span></a>
+      <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNavigation">☰</button>
+      <ul id="mainNavigation" class="site-nav-links">
+        <li><a class="site-nav-link" href="../index.html">Générateur</a></li>
+        <li><a class="site-nav-link active" href="../bibliotheque/">Bibliothèque</a></li>
+        <li><a class="site-nav-link" href="../guide-des-douaas/">Guide des douaas</a></li>
+        <li><a class="site-nav-link" href="../a-propos/">À propos</a></li>
+        <li class="nav-search-item"><form class="nav-search-form" role="search" action="../recherche/" method="get"><input name="q" type="search" placeholder="Rechercher une douaa…" aria-label="Rechercher une douaa"><button type="submit" aria-label="Lancer la recherche">⌕</button></form></li>
+      </ul>
+    </nav>
+  </header>
+
+  <header class="inner-hero">
+    <p class="eyebrow">Votre sélection</p>
+    <h1>Mes favoris</h1>
+    <p>Les douaas que vous enregistrez restent uniquement dans ce navigateur. Aucun compte ni envoi de données n’est nécessaire.</p>
+  </header>
+
+  <main class="container">
+    <section class="panel" aria-labelledby="favoritesTitle">
+      <div class="panel-heading">
+        <div><p class="step-label">Sur cet appareil</p><h2 id="favoritesTitle">Douaas enregistrées</h2></div>
+        <span id="favoritesCount" class="selection-count">Chargement…</span>
+      </div>
+      <div id="favoritesGrid" class="favorites-grid" aria-live="polite"></div>
+      <div id="favoritesEmpty" class="favorites-empty hidden">
+        <p>Vous n’avez pas encore ajouté de douaa à vos favoris.</p>
+        <a class="primary-button compact" href="../bibliotheque/">Découvrir la bibliothèque</a>
+      </div>
+      <p id="favoritesError" class="message message-error hidden" role="alert">Impossible de charger vos favoris pour le moment.</p>
+      <div class="detail-actions">
+        <button id="clearFavoritesBtn" class="secondary-button hidden" type="button">Effacer tous les favoris</button>
+        <a class="secondary-button" href="../bibliotheque/">Retour à la bibliothèque</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>Douaa Generator — Invocations issues du Coran et de la Sunna.</p></footer>
+  <script src="../menu.min.js?v=23"></script>
+  <script src="./favoris.min.js?v=1"></script>
+</body>
+</html>
