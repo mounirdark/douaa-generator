@@ -245,6 +245,7 @@ function createInlineDuaCard(dua, themeId) {
       ${dua.transliteration ? `<p class="theme-dua-transliteration"><strong>Phonétique :</strong> ${escapeHtml(dua.transliteration)}</p>` : ""}
       ${dua.french ? `<p class="theme-dua-french"><strong>Traduction :</strong> ${escapeHtml(dua.french)}</p>` : ""}
       ${dua.source ? `<p class="theme-dua-source"><strong>Source :</strong> ${escapeHtml(dua.source)}</p>` : ""}
+      <a class="details-link" href="${getDuaUrl(dua.id)}">Voir la fiche complète <span aria-hidden="true">→</span></a>
     </article>
   `;
 }
@@ -477,7 +478,18 @@ const staticDuaIds = new Set([
   "parents_17_24", "patience_2_250", "protection_words", "quran_3_38",
   "quran_14_40", "quran_21_89", "quran_25_74", "quran_30_21_general",
   "repentance_adam_7_23", "sayyid_istighfar_meaning", "work_long_general",
-  "yunus_21_87"
+  "yunus_21_87",
+  "quran_2_286_burden", "quran_3_16_forgiveness", "quran_3_147_steadfastness",
+  "quran_14_41_family_forgiveness", "quran_18_10_right_guidance", "quran_23_97_98_whispers",
+  "quran_40_7_9_family_paradise", "quran_46_15_righteous_descendants", "quran_59_10_no_resentment",
+  "quran_66_8_complete_light", "quran_71_28_believers_forgiveness", "prophetic_religion_world_hereafter",
+  "prophetic_guidance_piety_chastity", "prophetic_wronged_self", "prophetic_pardon_afuw",
+  "prophetic_help_worship", "prophetic_love_allah", "prophetic_distress_tawhid",
+  "prophetic_distress_allah_rabbi", "prophetic_calamity_reward", "prophetic_refuge_wrongdoing",
+  "prophetic_funeral_all_muslims", "prophetic_graveyard_greeting", "prophetic_deceased_reward",
+  "prophetic_healing_ruqya", "prophetic_healing_seven_times", "prophetic_spouse_goodness",
+  "prophetic_before_intimacy", "prophetic_all_good", "prophetic_bad_character_refuge",
+  "prophetic_refuge_poverty", "prophetic_refuge_severe_trial", "prophetic_useless_knowledge"
 ]);
 
 function getDuaUrl(id) {

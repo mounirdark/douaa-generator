@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recherchez une douaa par besoin, mot, thème ou source et retrouvez son texte arabe, sa phonétique, sa traduction et sa référence.">
+  <title>Rechercher une douaa — Douaa Generator</title>
+  <link rel="stylesheet" href="/style.min.css?v=25">
+  <link rel="canonical" href="https://douaagenerator.fr/recherche/">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Douaa Generator">
+  <meta property="og:title" content="Rechercher une douaa — Douaa Generator">
+  <meta property="og:description" content="Recherchez dans toute la bibliothèque par besoin, mot, thème ou source.">
+  <meta property="og:url" content="https://douaagenerator.fr/recherche/">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="page-background"></div>
+
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Navigation principale">
+      <a class="site-brand" href="/"><span class="site-brand-symbol" aria-hidden="true">☾</span><span>Douaa Generator</span></a>
+      <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNavigation">☰</button>
+      <ul id="mainNavigation" class="site-nav-links">
+        <li><a class="site-nav-link" href="/">Générateur</a></li>
+        <li><a class="site-nav-link" href="/bibliotheque/">Bibliothèque</a></li>
+        <li><a class="site-nav-link active" aria-current="page" href="/recherche/">Rechercher</a></li>
+        <li><a class="site-nav-link" href="/guide-des-douaas/">Guide des douaas</a></li>
+        <li><a class="site-nav-link" href="/a-propos/">À propos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <header class="inner-hero search-hero">
+    <p class="eyebrow">Toute la bibliothèque</p>
+    <h1>Rechercher une douaa</h1>
+    <p>Écrivez un besoin, un thème, quelques mots de la traduction, de la phonétique, de l’arabe ou une référence.</p>
+  </header>
+
+  <main class="container search-page">
+    <section class="panel global-search-panel" aria-labelledby="search-title">
+      <h2 id="search-title" class="sr-only">Recherche globale</h2>
+      <form id="globalSearchForm" class="global-search-form" role="search">
+        <label for="globalSearchInput">Que recherchez-vous ?</label>
+        <div class="global-search-field">
+          <span aria-hidden="true">⌕</span>
+          <input id="globalSearchInput" name="q" type="search" autocomplete="off" placeholder="Ex. guérison, parents, pardon, dette, Rabbana…" aria-describedby="searchHelp searchStatus">
+          <button type="submit">Rechercher</button>
+        </div>
+        <p id="searchHelp">La recherche ignore les accents et examine les 75 invocations ainsi que les 25 thèmes.</p>
+      </form>
+
+      <div class="search-suggestions" aria-label="Suggestions de recherche">
+        <span>Suggestions :</span>
+        <button type="button" data-search-suggestion="guérison">Guérison</button>
+        <button type="button" data-search-suggestion="protection">Protection</button>
+        <button type="button" data-search-suggestion="parents">Parents</button>
+        <button type="button" data-search-suggestion="tristesse">Tristesse</button>
+        <button type="button" data-search-suggestion="pardon">Pardon</button>
+      </div>
+    </section>
+
+    <section class="search-results-section" aria-labelledby="results-title">
+      <div class="panel-heading search-results-heading">
+        <div><p class="step-label">Résultats</p><h2 id="results-title">Invocations et thèmes</h2></div>
+        <span id="searchStatus" class="selection-count" role="status" aria-live="polite">Prêt</span>
+      </div>
+      <div id="searchResults" class="global-search-results">
+        <article class="panel search-welcome-card">
+          <h3>Comment utiliser la recherche ?</h3>
+          <p>Vous pouvez rechercher une situation comme « anxiété », une formule comme « Rabbana », une source comme « Muslim 2720 » ou directement quelques mots en arabe.</p>
+          <p>Les résultats renvoient vers les fiches détaillées et vers les pages thématiques correspondantes.</p>
+        </article>
+      </div>
+      <p id="searchLoading" class="loading-message">Chargement de la bibliothèque…</p>
+      <div id="searchError" class="message message-error hidden" role="alert">La recherche n’a pas pu charger la bibliothèque.</div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>Douaa Generator — Des invocations accessibles, sourcées et expliquées.</p></footer>
+  <script src="/menu.min.js?v=25"></script>
+  <script src="/recherche/recherche.min.js?v=25"></script>
+</body>
+</html>
