@@ -1344,6 +1344,64 @@ a:focus-visible,
   background: var(--primary-soft);
 }
 
+.nav-search-item {
+  display: flex;
+  align-items: center;
+  margin-right: 4px;
+}
+
+.nav-search-form {
+  display: grid;
+  grid-template-columns: minmax(110px, 180px) 34px;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid rgba(50, 79, 67, 0.18);
+  border-radius: 11px;
+  background: rgba(251, 248, 242, 0.78);
+  transition: border-color 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+.nav-search-form:focus-within {
+  border-color: rgba(50, 79, 67, 0.52);
+  background: var(--surface-solid);
+  box-shadow: 0 0 0 3px rgba(50, 79, 67, 0.08);
+}
+
+.nav-search-form input {
+  width: 100%;
+  min-width: 0;
+  height: 38px;
+  padding: 8px 6px 8px 12px;
+  border: 0;
+  outline: 0;
+  color: var(--text);
+  background: transparent;
+  font: inherit;
+  font-size: 0.8rem;
+}
+
+.nav-search-form input::placeholder {
+  color: var(--text-soft);
+  opacity: 0.88;
+}
+
+.nav-search-form button {
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 0;
+  border-radius: 9px;
+  color: var(--primary-dark);
+  background: transparent;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.nav-search-form button:hover {
+  color: #fff;
+  background: var(--primary);
+}
+
 .menu-toggle {
   display: none;
   width: 42px;
@@ -1420,6 +1478,27 @@ a:focus-visible,
   .site-nav-link {
     width: 100%;
     justify-content: center;
+  }
+
+  .nav-search-item {
+    width: 100%;
+    margin: 0 0 4px;
+  }
+
+  .nav-search-form {
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr) 44px;
+  }
+
+  .nav-search-form input {
+    height: 46px;
+    padding-left: 15px;
+    font-size: 0.92rem;
+  }
+
+  .nav-search-form button {
+    width: 42px;
+    height: 42px;
   }
 }
 
@@ -3032,6 +3111,41 @@ a:focus-visible,
 .home-page .site-nav {
   background: rgba(251, 248, 242, 0.76);
   box-shadow: 0 12px 36px rgba(38, 48, 40, 0.08);
+}
+
+/* Barre de navigation uniforme — dimensions de la page d'accueil */
+.site-header {
+  width: min(1240px, calc(100% - 48px));
+  margin-top: 24px;
+}
+
+.site-nav {
+  padding: 9px 10px 9px 16px;
+  border-color: rgba(31, 69, 58, 0.1);
+  border-radius: 999px;
+  background: rgba(251, 248, 242, 0.76);
+  box-shadow: 0 12px 36px rgba(38, 48, 40, 0.08);
+}
+
+.site-brand-symbol {
+  border: 0;
+  color: #fff;
+  background: #243d34;
+}
+
+.site-nav-link {
+  border-radius: 999px;
+  font-weight: 650;
+}
+
+@media (max-width: 570px) {
+  .site-header {
+    width: min(100% - 20px, 1120px);
+  }
+
+  .site-nav {
+    border-radius: 18px;
+  }
 }
 
 .home-page .site-brand-symbol,
