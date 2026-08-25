@@ -15,7 +15,8 @@ const themeElements = {
 document.addEventListener("DOMContentLoaded", initializeThemePage);
 
 async function initializeThemePage() {
-  const themeId = new URLSearchParams(window.location.search).get("id");
+  const themeId = document.body.dataset.themeId ||
+    new URLSearchParams(window.location.search).get("id");
 
   if (!themeId) {
     showError();
@@ -24,8 +25,8 @@ async function initializeThemePage() {
 
   try {
     const [duaResponse, contentResponse] = await Promise.all([
-      fetch("../data/duas.json?v=21", { cache: "no-store" }),
-      fetch("../data/themes.json?v=21", { cache: "no-store" })
+      fetch("/data/duas.json?v=22", { cache: "no-store" }),
+      fetch("/data/themes.json?v=22", { cache: "no-store" })
     ]);
 
     if (!duaResponse.ok) {
@@ -261,7 +262,7 @@ function createRelatedSection(items, labels = {}) {
       <h2>${escapeHtml(labels.relatedTitle || "📚 Voir aussi")}</h2>
       <div class="related-theme-links">
         ${items.map((item) => `
-          <a href="./index.html?id=${encodeURIComponent(item.id)}">${escapeHtml(item.label)} <span aria-hidden="true">→</span></a>
+          <a href="/themes/${encodeURIComponent(item.id)}/">${escapeHtml(item.label)} <span aria-hidden="true">→</span></a>
         `).join("")}
       </div>
     </section>
@@ -298,7 +299,7 @@ function updateThemeSeo(category, duaCount, content) {
   const title = content?.seoTitle || `Douaas ${category.label} — Textes, sources et traductions`;
   const description = content?.seoDescription ||
     `Découvrez ${duaCount} ${duaCount > 1 ? "douaas" : "douaa"} pour le thème ${category.label}, avec texte arabe, traduction française et sources.`;
-  const canonical = `https://douaagenerator.fr/theme/index.html?id=${encodeURIComponent(category.id)}`;
+  const canonical = `https://douaagenerator.fr/themes/${encodeURIComponent(category.id)}/`;
 
   document.title = title;
   updateMeta("description", description);
@@ -391,11 +392,29 @@ function createDuaCard(dua) {
       <p class="theme-dua-arabic" dir="rtl" lang="ar">${escapeHtml(dua.arabic || "")}</p>
       <p class="theme-dua-french">${escapeHtml(dua.french || "")}</p>
       ${explanation ? `<p class="theme-dua-explanation">${escapeHtml(explanation)}</p>` : ""}
-      <a class="details-link" href="../douaa.html?id=${encodeURIComponent(dua.id)}">
+      <a class="details-link" href="${getDuaUrl(dua.id)}">
         Voir la fiche complète <span aria-hidden="true">→</span>
       </a>
     </article>
   `;
+}
+
+const staticDuaIds = new Set([
+  "akhirah_2_201", "ayyub_21_83", "beneficial_rizq", "debt_anxiety",
+  "deceased_general", "family_protection_general", "firm_heart",
+  "gratitude_27_19", "guidance_3_8", "halal_sufficiency",
+  "hasbunallah_3_173", "healing_prophetic", "knowledge_20_114",
+  "musa_28_24", "musa_ease_20_25_28", "paradise_general",
+  "parents_17_24", "patience_2_250", "protection_words", "quran_3_38",
+  "quran_14_40", "quran_21_89", "quran_25_74", "quran_30_21_general",
+  "repentance_adam_7_23", "sayyid_istighfar_meaning", "work_long_general",
+  "yunus_21_87"
+]);
+
+function getDuaUrl(id) {
+  return staticDuaIds.has(id)
+    ? `/douaas/${id.replaceAll("_", "-")}/`
+    : `/douaa.html?id=${encodeURIComponent(id)}`;
 }
 
 function buildFallbackTitle(dua) {

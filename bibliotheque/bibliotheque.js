@@ -48,7 +48,7 @@ function renderLibrary(categories, duas) {
       return `
         <a
           class="library-card"
-          href="../theme/index.html?id=${encodeURIComponent(category.id)}"
+          href="../themes/${encodeURIComponent(category.id)}/"
         >
           <span class="library-card-icon" aria-hidden="true">
             ${escapeHtml(category.icon || "✦")}

@@ -2890,3 +2890,64 @@ a:focus-visible,
   color: #a77c3d;
   background: #f4ead8;
 }
+
+/* Page pilier SEO : prière de consultation */
+.istikhara-text {
+  margin: 22px 0 28px;
+  padding: clamp(24px, 5vw, 38px);
+  border: 1px solid rgba(167, 124, 61, 0.25);
+  border-radius: var(--radius-medium);
+  color: var(--primary-dark);
+  background: linear-gradient(145deg, var(--gold-soft), var(--surface-solid));
+  font-family: "Noto Naskh Arabic", "Geeza Pro", serif;
+  font-size: clamp(1.45rem, 3vw, 2rem);
+  line-height: 2.15;
+  text-align: right;
+}
+
+.seo-steps {
+  margin: 24px 0 0;
+  padding: 0;
+  counter-reset: istikhara-step;
+  list-style: none;
+}
+
+.seo-steps li {
+  position: relative;
+  min-height: 54px;
+  padding: 3px 0 22px 58px;
+  counter-increment: istikhara-step;
+}
+
+.seo-steps li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  display: grid;
+  border-radius: 50%;
+  place-items: center;
+  color: #fff;
+  background: var(--primary);
+  content: counter(istikhara-step, decimal-leading-zero);
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.seo-steps li:not(:last-child)::after {
+  position: absolute;
+  top: 39px;
+  bottom: 2px;
+  left: 18px;
+  width: 1px;
+  background: var(--border);
+  content: "";
+}
+
+.editorial-meta {
+  margin: 0 0 14px;
+  color: var(--text-soft);
+  font-size: 0.78rem;
+  text-align: right;
+}

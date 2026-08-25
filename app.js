@@ -334,7 +334,7 @@ function createInvocationCard({
     ? `
       <a
         class="details-link"
-        href="./douaa.html?id=${encodeURIComponent(duaId)}"
+        href="${getGeneratedDuaUrl(duaId)}"
       >
         En savoir plus sur cette douaa
         <span aria-hidden="true">→</span>
@@ -366,6 +366,24 @@ function createInvocationCard({
       ${detailsLink}
     </article>
   `;
+}
+
+const generatedStaticDuaIds = new Set([
+  "akhirah_2_201", "ayyub_21_83", "beneficial_rizq", "debt_anxiety",
+  "deceased_general", "family_protection_general", "firm_heart",
+  "gratitude_27_19", "guidance_3_8", "halal_sufficiency",
+  "hasbunallah_3_173", "healing_prophetic", "knowledge_20_114",
+  "musa_28_24", "musa_ease_20_25_28", "paradise_general",
+  "parents_17_24", "patience_2_250", "protection_words", "quran_3_38",
+  "quran_14_40", "quran_21_89", "quran_25_74", "quran_30_21_general",
+  "repentance_adam_7_23", "sayyid_istighfar_meaning", "work_long_general",
+  "yunus_21_87"
+]);
+
+function getGeneratedDuaUrl(id) {
+  return generatedStaticDuaIds.has(id)
+    ? `/douaas/${id.replaceAll("_", "-")}/`
+    : `/douaa.html?id=${encodeURIComponent(id)}`;
 }
 
 function createTawakkulCard() {

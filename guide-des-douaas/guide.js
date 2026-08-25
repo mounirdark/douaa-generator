@@ -1,6 +1,7 @@
 "use strict";
 
 const essentialIds = [
+  "linvocation_complete_de_listikhara",
   "yunus_21_87",
   "musa_28_24",
   "musa_ease_20_25_28",
@@ -18,7 +19,6 @@ const essentialIds = [
   "sayyid_istighfar",
   "travel_dua",
   "protection_children",
-  "istikhara",
   "morning_evening_protection",
   "parents_17_24"
 ];
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", loadEssentialDuas);
 
 async function loadEssentialDuas() {
   try {
-    const response = await fetch("../data/duas.json?v=18", {
+    const response = await fetch("../data/duas.json?v=20", {
       cache: "no-store"
     });
 
@@ -74,10 +74,14 @@ function createEssentialCard(dua, categories) {
     ? dua.whenToRead[0]
     : dua.meaning || dua.context || "Découvrir le texte et son explication.";
 
+  const href = dua.id === "linvocation_complete_de_listikhara"
+    ? "../priere-de-consultation/"
+    : getEssentialUrl(dua.id);
+
   return `
     <a
       class="essential-dua-card"
-      href="../douaa.html?id=${encodeURIComponent(dua.id)}"
+      href="${href}"
     >
       <span class="essential-number">✦</span>
       <strong>${escapeHtml(title)}</strong>
@@ -85,6 +89,20 @@ function createEssentialCard(dua, categories) {
       <small>${escapeHtml(dua.source || dua.referenceDetails || "")}</small>
     </a>
   `;
+}
+
+const staticEssentialIds = new Set([
+  "ayyub_21_83", "beneficial_rizq", "debt_anxiety", "guidance_3_8",
+  "halal_sufficiency", "hasbunallah_3_173", "healing_prophetic",
+  "knowledge_20_114", "musa_28_24", "musa_ease_20_25_28",
+  "parents_17_24", "protection_words", "quran_3_38", "quran_14_40",
+  "quran_25_74", "yunus_21_87"
+]);
+
+function getEssentialUrl(id) {
+  return staticEssentialIds.has(id)
+    ? `../douaas/${id.replaceAll("_", "-")}/`
+    : `../douaa.html?id=${encodeURIComponent(id)}`;
 }
 
 function escapeHtml(value) {
