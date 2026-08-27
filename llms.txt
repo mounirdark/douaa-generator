@@ -4,12 +4,12 @@
 
 ## Pages principales
 
-- https://douaagenerator.fr/ : générateur d’invocations personnalisées
-- https://douaagenerator.fr/bibliotheque/ : bibliothèque des thèmes et des fiches
-- https://douaagenerator.fr/guide-des-douaas/ : guide pédagogique des invocations
-- https://douaagenerator.fr/priere-de-consultation/ : guide de la prière d’Istikhara
-- https://douaagenerator.fr/a-propos/ : mission et politique éditoriale
-- https://douaagenerator.fr/sitemap.xml : liste des pages indexables
+- [Générateur d’invocations](https://douaagenerator.fr/) : composition d’invocations personnalisées
+- [Bibliothèque des douaas](https://douaagenerator.fr/bibliotheque/) : thèmes et fiches détaillées
+- [Guide des douaas](https://douaagenerator.fr/guide-des-douaas/) : guide pédagogique des invocations
+- [Prière de consultation](https://douaagenerator.fr/priere-de-consultation/) : guide de la prière d’Istikhara
+- [À propos](https://douaagenerator.fr/a-propos/) : mission et politique éditoriale
+- [Sitemap XML](https://douaagenerator.fr/sitemap.xml) : liste des pages indexables
 
 ## Politique éditoriale
 
