@@ -200,6 +200,11 @@ function generateInvocation() {
     closing: chosenClosing
   };
 
+  window.trackEvent?.("generate_dua", {
+    category_count: categoryIds.length,
+    categories: categoryIds.join(",")
+  });
+
   setLanguage("fr");
   showElement(elements.resultSection);
 
@@ -461,6 +466,10 @@ async function copyInvocation() {
 
     showTemporaryMessage(elements.copyMessage);
   }
+
+  window.trackEvent?.("copy_generated_dua", {
+    language: currentLanguage
+  });
 }
 
 function buildPlainTextInvocation() {

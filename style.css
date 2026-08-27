@@ -1330,6 +1330,68 @@ a:focus-visible,
   }
 }
 
+.consent-banner {
+  position: fixed;
+  z-index: 1000;
+  right: 18px;
+  bottom: 18px;
+  left: 18px;
+  width: min(720px, calc(100% - 36px));
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  margin: 0 auto;
+  padding: 18px 20px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: rgba(255, 255, 252, 0.98);
+  box-shadow: 0 18px 55px rgba(38, 48, 40, 0.2);
+}
+
+.consent-banner strong {
+  color: var(--primary-dark);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.consent-banner p {
+  margin: 5px 0 0;
+  color: var(--text-soft);
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
+.consent-actions {
+  display: flex;
+  flex-shrink: 0;
+  gap: 8px;
+}
+
+.consent-settings-button {
+  position: fixed;
+  z-index: 900;
+  bottom: 10px;
+  left: 10px;
+  padding: 6px 9px;
+  border: 1px solid var(--border-soft);
+  border-radius: 999px;
+  color: var(--text-soft);
+  background: rgba(255, 255, 252, 0.88);
+  font: inherit;
+  font-size: 0.68rem;
+  cursor: pointer;
+}
+
+@media (max-width: 620px) {
+  .consent-banner {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .consent-actions button {
+    flex: 1;
+  }
+}
+
 .detail-state-panel {
   text-align: center;
 }

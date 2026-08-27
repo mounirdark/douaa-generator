@@ -73,6 +73,8 @@ Une formulation générale ne doit jamais être présentée comme un verset ou u
 
 Les favoris utilisent uniquement le stockage local du navigateur (`localStorage`). Ils ne sont ni synchronisés entre les appareils ni transmis à un serveur.
 
+Google Analytics utilise l’identifiant `G-54ZYPQCDM3`. Le script partagé `analytics.js` attend le consentement explicite du visiteur avant de charger la balise et mesure les consultations, recherches, générations, favoris, copies et partages.
+
 ## Référencement naturel
 
 Le site utilise des URL statiques et canoniques :

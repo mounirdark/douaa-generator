@@ -63,6 +63,7 @@ function renderFavorites(duas) {
 
 function clearFavorites() {
   if (!window.confirm("Effacer toutes les douaas enregistrées dans vos favoris ?")) return;
+  window.trackEvent?.("clear_favorites", { favorite_count: readFavorites().length });
   localStorage.removeItem(FAVORITES_STORAGE_KEY);
   window.location.reload();
 }

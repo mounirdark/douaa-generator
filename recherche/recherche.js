@@ -116,6 +116,13 @@ function performSearch(rawQuery, updateHistory = false) {
   const total = duaResults.length + themeResults.length;
   searchElements.status.textContent = `${total} ${total > 1 ? "résultats" : "résultat"}`;
 
+  if (updateHistory) {
+    window.trackEvent?.("search", {
+      search_term: query,
+      result_count: total
+    });
+  }
+
   if (!total) {
     searchElements.results.innerHTML = `
       <article class="panel search-empty-card">

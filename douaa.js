@@ -439,9 +439,11 @@ function toggleCurrentDuaFavorite() {
   if (favoriteIndex >= 0) {
     favorites.splice(favoriteIndex, 1);
     showActionMessage("Douaa retirée de vos favoris.");
+    window.trackEvent?.("remove_favorite", { dua_id: currentDua.id });
   } else {
     favorites.push({ id: currentDua.id, url: getDetailUrl(currentDua.id) });
     showActionMessage("Douaa ajoutée à vos favoris.");
+    window.trackEvent?.("add_favorite", { dua_id: currentDua.id });
   }
 
   writeFavorites(favorites);
@@ -461,6 +463,10 @@ async function copyCurrentDua() {
   try {
     await copyText(content);
     showActionMessage("La douaa a été copiée.");
+    window.trackEvent?.("copy_dua", {
+      dua_id: currentDua.id,
+      language: currentLanguage
+    });
   } catch (error) {
     console.error("Copie impossible :", error);
     showActionMessage("La copie n’a pas pu être effectuée.");
@@ -495,11 +501,21 @@ async function shareCurrentDua() {
   try {
     if (navigator.share) {
       await navigator.share(shareData);
+      window.trackEvent?.("share", {
+        method: "native",
+        content_type: "dua",
+        item_id: currentDua.id
+      });
       return;
     }
 
     await copyText(window.location.href);
     showActionMessage("Le lien a été copié.");
+    window.trackEvent?.("share", {
+      method: "copy_link",
+      content_type: "dua",
+      item_id: currentDua.id
+    });
   } catch (error) {
     if (error.name !== "AbortError") {
       console.error("Partage impossible :", error);

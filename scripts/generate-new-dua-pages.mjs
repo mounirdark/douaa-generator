@@ -75,7 +75,7 @@ function buildPage(dua) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="${escapeHtml(description)}">
   <title>${escapeHtml(title)}</title>
-  <link rel="stylesheet" href="/style.min.css?v=28">
+  <link rel="stylesheet" href="/style.min.css?v=29">
 
   <link rel="canonical" href="${url}">
   <meta property="og:locale" content="fr_FR">
@@ -167,7 +167,8 @@ function buildPage(dua) {
   </main>
 
   <script src="/menu.min.js?v=25"></script>
-  <script src="/douaa.min.js?v=26"></script>
+  <script src="/douaa.min.js?v=27"></script>
+  <script src="/analytics.min.js?v=1"></script>
 </body>
 </html>
 `;
