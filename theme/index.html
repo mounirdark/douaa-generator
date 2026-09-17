@@ -6,7 +6,7 @@
   <meta name="robots" content="noindex, follow">
   <meta name="description" content="Retrouvez toutes les invocations associées à un thème, avec leur texte arabe, leur traduction et leur source.">
   <title>Douaas par thème — Douaa Generator</title>
-  <link rel="stylesheet" href="../style.min.css?v=29">
+  <link rel="stylesheet" href="../style.min.css?v=31">
 
   <link rel="canonical" href="https://douaagenerator.fr/theme/">
   <meta property="og:locale" content="fr_FR">
@@ -15,9 +15,23 @@
   <meta property="og:title" content="Douaas par thème — Douaa Generator">
   <meta property="og:description" content="Retrouvez toutes les invocations associées à un thème, avec leur texte arabe, leur traduction et leur source.">
   <meta property="og:url" content="https://douaagenerator.fr/theme/">
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Douaas par thème — Douaa Generator">
   <meta name="twitter:description" content="Retrouvez toutes les invocations associées à un thème, avec leur texte arabe, leur traduction et leur source.">
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <script src="/security.min.js?v=1"></script>
+  <meta property="og:image" content="https://douaagenerator.fr/assets/social-preview.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:alt" content="Douaa Generator — Des mots pour ce qui habite votre cœur. Invocations en français, arabe et phonétique.">
+  <meta name="twitter:image" content="https://douaagenerator.fr/assets/social-preview.jpg">
+  <meta name="twitter:image:alt" content="Douaa Generator — Invocations en français, arabe et phonétique.">
+  <script src="/forms.min.js?v=1" defer></script>
 </head>
 
 <body>
@@ -45,7 +59,7 @@
         <li><a class="site-nav-link active" href="../bibliotheque/index.html">Bibliothèque</a></li>
         <li><a class="site-nav-link" href="../guide-des-douaas/index.html">Guide des douaas</a></li>
         <li><a class="site-nav-link" href="../a-propos/index.html">À propos</a></li>
-        <li class="nav-search-item"><form class="nav-search-form" role="search" action="../recherche/index.html" method="get"><input name="q" type="search" placeholder="Rechercher une douaa…" aria-label="Rechercher une douaa"><button type="submit" aria-label="Lancer la recherche">⌕</button></form></li>
+        <li class="nav-search-item"><form class="nav-search-form" role="search" action="../recherche/index.html" method="get"><input name="q" type="search" required minlength="2" maxlength="120" placeholder="Rechercher une douaa…" aria-label="Rechercher une douaa"><button type="submit" aria-label="Lancer la recherche">⌕</button></form></li>
       </ul>
     </nav>
   </header>
@@ -99,10 +113,11 @@
 
   <footer class="site-footer">
     <p>Douaa Generator — Invocations inspirées du Coran et de la Sunna.</p>
+  <nav class="legal-links" aria-label="Informations légales"><a href="/confidentialite/">Politique de confidentialité</a><a href="/cgu/">Conditions générales d’utilisation</a></nav>
   </footer>
 
   <script src="../menu.min.js?v=23"></script>
-  <script src="./theme.min.js?v=23"></script>
-  <script src="/analytics.min.js?v=1"></script>
+  <script src="./theme.min.js?v=31"></script>
+  <script src="/analytics.min.js?v=2"></script>
 </body>
 </html>

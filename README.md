@@ -73,7 +73,7 @@ Une formulation générale ne doit jamais être présentée comme un verset ou u
 
 Les favoris utilisent uniquement le stockage local du navigateur (`localStorage`). Ils ne sont ni synchronisés entre les appareils ni transmis à un serveur.
 
-Google Analytics utilise l’identifiant `G-54ZYPQCDM3`. Le script partagé `analytics.js` attend le consentement explicite du visiteur avant de charger la balise et mesure les consultations, recherches, générations, favoris, copies et partages.
+Google Analytics utilise l’identifiant `G-54ZYPQCDM3`. Le script partagé `analytics.js` attend le consentement explicite du visiteur avant de charger la balise. Il émet une visite générique, sans chemin de page, terme de recherche ni intention choisie. Les événements métier sont désactivés. Le choix expire après 183 jours et peut être retiré via le bouton « Cookies ».
 
 ## Référencement naturel
 
@@ -130,7 +130,7 @@ Vérifier également :
 
 ## Déploiement
 
-Le projet ne nécessite aucune compilation. Il est publié comme site statique depuis la branche `main`. Le fichier `CNAME` associe le déploiement au domaine `douaagenerator.fr`.
+Les fichiers publiés sont statiques et versionnés. Après une modification des données ou des scripts de rendu, exécuter `npm run build` pour régénérer les pages. Le site est publié depuis la branche `main`. Le fichier `CNAME` associe le déploiement au domaine `douaagenerator.fr`.
 
 Après chaque mise à jour :
 
@@ -143,3 +143,52 @@ git push origin main
 ## Limites et responsabilité éditoriale
 
 Douaa Generator est un outil pédagogique et non une autorité religieuse. Les contenus doivent être vérifiés avec soin, mais ils ne remplacent pas l’avis d’une personne qualifiée pour une question religieuse précise ou une situation personnelle complexe.
+
+## Maintenance, qualité et confidentialité
+
+Voir [le rapport de vérification](AUDIT-SITE.md) pour les résultats, les limites et les informations juridiques à compléter.
+
+Le site publié reste entièrement statique. Les dépendances npm servent uniquement au développement :
+
+```bash
+npm ci
+npm run build
+npm run test:static
+```
+
+`build` exécute `build:assets` (minification JS/CSS et génération des images) puis `build:pages` (prérendu des 61 fiches et 25 thèmes, et PDF Istikhara). Cette seconde étape utilise Chrome et un serveur temporaire limité à 127.0.0.1, sans service externe. Définir `CHROME_PATH` si Chrome n’est pas installé au chemin macOS par défaut. Les SVG sont les sources vectorielles éditables ; les illustrations de l’accueil restent en CSS.
+
+Pour les tests navigateur, démarrer `python3 -m http.server 8000` dans un autre terminal, puis lancer :
+
+```bash
+npm run test:browser
+npm run audit:accessibility
+npm run audit:performance
+```
+
+Les scripts utilisent Chrome installé sur macOS par défaut. Sur une autre machine, définir `CHROME_PATH` avec le chemin du navigateur. Les captures et rapports sont écrits dans `artifacts/` (ignoré par Git). Les tests de consentement simulent le script Analytics sans transmettre de statistiques.
+
+Le générateur `scripts/generate-new-dua-pages.mjs` inclut les métadonnées sociales, favicons, liens juridiques et contrôles de recherche. Mettre à jour le sitemap après l’ajout de pages ; `test:static` détecte les écarts.
+
+Aucune clé API privée n’est nécessaire. L’identifiant GA4 `G-54ZYPQCDM3` est un identifiant public, pas un secret. Tout futur service nécessitant une clé privée devra être appelé depuis un serveur, avec secret dans l’environnement, validation et limitation de débit côté serveur.
+
+## Contenus HTML complets et SEO
+
+- Les routes `douaas/*/` et `themes/*/` contiennent leur contenu complet avant l’exécution de JavaScript. Le prérendu emploie les mêmes fonctions de rendu que les anciennes routes dynamiques, à partir des JSON de `data/`.
+- Les fiches embarquent uniquement leur propre objet de données pour les langues, la copie et les favoris. Les thèmes n’ont plus besoin de télécharger les JSON à la lecture. Le mode sans JavaScript conserve les textes, les liens et les FAQ natives.
+- Ne pas modifier manuellement les sections générées de ces 86 pages : modifier les données ou les fonctions de rendu, puis lancer `npm run build`. Les titres, descriptions et URL canoniques déjà éditorialisés dans les fichiers HTML sont conservés.
+- Les liens contextuels et les liens vers la méthode éditoriale sont produits dans `scripts/prerender.cjs`. Les résumés statiques d’origine sont remplacés par le contenu complet, sans double version visible.
+- Le guide Istikhara reste rédigé dans `priere-de-consultation/index.html`. Son PDF `assets/guide-istikhara.pdf` est régénéré pendant le build avec le style d’impression et les réponses ouvertes. L’impression navigateur fonctionne aussi via le bouton prévu.
+- `npm run test:seo`, avec le serveur local sur le port 8000, vérifie toutes les pages sans JavaScript et les fonctions interactives avec l’accès aux JSON bloqué. `SITE_URL` permet un autre serveur de test.
+
+### Exploiter un export Search Console
+
+Dans Search Console, ouvrir **Performances → Résultats de recherche**, choisir une période explicite (par exemple les trois derniers mois), puis exporter le tableau **Pages** ou **Requêtes** en CSV. Ne pas utiliser le tableau par date. L’outil accepte les en-têtes français et anglais.
+
+```bash
+npm run seo:search-console -- /chemin/Pages.csv --output artifacts/opportunites-seo.md
+```
+
+Le rapport classe des pistes à examiner selon les impressions, la position moyenne et le taux de clics. Les seuils sont exploratoires ; ils ne constituent ni une prévision de trafic ni une preuve de concurrence entre pages. Consigner les changements et comparer des périodes de durée égale, en tenant compte de la saisonnalité. L’outil ne transmet rien à un service externe.
+
+L’accès Search Console, une identité juridique et des relecteurs réellement identifiés restent à fournir. Aucun auteur, diplôme ou contrôle religieux indépendant n’a été inventé. L’audio reste à intégrer à partir d’un enregistrement vérifié et autorisé ; aucune récitation synthétique ou sans licence n’a été ajoutée.

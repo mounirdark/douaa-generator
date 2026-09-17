@@ -45,7 +45,7 @@ async function initializeSearch() {
   bindSearchEvents();
 
   try {
-    const response = await fetch("/data/duas.json?v=25", { cache: "no-store" });
+    const response = await fetch("/data/duas.json?v=26", { cache: "default" });
     if (!response.ok) throw new Error(`Erreur HTTP ${response.status}`);
     searchDatabase = await response.json();
     searchElements.loading.classList.add("hidden");
@@ -87,7 +87,7 @@ function bindSearchEvents() {
 
 function performSearch(rawQuery, updateHistory = false) {
   if (!searchDatabase) return;
-  const query = rawQuery.trim();
+  const query = String(rawQuery).trim().slice(0, 120);
 
   if (updateHistory) {
     const url = query ? `/recherche/?q=${encodeURIComponent(query)}` : "/recherche/";

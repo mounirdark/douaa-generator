@@ -25,8 +25,8 @@ async function initializeThemePage() {
   }
 
   try {
-    const response = await fetch("/data/duas.json?v=19", {
-      cache: "no-store"
+    const response = await fetch("/data/duas.json?v=26", {
+      cache: "default"
     });
 
     if (!response.ok) {

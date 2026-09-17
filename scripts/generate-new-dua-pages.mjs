@@ -75,7 +75,7 @@ function buildPage(dua) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="${escapeHtml(description)}">
   <title>${escapeHtml(title)}</title>
-  <link rel="stylesheet" href="/style.min.css?v=29">
+  <link rel="stylesheet" href="/style.min.css?v=31">
 
   <link rel="canonical" href="${url}">
   <meta property="og:locale" content="fr_FR">
@@ -84,9 +84,10 @@ function buildPage(dua) {
   <meta property="og:title" content="${escapeHtml(title)}">
   <meta property="og:description" content="${escapeHtml(description)}">
   <meta property="og:url" content="${url}">
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${escapeHtml(title)}">
   <meta name="twitter:description" content="${escapeHtml(description)}">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 </head>
 
 <body data-dua-id="${escapeHtml(dua.id)}" data-dua-slug="${slug}">
@@ -104,7 +105,7 @@ function buildPage(dua) {
         <li><a class="site-nav-link" href="/bibliotheque/">Bibliothèque</a></li>
         <li><a class="site-nav-link" href="/guide-des-douaas/">Guide des douaas</a></li>
         <li><a class="site-nav-link" href="/a-propos/">À propos</a></li>
-        <li class="nav-search-item"><form class="nav-search-form" role="search" aria-label="Recherche globale" action="/recherche/" method="get"><input name="q" type="search" placeholder="Rechercher une douaa…" aria-label="Rechercher une douaa"><button type="submit" aria-label="Lancer la recherche">⌕</button></form></li>
+        <li class="nav-search-item"><form class="nav-search-form" role="search" aria-label="Recherche globale" action="/recherche/" method="get"><input name="q" type="search" required minlength="2" maxlength="120" placeholder="Rechercher une douaa…" aria-label="Rechercher une douaa"><button type="submit" aria-label="Lancer la recherche">⌕</button></form></li>
       </ul>
     </nav>
   </header>
@@ -165,10 +166,11 @@ function buildPage(dua) {
       <a class="primary-button compact detail-return-button" href="/">Retour au générateur</a>
     </section>
   </main>
+<footer class="site-footer"><nav class="legal-links" aria-label="Informations légales"><a href="/confidentialite/">Politique de confidentialité</a><a href="/cgu/">Conditions générales d’utilisation</a></nav></footer>
 
   <script src="/menu.min.js?v=25"></script>
-  <script src="/douaa.min.js?v=27"></script>
-  <script src="/analytics.min.js?v=1"></script>
+  <script src="/douaa.min.js?v=31"></script>
+  <script src="/analytics.min.js?v=2"></script>
 </body>
 </html>
 `;

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Composez gratuitement une invocation personnalisée à partir de thèmes comme le mariage, la famille, le travail, la santé, la protection ou le pardon.">
   <title>Douaa Generator — Générateur d’invocations personnalisées</title>
-  <link rel="stylesheet" href="./style.min.css?v=29">
+  <link rel="stylesheet" href="./style.min.css?v=31">
 
   <link rel="canonical" href="https://douaagenerator.fr/">
   <meta property="og:locale" content="fr_FR">
@@ -14,7 +14,7 @@
   <meta property="og:title" content="Douaa Generator — Générateur d’invocations personnalisées">
   <meta property="og:description" content="Composez gratuitement une invocation personnalisée à partir de thèmes comme le mariage, la famille, le travail, la santé, la protection ou le pardon.">
   <meta property="og:url" content="https://douaagenerator.fr/">
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Douaa Generator — Générateur d’invocations personnalisées">
   <meta name="twitter:description" content="Composez gratuitement une invocation personnalisée à partir de thèmes comme le mariage, la famille, le travail, la santé, la protection ou le pardon.">
 
@@ -33,6 +33,20 @@
     }
   }
   </script>
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <script src="/security.min.js?v=1"></script>
+  <meta property="og:image" content="https://douaagenerator.fr/assets/social-preview.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:alt" content="Douaa Generator — Des mots pour ce qui habite votre cœur. Invocations en français, arabe et phonétique.">
+  <meta name="twitter:image" content="https://douaagenerator.fr/assets/social-preview.jpg">
+  <meta name="twitter:image:alt" content="Douaa Generator — Invocations en français, arabe et phonétique.">
+  <script src="/forms.min.js?v=1" defer></script>
 </head>
 <body class="home-page">
   <div class="page-background"></div>
@@ -48,7 +62,7 @@
       <li><a class="site-nav-link" href="./bibliotheque/index.html">Bibliothèque</a></li>
       <li><a class="site-nav-link" href="./guide-des-douaas/index.html">Guide des douaas</a></li>
       <li><a class="site-nav-link" href="./a-propos/index.html">À propos</a></li>
-      <li class="nav-search-item"><form class="nav-search-form" role="search" action="./recherche/index.html" method="get"><input name="q" type="search" placeholder="Rechercher une douaa…" aria-label="Rechercher une douaa"><button type="submit" aria-label="Lancer la recherche">⌕</button></form></li>
+      <li class="nav-search-item"><form class="nav-search-form" role="search" action="./recherche/index.html" method="get"><input name="q" type="search" required minlength="2" maxlength="120" placeholder="Rechercher une douaa…" aria-label="Rechercher une douaa"><button type="submit" aria-label="Lancer la recherche">⌕</button></form></li>
     </ul>
   </nav>
 </header>
@@ -60,13 +74,11 @@
       <p class="hero-description">
         Composez une invocation personnelle, structurée avec soin et accompagnée de ses sources.
       </p>
-      <a class="hero-cta" href="#selection-title">
-        Commencer mon invocation <span aria-hidden="true">↓</span>
-      </a>
+
       <div class="trust-points" aria-label="Nos engagements">
         <span><i aria-hidden="true">✓</i> Sans inscription</span>
         <span><i aria-hidden="true">✓</i> Sources indiquées</span>
-        <span><i aria-hidden="true">✓</i> Entièrement privé</span>
+        <span><i aria-hidden="true">✓</i> Sans compte</span>
       </div>
     </div>
 
@@ -103,16 +115,18 @@
         Prenez votre temps. Vous pouvez choisir une ou plusieurs intentions ; une invocation adaptée sera proposée pour chacune.
       </p>
 
+      <button id="generateBtn" class="primary-button" type="button" disabled>
+        <span>Générer mon invocation</span>
+        <span aria-hidden="true">✦</span>
+      </button>
+
       <div id="categoriesGrid" class="categories-grid"></div>
 
       <div id="selectionError" class="message message-error hidden" role="alert">
         Sélectionnez au moins une catégorie.
       </div>
 
-      <button id="generateBtn" class="primary-button" type="button" disabled>
-        <span>Générer mon invocation</span>
-        <span aria-hidden="true">✦</span>
-      </button>
+
 
       <p id="loadingMessage" class="loading-message">
         Chargement de la bibliothèque d’invocations…
@@ -136,7 +150,7 @@
 
       <div class="result-actions">
         <button id="copyBtn" class="secondary-button" type="button">Copier l’invocation</button>
-        <button id="regenerateBtn" class="primary-button compact" type="button">Générer une autre version</button>
+        <button id="regenerateBtn" class="secondary-button" type="button">Générer une autre version</button>
       </div>
 
       <div id="copyMessage" class="message message-success hidden" role="status">Invocation copiée.</div>
@@ -152,10 +166,11 @@
 
   <footer class="site-footer">
     <p>Qu’Allah accepte nos invocations, nous pardonne et nous guide vers ce qu’Il aime.</p>
+  <nav class="legal-links" aria-label="Informations légales"><a href="/confidentialite/">Politique de confidentialité</a><a href="/cgu/">Conditions générales d’utilisation</a></nav>
   </footer>
 
   <script src="./menu.min.js?v=23"></script>
-  <script src="./app.min.js?v=26"></script>
-  <script src="/analytics.min.js?v=1"></script>
+  <script src="./app.min.js?v=30"></script>
+  <script src="/analytics.min.js?v=2"></script>
 </body>
 </html>

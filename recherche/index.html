@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Recherchez une douaa par besoin, mot, thème ou source et retrouvez son texte arabe, sa phonétique, sa traduction et sa référence.">
   <title>Rechercher une douaa — Douaa Generator</title>
-  <link rel="stylesheet" href="/style.min.css?v=29">
+  <link rel="stylesheet" href="/style.min.css?v=31">
   <link rel="canonical" href="https://douaagenerator.fr/recherche/">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:type" content="website">
@@ -13,7 +13,21 @@
   <meta property="og:title" content="Rechercher une douaa — Douaa Generator">
   <meta property="og:description" content="Recherchez dans toute la bibliothèque par besoin, mot, thème ou source.">
   <meta property="og:url" content="https://douaagenerator.fr/recherche/">
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <script src="/security.min.js?v=1"></script>
+  <meta property="og:image" content="https://douaagenerator.fr/assets/social-preview.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:alt" content="Douaa Generator — Des mots pour ce qui habite votre cœur. Invocations en français, arabe et phonétique.">
+  <meta name="twitter:image" content="https://douaagenerator.fr/assets/social-preview.jpg">
+  <meta name="twitter:image:alt" content="Douaa Generator — Invocations en français, arabe et phonétique.">
+  <script src="/forms.min.js?v=1" defer></script>
 </head>
 <body>
   <div class="page-background"></div>
@@ -27,7 +41,7 @@
         <li><a class="site-nav-link" href="/bibliotheque/">Bibliothèque</a></li>
         <li><a class="site-nav-link" href="/guide-des-douaas/">Guide des douaas</a></li>
         <li><a class="site-nav-link" href="/a-propos/">À propos</a></li>
-        <li class="nav-search-item"><form class="nav-search-form" role="search" action="/recherche/" method="get"><input name="q" type="search" placeholder="Rechercher une douaa…" aria-label="Rechercher une douaa"><button type="submit" aria-label="Lancer la recherche">⌕</button></form></li>
+        <li class="nav-search-item"><form class="nav-search-form" role="search" action="/recherche/" method="get"><input name="q" type="search" required minlength="2" maxlength="120" placeholder="Rechercher une douaa…" aria-label="Rechercher une douaa"><button type="submit" aria-label="Lancer la recherche">⌕</button></form></li>
       </ul>
     </nav>
   </header>
@@ -45,7 +59,7 @@
         <label for="globalSearchInput">Que recherchez-vous ?</label>
         <div class="global-search-field">
           <span aria-hidden="true">⌕</span>
-          <input id="globalSearchInput" name="q" type="search" autocomplete="off" placeholder="Ex. guérison, parents, pardon, dette, Rabbana…" aria-describedby="searchHelp searchStatus">
+          <input id="globalSearchInput" name="q" type="search" required minlength="2" maxlength="120" autocomplete="off" placeholder="Ex. guérison, parents, pardon, dette, Rabbana…" aria-describedby="searchHelp searchStatus">
           <button type="submit">Rechercher</button>
         </div>
         <p id="searchHelp">La recherche ignore les accents et examine les 75 invocations ainsi que les 25 thèmes.</p>
@@ -78,9 +92,10 @@
     </section>
   </main>
 
-  <footer class="site-footer"><p>Douaa Generator — Des invocations accessibles, sourcées et expliquées.</p></footer>
+  <footer class="site-footer"><p>Douaa Generator — Des invocations accessibles, sourcées et expliquées.</p><nav class="legal-links" aria-label="Informations légales"><a href="/confidentialite/">Politique de confidentialité</a><a href="/cgu/">Conditions générales d’utilisation</a></nav>
+  </footer>
   <script src="/menu.min.js?v=25"></script>
-  <script src="/recherche/recherche.min.js?v=26"></script>
-  <script src="/analytics.min.js?v=1"></script>
+  <script src="/recherche/recherche.min.js?v=30"></script>
+  <script src="/analytics.min.js?v=2"></script>
 </body>
 </html>

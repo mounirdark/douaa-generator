@@ -24,8 +24,8 @@ async function initializeApp() {
   bindStaticEvents();
 
   try {
-    const response = await fetch("./data/duas.json?v=18", {
-      cache: "no-store"
+    const response = await fetch("./data/duas.json?v=26", {
+      cache: "default"
     });
 
     if (!response.ok) {

@@ -15,7 +15,7 @@ async function initializeFavorites() {
   elements.clearButton.addEventListener("click", clearFavorites);
 
   try {
-    const response = await fetch("../data/duas.json?v=22", { cache: "no-store" });
+    const response = await fetch("../data/duas.json?v=26", { cache: "default" });
     if (!response.ok) throw new Error(`Erreur HTTP ${response.status}`);
     const database = await response.json();
     renderFavorites(database.duas || []);

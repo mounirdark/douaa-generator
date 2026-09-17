@@ -499,23 +499,23 @@
     "related": [
       {
         "label": "Famille",
-        "href": "../theme/index.html?id=famille"
+        "id": "famille"
       },
       {
         "label": "Enfants",
-        "href": "../theme/index.html?id=enfants"
+        "id": "enfants"
       },
       {
         "label": "Foyer et maison",
-        "href": "../theme/index.html?id=foyer"
+        "id": "foyer"
       },
       {
         "label": "Stress et anxiété",
-        "href": "../theme/index.html?id=stress"
+        "id": "stress"
       },
       {
         "label": "Foi et fermeté",
-        "href": "../theme/index.html?id=foi"
+        "id": "foi"
       }
     ]
   },

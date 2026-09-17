@@ -3555,3 +3555,80 @@ a:focus-visible,
     height: 40px;
   }
 }
+
+/* Readable text, keyboard navigation and small screens. */
+:root { --text-soft: #535f58; --gold: #785723; }
+.home-page .hero h1 em, .home-page .category-icon { color: #785723; }
+.hero-art-card .art-kicker, .hero-art-card small { color: #f4ead8; opacity: 1; }
+.legal-page { max-width: 900px; padding-top: 40px; }
+.legal-page h1 { font-size: clamp(1.8rem, 5vw, 2.7rem); line-height: 1.2; }
+.legal-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 24px; margin-top: 20px; }
+.legal-links a, .legal-page a, .consent-banner a { text-decoration: underline; text-underline-offset: 3px; }
+.site-footer { padding-bottom: 90px; }
+:focus-visible { outline: 3px solid #785723; outline-offset: 4px; }
+img { max-width: 100%; height: auto; }
+input, select, textarea { max-width: 100%; font-size: max(16px, 1em); }
+input[type="search"] { min-width: 0; }
+.consent-banner { max-height: 70dvh; overflow-y: auto; background: #fff; color: #24302b; }
+.consent-actions > button { flex: 1; min-height: 44px; color: #243d34; background: #fff; border: 1px solid #315d50; }
+.consent-settings-button { min-height: 44px; }
+@media (max-width: 620px) {
+  .panel-heading, .result-header { flex-wrap: wrap; gap: 16px; }
+  .container { width: 100%; padding-left: 16px; padding-right: 16px; }
+  .panel { padding: 22px 18px; }
+  .site-brand { font-size: 1rem; }
+  .global-search-field { flex-wrap: wrap; }
+  .global-search-field input { flex: 1 1 150px; }
+  .global-search-field button { min-height: 44px; }
+  .consent-banner { left: 12px; right: 12px; bottom: 68px; width: auto; padding: 18px; }
+  .consent-actions { display: flex; width: 100%; }
+  .legal-page, .card-content, .static-seo-content { overflow-wrap: anywhere; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+.home-page .hero-art { overflow: clip; }
+.advice-card > span { color: var(--text-soft); opacity: 1; }
+.primary-button:disabled { opacity: 1; color: #fff; background: #535f58; }
+.category-option:has(input:focus-visible) { outline: 3px solid #785723; outline-offset: 4px; }
+#generateBtn { margin-bottom: 24px; }
+
+/* Content remains accessible without JavaScript. */
+.faq-item > summary { padding: 18px 20px; color: var(--primary-dark); font-weight: 700; cursor: pointer; }
+.reading-languages { margin: 24px 0; }
+.reading-languages [lang="ar"] { font-family: "Noto Naskh Arabic", "Geeza Pro", serif; font-size: 1.65rem; line-height: 2; }
+.editorial-links { margin-top: 24px; }
+.print-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 20px 0; }
+.print-actions [hidden] { display: none; }
+@media print {
+  @page { size: A4; margin: 16mm; }
+  body, .page-background { background: #fff !important; color: #000; }
+  .site-header, .site-footer, .guide-summary, .consent-banner, .consent-settings-button,
+  .print-actions, .guide-cta, .detail-actions, .detail-language-switcher, .detail-navigation,
+  .copy-dua-button, .theme-quick-nav { display: none !important; }
+  .container, .guide-layout, .guide-content, .hero { display: block; width: 100%; max-width: none; margin: 0; padding: 0; }
+  .hero { min-height: 0; }
+  .hero h1 { font-size: 24pt; line-height: 1.2; }
+  .panel, .detail-panel, .theme-dua-card { box-shadow: none; border: 0; border-radius: 0; background: #fff; padding: 8pt 0; margin: 0; }
+  h2, h3, summary { break-after: avoid; }
+  p, li { orphans: 3; widows: 3; }
+  .istikhara-text { font-size: 16pt; line-height: 1.85; padding: 10pt; }
+  .faq-answer, details > :not(summary) { display: block !important; }
+  a { color: #000; text-decoration: underline; }
+}
+.faq-answer .teaching-source { color: #535f58; opacity: 1; }
+@media print {
+  body { font-size: 10pt; line-height: 1.5; }
+  .hero h1 { font-size: 22pt !important; }
+  .guide-section h2 { font-size: 16pt; line-height: 1.25; }
+  .guide-section h3 { font-size: 12pt; }
+  .guide-content, .guide-layout, .guide-section { min-width: 0; max-width: 100%; }
+  .editorial-meta { text-align: left; white-space: normal; overflow-wrap: anywhere; }
+  .hero { padding-bottom: 12pt; }
+}
+@media print {
+  .inner-hero { max-width: none; margin: 0; padding: 0 0 12pt; }
+  .inner-hero h1 { font-size: 22pt; line-height: 1.2; }
+  .inner-hero p:last-child { max-width: none; font-size: 10pt; }
+}

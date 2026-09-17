@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Découvrez la mission, les sources, la méthode et les réseaux sociaux du projet Douaa Generator.">
   <title>À propos de Douaa Generator</title>
-  <link rel="stylesheet" href="../style.min.css?v=29">
+  <link rel="stylesheet" href="../style.min.css?v=31">
 
   <link rel="canonical" href="https://douaagenerator.fr/a-propos/">
   <meta property="og:locale" content="fr_FR">
@@ -14,7 +14,7 @@
   <meta property="og:title" content="À propos de Douaa Generator">
   <meta property="og:description" content="Découvrez la mission, les sources, la méthode et les réseaux sociaux du projet Douaa Generator.">
   <meta property="og:url" content="https://douaagenerator.fr/a-propos/">
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="À propos de Douaa Generator">
   <meta name="twitter:description" content="Découvrez la mission, les sources, la méthode et les réseaux sociaux du projet Douaa Generator.">
 
@@ -30,6 +30,20 @@
     ]
   }
   </script>
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <script src="/security.min.js?v=1"></script>
+  <meta property="og:image" content="https://douaagenerator.fr/assets/social-preview.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:alt" content="Douaa Generator — Des mots pour ce qui habite votre cœur. Invocations en français, arabe et phonétique.">
+  <meta name="twitter:image" content="https://douaagenerator.fr/assets/social-preview.jpg">
+  <meta name="twitter:image:alt" content="Douaa Generator — Invocations en français, arabe et phonétique.">
+  <script src="/forms.min.js?v=1" defer></script>
 </head>
 
 <body>
@@ -50,7 +64,7 @@
         <li><a class="site-nav-link" href="../bibliotheque/index.html">Bibliothèque</a></li>
         <li><a class="site-nav-link" href="../guide-des-douaas/index.html">Guide des douaas</a></li>
         <li><a class="site-nav-link active" aria-current="page" href="./index.html">À propos</a></li>
-        <li class="nav-search-item"><form class="nav-search-form" role="search" action="../recherche/index.html" method="get"><input name="q" type="search" placeholder="Rechercher une douaa…" aria-label="Rechercher une douaa"><button type="submit" aria-label="Lancer la recherche">⌕</button></form></li>
+        <li class="nav-search-item"><form class="nav-search-form" role="search" action="../recherche/index.html" method="get"><input name="q" type="search" required minlength="2" maxlength="120" placeholder="Rechercher une douaa…" aria-label="Rechercher une douaa"><button type="submit" aria-label="Lancer la recherche">⌕</button></form></li>
       </ul>
     </nav>
   </header>
@@ -156,12 +170,8 @@
 
     <section class="panel about-section" id="politique-editoriale">
       <p class="chapter-label">Responsabilité éditoriale</p>
-      <h2>Comment vérifions-nous les contenus ?</h2>
-      <p>
-        Les contenus sont préparés par l’équipe éditoriale Douaa Generator.
-        Avant publication, nous vérifions la catégorie du texte, sa transcription,
-        sa traduction et la référence disponible dans la bibliothèque.
-      </p>
+      <h2>Comment lire les sources et les explications ?</h2>
+      <p>Les contenus sont publiés sous le nom Douaa Generator. Aucun relecteur religieux indépendant n’est actuellement identifié sur le site. Les références permettent au lecteur de consulter les textes cités ; leur présence ne vaut pas validation de l’ensemble des explications par l’auteur ou l’organisme lié.</p>
       <p>
         Nous distinguons systématiquement les versets du Coran, les invocations
         rapportées dans les recueils de hadiths et les formulations personnelles.
@@ -177,7 +187,7 @@
       <div class="source-types editorial-method-steps">
         <article>
           <strong>1. Identifier la nature du texte</strong>
-          <p>Nous déterminons d’abord s’il s’agit d’un verset, d’une invocation prophétique ou d’une formulation personnelle. Cette nature est affichée sur la fiche.</p>
+          <p>Il faut d’abord vérifier s’il s’agit d’un verset, d’une invocation prophétique ou d’une formulation personnelle. Cette nature est affichée sur la fiche.</p>
         </article>
         <article>
           <strong>2. Retrouver la source primaire</strong>
@@ -189,7 +199,7 @@
         </article>
         <article>
           <strong>4. Vérifier le sens</strong>
-          <p>Le texte arabe, la phonétique et la traduction sont comparés à la source. Les explications restent sobres et ne transforment pas une invocation générale en promesse de résultat garanti.</p>
+          <p>Pour vérifier une fiche, comparez le texte arabe, la phonétique et la traduction à la source citée. Les explications restent sobres et ne transforment pas une invocation générale en promesse de résultat garanti.</p>
         </article>
         <article>
           <strong>5. Relier sans dénaturer</strong>
@@ -201,13 +211,13 @@
         </article>
       </div>
 
-      <p class="editorial-meta">Dernière révision de la méthodologie : 25 août 2026.</p>
+      <p class="editorial-meta">Dernière révision de la méthodologie : 16 septembre 2026.</p>
     </section>
 
     <section class="panel about-section" id="confidentialite">
       <p class="chapter-label">Confidentialité</p>
       <h2>Comment les données de navigation sont-elles utilisées ?</h2>
-      <p>Avec votre accord, Douaa Generator utilise Google Analytics pour mesurer anonymement la fréquentation, comprendre les pages consultées et améliorer l’expérience. Les fonctions publicitaires et la personnalisation des annonces sont désactivées.</p>
+      <p>Avec votre accord, Douaa Generator utilise Google Analytics pour compter des visites génériques, sans envoyer les chemins de page, les recherches ni les intentions sélectionnées depuis notre code. Les fonctions publicitaires et la personnalisation des annonces sont désactivées.</p>
       <p>La mesure d’audience ne démarre qu’après votre acceptation. Vous pouvez modifier votre choix à tout moment avec le bouton « Confidentialité » affiché en bas du site.</p>
       <p>Vos douaas favorites restent enregistrées uniquement dans le stockage local de votre navigateur. Elles ne sont pas envoyées à Douaa Generator et ne sont pas synchronisées entre vos appareils.</p>
     </section>
@@ -228,6 +238,12 @@
       </p>
     </section>
 
+    <section id="signaler-erreur" class="panel about-section">
+      <h2>Signaler une erreur</h2>
+      <p>Vous pouvez contacter le projet via <a href="https://www.instagram.com/douaagenerator/">son compte Instagram</a>. Indiquez l’adresse de la page, le passage concerné et, si possible, une référence permettant de vérifier la correction. N’envoyez pas d’informations personnelles sensibles.</p>
+      <h3>Traductions et phonétique</h3>
+      <p>Les traductions françaises servent à comprendre le sens. Lorsqu’une édition ou un traducteur n’est pas documenté dans la fiche, aucune attribution n’est revendiquée. La phonétique est une aide approximative et ne remplace pas l’apprentissage de la prononciation.</p>
+    </section>
     <section class="panel social-section">
       <p class="chapter-label">Suivre le projet</p>
       <h2>Réseaux sociaux</h2>
@@ -272,9 +288,10 @@
 
   <footer class="site-footer">
     <p>Douaa Generator — Un projet gratuit, simple et pédagogique.</p>
+  <nav class="legal-links" aria-label="Informations légales"><a href="/confidentialite/">Politique de confidentialité</a><a href="/cgu/">Conditions générales d’utilisation</a></nav>
   </footer>
 
   <script src="../menu.min.js?v=23"></script>
-  <script src="/analytics.min.js?v=1"></script>
+  <script src="/analytics.min.js?v=2"></script>
 </body>
 </html>

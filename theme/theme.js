@@ -15,6 +15,10 @@ const themeElements = {
 document.addEventListener("DOMContentLoaded", initializeThemePage);
 
 async function initializeThemePage() {
+  if (document.body.dataset.prerendered && !window.__BUILD_PRERENDER__) {
+    bindCopyButtons();
+    return;
+  }
   const themeId = document.body.dataset.themeId ||
     new URLSearchParams(window.location.search).get("id");
 
@@ -25,9 +29,9 @@ async function initializeThemePage() {
 
   try {
     const [duaResponse, contentResponse, reminderResponse] = await Promise.all([
-      fetch("/data/duas.json?v=22", { cache: "no-store" }),
-      fetch("/data/themes.json?v=22", { cache: "no-store" }),
-      fetch("/data/theme-reminders.json?v=24", { cache: "no-store" })
+      fetch("/data/duas.json?v=26", { cache: "default" }),
+      fetch("/data/themes.json?v=22", { cache: "default" }),
+      fetch("/data/theme-reminders.json?v=24", { cache: "default" })
     ]);
 
     if (!duaResponse.ok) {
@@ -308,16 +312,13 @@ function createFaqSection(items, labels = {}) {
       </div>
       <div class="faq-list">
         ${items.map((item, index) => `
-          <article class="faq-item">
-            <button type="button" aria-expanded="${index === 0 ? "true" : "false"}">
-              <span>${escapeHtml(item.question)}</span>
-              <span class="faq-symbol" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-answer${index === 0 ? " open" : ""}">
+          <details class="faq-item"${index === 0 ? " open" : ""}>
+            <summary>${escapeHtml(item.question)}</summary>
+            <div class="faq-answer open">
               <p>${escapeHtml(item.answer)}</p>
               ${item.source ? `<p class="teaching-source">${escapeHtml(item.source)}</p>` : ""}
             </div>
-          </article>
+          </details>
         `).join("")}
       </div>
     </section>
@@ -366,6 +367,7 @@ function bindCopyButtons() {
 }
 
 function updateThemeSeo(category, duaCount, content) {
+  if (document.body.dataset.themeId) return;
   const title = content?.seoTitle || `Douaas ${category.label} — Textes, sources et traductions`;
   const description = content?.seoDescription ||
     `Découvrez ${duaCount} ${duaCount > 1 ? "douaas" : "douaa"} pour le thème ${category.label}, avec texte arabe, traduction française et sources.`;

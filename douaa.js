@@ -42,6 +42,12 @@ document.addEventListener("DOMContentLoaded", initializeDetailPage);
 
 async function initializeDetailPage() {
   bindDetailEvents();
+  const embedded = document.getElementById("duaData");
+  if (document.body.dataset.prerendered && !window.__BUILD_PRERENDER__ && embedded) {
+    currentDua = JSON.parse(embedded.textContent);
+    updateFavoriteButton();
+    return;
+  }
 
   const duaId = document.body.dataset.duaId ||
     new URLSearchParams(window.location.search).get("id");
@@ -52,8 +58,8 @@ async function initializeDetailPage() {
   }
 
   try {
-    const response = await fetch("/data/duas.json?v=22", {
-      cache: "no-store"
+    const response = await fetch("/data/duas.json?v=26", {
+      cache: "default"
     });
 
     if (!response.ok) {
@@ -162,6 +168,7 @@ function renderDetailPage() {
 
 
 function updateDuaSeo() {
+  if (document.body.dataset.duaId) return;
   const title = `${detailElements.title.textContent} — Texte, traduction et source`;
   const descriptionSource =
     currentDua.meaning ||

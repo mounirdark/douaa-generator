@@ -1,0 +1,24 @@
+{
+  "name": "douaa-generator",
+  "private": true,
+  "scripts": {
+    "build": "npm run build:assets && npm run build:pages",
+    "test:browser": "node scripts/test-browser.cjs",
+    "audit:accessibility": "node scripts/audit-accessibility.cjs",
+    "audit:performance": "node scripts/audit-performance.mjs",
+    "test:static": "python3 scripts/check-site.py",
+    "build:assets": "node scripts/build.cjs",
+    "build:pages": "node scripts/prerender.cjs",
+    "test:seo": "node scripts/test-seo.cjs",
+    "seo:search-console": "python3 scripts/analyze-search-console.py",
+    "build:pdf": "node scripts/prerender.cjs --pdf-only"
+  },
+  "devDependencies": {
+    "terser": "5.51.2",
+    "clean-css": "5.3.3",
+    "sharp": "0.35.4",
+    "playwright": "1.63.0",
+    "@axe-core/playwright": "4.13.0",
+    "lighthouse": "13.4.1"
+  }
+}
