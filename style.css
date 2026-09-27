@@ -3632,3 +3632,28 @@ input[type="search"] { min-width: 0; }
   .inner-hero h1 { font-size: 22pt; line-height: 1.2; }
   .inner-hero p:last-child { max-width: none; font-size: 10pt; }
 }
+
+/* Navigation des invocations par thème */
+.dua-navigation, .dua-card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+.dua-card-actions { flex-wrap: wrap; gap: 10px; }
+.dua-arrow {
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--background-soft);
+  color: var(--primary-dark);
+  font-size: 1.4rem;
+}
+.dua-arrow:hover { background: var(--surface-solid); }
+.dua-arrow:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
+.dua-counter { color: var(--text-soft); font-variant-numeric: tabular-nums; }
+.dua-feedback { text-align: center; color: var(--primary-dark); font-size: .85rem; }
+.dua-feedback:empty { display: none; }
+@media print { .dua-navigation, .dua-card-actions, .dua-feedback { display: none; } }

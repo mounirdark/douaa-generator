@@ -72,6 +72,7 @@ function validateDatabase(data) {
 }
 
 function bindStaticEvents() {
+  bindDuaNavigation();
   elements.generateBtn.addEventListener("click", generateInvocation);
 
   elements.regenerateBtn.addEventListener("click", generateInvocation);
@@ -176,7 +177,12 @@ function generateInvocation() {
         dua.categories.includes(categoryId)
       );
 
-      const selectedDua = pickRandom(possibleDuas);
+      const options = [...new Map(possibleDuas.map(dua => [dua.id, dua])).values()];
+      for (let i = options.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [options[i], options[j]] = [options[j], options[i]];
+      }
+      const selectedDua = options[0];
 
       if (!category || !selectedDua) {
         return null;
@@ -184,7 +190,9 @@ function generateInvocation() {
 
       return {
         category,
-        dua: selectedDua
+        dua: selectedDua,
+        options,
+        position: 0
       };
     })
     .filter(Boolean);
@@ -291,18 +299,8 @@ function renderInvocation() {
   );
 
   currentGeneration.selectedDuas.forEach((selection, index) => {
-  blocks.push(
-    createInvocationCard({
-      title: `Douaa : ${selection.category.label}`,
-      content: getLocalizedText(selection.dua, currentLanguage),
-      source: selection.dua.source,
-      language: currentLanguage,
-      className: "dua-card",
-      index: index + 2,
-      duaId: selection.dua.id
-    })
-  );
-});
+    blocks.push(createSelectionCard(selection, index));
+  });
 
   blocks.push(
     createInvocationCard({
@@ -323,6 +321,103 @@ function renderInvocation() {
   elements.output.innerHTML = blocks.join("");
 }
 
+function readGeneratorFavorites() {
+  try {
+    const saved = JSON.parse(localStorage.getItem("douaaGeneratorFavorites") || "[]");
+    return Array.isArray(saved) ? saved.filter(item => item && (typeof item === "string" || item.id)) : [];
+  } catch { return []; }
+}
+
+function createSelectionCard(selection, index) {
+  const favorite = readGeneratorFavorites().some(item => (item.id || item) === selection.dua.id);
+  const navigation = selection.options.length > 1 ? `
+    <nav class="dua-navigation" aria-label="Douaas : ${escapeHtml(selection.category.label)}" dir="ltr">
+      <button type="button" class="dua-arrow" data-dua-action="previous" aria-label="Douaa précédente">←</button>
+      <span class="dua-counter">${selection.position + 1} / ${selection.options.length}</span>
+      <button type="button" class="dua-arrow" data-dua-action="next" aria-label="Douaa suivante">→</button>
+    </nav>` : "";
+  return createInvocationCard({
+    title: `Douaa : ${selection.category.label}`,
+    content: getLocalizedText(selection.dua, currentLanguage),
+    source: selection.dua.source,
+    language: currentLanguage,
+    className: "dua-card",
+    index: index + 2,
+    duaId: selection.dua.id,
+    selectionIndex: index,
+    controls: `${navigation}<div class="dua-card-actions">
+      <button type="button" class="secondary-button" data-dua-action="copy">Copier cette douaa</button>
+      <button type="button" class="secondary-button" data-dua-action="favorite" aria-pressed="${favorite}">${favorite ? "★ Dans mes favoris" : "☆ Favori"}</button>
+    </div><p class="dua-feedback" role="status"></p>`
+  });
+}
+
+function moveDua(card, step, focusAction) {
+  const index = Number(card.dataset.selectionIndex);
+  const selection = currentGeneration?.selectedDuas[index];
+  if (!selection || selection.options.length < 2) return;
+  selection.position = (selection.position + step + selection.options.length) % selection.options.length;
+  selection.dua = selection.options[selection.position];
+  card.outerHTML = createSelectionCard(selection, index);
+  const replacement = elements.output.querySelector(`[data-selection-index="${index}"]`);
+  replacement.style.animation = "none";
+  if (focusAction) replacement.querySelector(`[data-dua-action="${focusAction}"]`).focus({ preventScroll: true });
+  document.getElementById("duaNavigationStatus").textContent = `${selection.category.label} : douaa ${selection.position + 1} sur ${selection.options.length}`;
+  hideElement(elements.copyMessage);
+}
+
+function bindDuaNavigation() {
+  elements.output.addEventListener("click", async event => {
+    const button = event.target.closest("[data-dua-action]");
+    if (!button) return;
+    const card = button.closest("[data-selection-index]");
+    const selection = currentGeneration.selectedDuas[Number(card.dataset.selectionIndex)];
+    const action = button.dataset.duaAction;
+    if (action === "previous" || action === "next") {
+      moveDua(card, action === "next" ? 1 : -1, action);
+      return;
+    }
+    const feedback = card.querySelector(".dua-feedback");
+    try {
+      if (action === "copy") {
+        await navigator.clipboard.writeText(getLocalizedText(selection.dua, currentLanguage));
+        feedback.textContent = "Douaa copiée.";
+      } else if (action === "favorite") {
+        const favorites = readGeneratorFavorites();
+        const existing = favorites.findIndex(item => (item.id || item) === selection.dua.id);
+        if (existing >= 0) favorites.splice(existing, 1);
+        else favorites.push({ id: selection.dua.id, url: getGeneratedDuaUrl(selection.dua.id) });
+        localStorage.setItem("douaaGeneratorFavorites", JSON.stringify(favorites));
+        elements.output.querySelectorAll('[data-dua-action="favorite"]').forEach(control => {
+          const item = currentGeneration.selectedDuas[Number(control.closest("[data-selection-index]").dataset.selectionIndex)];
+          const active = favorites.some(saved => (saved.id || saved) === item.dua.id);
+          control.setAttribute("aria-pressed", String(active));
+          control.textContent = active ? "★ Dans mes favoris" : "☆ Favori";
+        });
+        feedback.textContent = existing >= 0 ? "Douaa retirée des favoris." : "Douaa ajoutée aux favoris.";
+      }
+    } catch {
+      feedback.textContent = action === "copy" ? "Copie impossible. Vous pouvez sélectionner le texte pour le copier." : "Impossible d’enregistrer les favoris sur ce navigateur.";
+    }
+  });
+  let touch = null;
+  elements.output.addEventListener("touchstart", event => {
+    const card = event.target.closest("[data-selection-index]");
+    touch = card && event.touches.length === 1 && !event.target.closest("a, button")
+      ? { card, x: event.touches[0].clientX, y: event.touches[0].clientY } : null;
+  }, { passive: true });
+  elements.output.addEventListener("touchend", event => {
+    if (!touch) return;
+    const start = touch;
+    touch = null;
+    if (!start.card.isConnected || window.getSelection()?.toString()) return;
+    const dx = event.changedTouches[0].clientX - start.x;
+    const dy = event.changedTouches[0].clientY - start.y;
+    if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) moveDua(start.card, dx < 0 ? 1 : -1);
+  }, { passive: true });
+  elements.output.addEventListener("touchcancel", () => { touch = null; }, { passive: true });
+}
+
 function createInvocationCard({
   title,
   content,
@@ -330,7 +425,9 @@ function createInvocationCard({
   language,
   className,
   index,
-  duaId = null
+  duaId = null,
+  selectionIndex = null,
+  controls = ""
 }) {
   const directionClass =
     language === "ar" ? "arabic-content" : "";
@@ -349,6 +446,7 @@ function createInvocationCard({
 
   return `
     <article
+      ${selectionIndex !== null ? `data-selection-index="${selectionIndex}"` : ""}
       class="invocation-card ${escapeHtml(className)}"
       style="animation-delay: ${index * 65}ms"
     >
@@ -368,6 +466,7 @@ function createInvocationCard({
           : ""
       }
 
+      ${controls}
       ${detailsLink}
     </article>
   `;
