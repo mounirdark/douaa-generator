@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Composez gratuitement une invocation personnalisée à partir de thèmes comme le mariage, la famille, le travail, la santé, la protection ou le pardon.">
   <title>Douaa Generator — Générateur d’invocations personnalisées</title>
-  <link rel="stylesheet" href="./style.min.css?v=34">
+  <link rel="stylesheet" href="./style.min.css?v=35">
 
   <link rel="canonical" href="https://douaagenerator.fr/">
   <meta property="og:locale" content="fr_FR">
@@ -112,7 +112,8 @@
       </div>
 
       <p class="panel-description">
-        Prenez votre temps. Vous pouvez choisir une ou plusieurs intentions ; une invocation adaptée sera proposée pour chacune. Parcourez les douaas de chaque thème avec les flèches.
+        Choisissez vos thèmes, composez votre invocation, puis lisez-la et copiez-la.
+        Le générateur assemble des textes de notre bibliothèque : une douaa par thème, accompagnée d’une louange, d’une prière sur le Prophète ﷺ et d’une clôture.
       </p>
 
       <button id="generateBtn" class="primary-button" type="button" disabled>
@@ -121,6 +122,11 @@
       </button>
 
       <div id="categoriesGrid" class="categories-grid"></div>
+
+      <button id="generateBottomBtn" class="primary-button" type="button" disabled>
+        <span>Générer mon invocation</span>
+      </button>
+      <p class="loading-message">Vous pourrez parcourir les douaas de chaque thème avec les flèches, puis copier toute l’invocation avec les textes choisis.</p>
 
       <div id="selectionError" class="message message-error hidden" role="alert">
         Sélectionnez au moins une catégorie.
@@ -171,7 +177,7 @@
   </footer>
 
   <script src="./menu.min.js?v=23"></script>
-  <script src="./app.min.js?v=33"></script>
+  <script src="./app.min.js?v=34"></script>
   <script src="/analytics.min.js?v=2"></script>
 </body>
 </html>

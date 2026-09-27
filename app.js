@@ -9,6 +9,7 @@ const elements = {
   selectionCount: document.getElementById("selectionCount"),
   selectionError: document.getElementById("selectionError"),
   generateBtn: document.getElementById("generateBtn"),
+  generateBottomBtn: document.getElementById("generateBottomBtn"),
   loadingMessage: document.getElementById("loadingMessage"),
   resultSection: document.getElementById("resultSection"),
   output: document.getElementById("output"),
@@ -39,6 +40,7 @@ async function initializeApp() {
     renderCategories();
 
     elements.generateBtn.disabled = false;
+    elements.generateBottomBtn.disabled = false;
     elements.loadingMessage.textContent =
       "Bibliothèque chargée. Sélectionnez vos intentions.";
   } catch (error) {
@@ -74,6 +76,7 @@ function validateDatabase(data) {
 function bindStaticEvents() {
   bindDuaNavigation();
   elements.generateBtn.addEventListener("click", generateInvocation);
+  elements.generateBottomBtn.addEventListener("click", generateInvocation);
 
   elements.regenerateBtn.addEventListener("click", generateInvocation);
 

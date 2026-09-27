@@ -3593,6 +3593,7 @@ input[type="search"] { min-width: 0; }
 .primary-button:disabled { opacity: 1; color: #fff; background: #535f58; }
 .category-option:has(input:focus-visible) { outline: 3px solid #785723; outline-offset: 4px; }
 #generateBtn { margin-bottom: 24px; }
+#generateBottomBtn { margin-top: 24px; }
 
 /* Content remains accessible without JavaScript. */
 .faq-item > summary { padding: 18px 20px; color: var(--primary-dark); font-weight: 700; cursor: pointer; }
