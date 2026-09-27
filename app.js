@@ -346,7 +346,6 @@ function createSelectionCard(selection, index) {
     duaId: selection.dua.id,
     selectionIndex: index,
     controls: `${navigation}<div class="dua-card-actions">
-      <button type="button" class="secondary-button" data-dua-action="copy">Copier cette douaa</button>
       <button type="button" class="secondary-button" data-dua-action="favorite" aria-pressed="${favorite}">${favorite ? "★ Dans mes favoris" : "☆ Favori"}</button>
     </div><p class="dua-feedback" role="status"></p>`
   });
@@ -367,7 +366,7 @@ function moveDua(card, step, focusAction) {
 }
 
 function bindDuaNavigation() {
-  elements.output.addEventListener("click", async event => {
+  elements.output.addEventListener("click", event => {
     const button = event.target.closest("[data-dua-action]");
     if (!button) return;
     const card = button.closest("[data-selection-index]");
@@ -379,10 +378,7 @@ function bindDuaNavigation() {
     }
     const feedback = card.querySelector(".dua-feedback");
     try {
-      if (action === "copy") {
-        await navigator.clipboard.writeText(getLocalizedText(selection.dua, currentLanguage));
-        feedback.textContent = "Douaa copiée.";
-      } else if (action === "favorite") {
+      if (action === "favorite") {
         const favorites = readGeneratorFavorites();
         const existing = favorites.findIndex(item => (item.id || item) === selection.dua.id);
         if (existing >= 0) favorites.splice(existing, 1);
@@ -397,7 +393,7 @@ function bindDuaNavigation() {
         feedback.textContent = existing >= 0 ? "Douaa retirée des favoris." : "Douaa ajoutée aux favoris.";
       }
     } catch {
-      feedback.textContent = action === "copy" ? "Copie impossible. Vous pouvez sélectionner le texte pour le copier." : "Impossible d’enregistrer les favoris sur ce navigateur.";
+      feedback.textContent = "Impossible d’enregistrer les favoris sur ce navigateur.";
     }
   });
   let touch = null;

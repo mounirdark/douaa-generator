@@ -31,8 +31,16 @@ const { chromium } = require('playwright');
     assert.equal(await card.locator('.details-link').getAttribute('href'), saved[0].url);
     await page.locator('[data-lang="ar"]').click();
     assert(await card.locator('.arabic-content').count());
-    await card.getByRole('button', {name: 'Copier cette douaa', exact: true}).click();
-    assert.equal(await page.evaluate(() => navigator.clipboard.readText()), (await content()).trim());
+    assert.equal(await page.locator('[data-dua-action="copy"]').count(), 0);
+    async function checkFullCopy() {
+      await page.locator('#copyBtn').click();
+      const copied = await page.evaluate(() => navigator.clipboard.readText());
+      for (const text of await page.locator('.praise-card .card-content, .salawat-card .card-content, .dua-card .card-content, .closing-card .card-content').allInnerTexts()) {
+        assert(copied.includes(text.trim()), 'Full copy must contain every currently displayed invocation');
+      }
+      assert(copied.includes('TAWAKKUL ET YAQÎN'));
+    }
+    await checkFullCopy();
     await card.locator('.card-content').evaluate(target => {
       const start = new Touch({identifier: 1, target, clientX: 300, clientY: 200});
       const end = new Touch({identifier: 1, target, clientX: 100, clientY: 205});
@@ -43,6 +51,12 @@ const { chromium } = require('playwright');
     await page.locator('[data-lang="fr"]').click();
     assert.equal(await content(), original);
     assert(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth));
+    for (let i = 0; i < 6; i++) await card.getByRole('button', {name: 'Douaa suivante', exact: true}).click();
+    assert.equal(await card.locator('.dua-counter').innerText(), `7 / ${total}`);
+    await checkFullCopy();
+    const copied = await page.evaluate(() => navigator.clipboard.readText());
+    const marriageText = copied.split('DOUAA : MARIAGE\n')[1].split('\n\n')[0];
+    assert.equal(marriageText, (await content()).trim());
     // A theme with a single available text needs no navigation.
     await page.route('**/data/duas.json*', async route => {
       const data = require('../data/duas.json');
@@ -53,6 +67,6 @@ const { chromium } = require('playwright');
     await page.locator('.category-option').first().click();
     await page.locator('#generateBtn').click();
     assert.equal(await page.locator('.dua-navigation').count(), 0);
-    console.log('PASS: unique cycle, previous, independent themes, favorites, Arabic copy, swipe, language persistence, mobile width, single result.');
+    console.log('PASS: unique cycle, previous, independent themes, favorites, full copy in Arabic and French at 7/14, swipe, language persistence, mobile width, single result.');
   } finally { await browser.close(); }
 })().catch(error => {console.error(error); process.exitCode = 1;});
