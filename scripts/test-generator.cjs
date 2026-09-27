@@ -25,10 +25,11 @@ const { chromium } = require('playwright');
     await card.getByRole('button', {name: 'Douaa précédente', exact: true}).click();
     assert((await card.locator('.dua-counter').innerText()).startsWith(String(total)));
     assert.equal(await page.locator('.dua-card').nth(1).innerText(), other);
-    await card.getByRole('button', {name: '☆ Favori', exact: true}).click();
-    const saved = await page.evaluate(() => JSON.parse(localStorage.getItem('douaaGeneratorFavorites')));
-    assert.equal(saved.length, 1);
-    assert.equal(await card.locator('.details-link').getAttribute('href'), saved[0].url);
+    assert.equal(await page.locator('[data-dua-action="favorite"]').count(), 0);
+    assert(await card.evaluate(element => {
+      const navigation = element.querySelector('.dua-navigation');
+      return element.lastElementChild === navigation && getComputedStyle(navigation).justifyContent === 'flex-end';
+    }));
     await page.locator('[data-lang="ar"]').click();
     assert(await card.locator('.arabic-content').count());
     assert.equal(await page.locator('[data-dua-action="copy"]').count(), 0);
@@ -67,6 +68,6 @@ const { chromium } = require('playwright');
     await page.locator('.category-option').first().click();
     await page.locator('#generateBtn').click();
     assert.equal(await page.locator('.dua-navigation').count(), 0);
-    console.log('PASS: unique cycle, previous, independent themes, favorites, full copy in Arabic and French at 7/14, swipe, language persistence, mobile width, single result.');
+    console.log('PASS: unique cycle, previous, independent themes, bottom-right navigation without favorites, full copy in Arabic and French at 7/14, swipe, language persistence, mobile width, single result.');
   } finally { await browser.close(); }
 })().catch(error => {console.error(error); process.exitCode = 1;});

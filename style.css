@@ -3634,15 +3634,13 @@ input[type="search"] { min-width: 0; }
 }
 
 /* Navigation des invocations par thème */
-.dua-navigation, .dua-card-actions {
+.dua-navigation {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 16px;
-  margin-top: 20px;
+  justify-content: flex-end;
+  gap: 6px;
+  margin-top: 12px;
 }
-.dua-card-actions { flex-wrap: wrap; gap: 10px; }
-.dua-navigation { gap: 6px; margin-top: 12px; }
 .dua-arrow {
   display: inline-flex;
   align-items: center;
@@ -3663,6 +3661,4 @@ input[type="search"] { min-width: 0; }
 @media (pointer: coarse) {
   .dua-arrow { width: 44px; height: 44px; }
 }
-.dua-feedback { text-align: center; color: var(--primary-dark); font-size: .85rem; }
-.dua-feedback:empty { display: none; }
-@media print { .dua-navigation, .dua-card-actions, .dua-feedback { display: none; } }
+@media print { .dua-navigation { display: none; } }
