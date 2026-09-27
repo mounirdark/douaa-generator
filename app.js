@@ -420,6 +420,7 @@ function createInvocationCard({
       class="invocation-card ${escapeHtml(className)}"
       style="animation-delay: ${index * 65}ms"
     >
+      ${controls}
       <h3 class="card-title">${escapeHtml(title)}</h3>
 
       <div class="card-content ${directionClass}">
@@ -437,7 +438,6 @@ function createInvocationCard({
       }
 
       ${detailsLink}
-      ${controls}
     </article>
   `;
 }

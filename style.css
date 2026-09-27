@@ -3640,7 +3640,7 @@ input[type="search"] { min-width: 0; }
   align-items: center;
   justify-content: flex-end;
   gap: 6px;
-  margin-top: 12px;
+  margin: 0 0 10px;
 }
 .dua-arrow {
   display: inline-flex;

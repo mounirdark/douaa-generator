@@ -17,10 +17,20 @@ const { chromium } = require('playwright');
     const original = await content();
     const other = await page.locator('.dua-card').nth(1).innerText();
     const total = Number((await card.locator('.dua-counter').innerText()).split('/')[1]);
+    const navigationOffset = () => card.evaluate(element => {
+      const button = element.querySelector('[data-dua-action="next"]');
+      const bounds = element.getBoundingClientRect();
+      const control = button.getBoundingClientRect();
+      return { top: control.top - bounds.top, right: bounds.right - control.right };
+    });
+    const initialOffset = await navigationOffset();
     const seen = new Set([original]);
     for (let i = 1; i < total; i++) {
       await card.getByRole('button', {name: 'Douaa suivante', exact: true}).click();
       const text = await content(); assert(!seen.has(text)); seen.add(text);
+      const offset = await navigationOffset();
+      assert(Math.abs(offset.top - initialOffset.top) < 1);
+      assert(Math.abs(offset.right - initialOffset.right) < 1);
     }
     await card.getByRole('button', {name: 'Douaa suivante', exact: true}).click();
     assert.equal(await content(), original);
@@ -30,7 +40,7 @@ const { chromium } = require('playwright');
     assert.equal(await page.locator('[data-dua-action="favorite"]').count(), 0);
     assert(await card.evaluate(element => {
       const navigation = element.querySelector('.dua-navigation');
-      return element.lastElementChild === navigation && getComputedStyle(navigation).justifyContent === 'flex-end';
+      return element.firstElementChild === navigation && getComputedStyle(navigation).justifyContent === 'flex-end';
     }));
     await page.locator('[data-lang="ar"]').click();
     assert(await card.locator('.arabic-content').count());
@@ -70,6 +80,6 @@ const { chromium } = require('playwright');
     await page.locator('.category-option').first().click();
     await page.locator('#generateBtn').click();
     assert.equal(await page.locator('.dua-navigation').count(), 0);
-    console.log('PASS: unique cycle, previous, independent themes, bottom-right navigation without favorites, full copy in Arabic and French at 7/14, swipe, language persistence, mobile width, single result.');
+    console.log('PASS: unique cycle, previous, independent themes, top-right navigation without favorites, full copy in Arabic and French at 7/14, swipe, language persistence, mobile width, single result.');
   } finally { await browser.close(); }
 })().catch(error => {console.error(error); process.exitCode = 1;});
