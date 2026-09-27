@@ -7,12 +7,12 @@
     "labels": {
       "introductionEyebrow": "Comprendre le thème",
       "duasEyebrow": "Réponse directe à votre recherche",
-      "duasTitle": "🤲 Les douaas du thème",
-      "quranTitle": "📖 Ce que dit le Coran",
-      "sunnahTitle": "🕌 Ce que dit la Sunna",
-      "adviceTitle": "💡 Conseils pratiques",
-      "faqTitle": "❓ Questions fréquentes",
-      "relatedTitle": "📚 Voir aussi"
+      "duasTitle": "Les douaas du thème",
+      "quranTitle": "Ce que dit le Coran",
+      "sunnahTitle": "Ce que dit la Sunna",
+      "adviceTitle": "Conseils pratiques",
+      "faqTitle": "Questions fréquentes",
+      "relatedTitle": "Voir aussi"
     },
     "quickLinks": [
       { "label": "Première situation", "target": "premiere-situation" },
@@ -26,7 +26,7 @@
     "duaGroups": [
       {
         "id": "premiere-situation",
-        "icon": "🤲",
+        "icon": "",
         "title": "Douaas pour une situation précise",
         "description": "Présentation courte de la situation.",
         "duaIds": ["identifiant_dune_douaa_dans_duas_json"]

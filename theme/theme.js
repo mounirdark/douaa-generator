@@ -30,7 +30,7 @@ async function initializeThemePage() {
   try {
     const [duaResponse, contentResponse, reminderResponse] = await Promise.all([
       fetch("/data/duas.json?v=26", { cache: "default" }),
-      fetch("/data/themes.json?v=22", { cache: "default" }),
+      fetch("/data/themes.json?v=23", { cache: "default" }),
       fetch("/data/theme-reminders.json?v=24", { cache: "default" })
     ]);
 
@@ -128,7 +128,7 @@ function createRichThemePage(content, allDuas) {
     <section id="douaas" class="rich-theme-section">
       <div class="rich-section-heading">
         <p class="eyebrow">${escapeHtml(labels.duasEyebrow || "Réponse directe à votre recherche")}</p>
-        <h2>${escapeHtml(labels.duasTitle || "🤲 Les douaas")}</h2>
+        <h2>${escapeHtml(labels.duasTitle || "Les douaas")}</h2>
         ${content.duaIntroduction ? `<p>${escapeHtml(content.duaIntroduction)}</p>` : ""}
       </div>
       ${(content.duaGroups || []).map((group) => createDuaGroup(group, duaMap, content.id)).join("")}
@@ -141,8 +141,8 @@ function createRichThemePage(content, allDuas) {
       }, duaMap, content.id) : ""}
     </section>
 
-    ${createTextSection("coran", labels.quranEyebrow || "Pour approfondir", labels.quranTitle || "📖 Ce que dit le Coran", content.quran || [])}
-    ${createTextSection("sunna", labels.sunnahEyebrow || "Pour approfondir", labels.sunnahTitle || "🕌 Ce que dit la Sunna", content.sunnah || [])}
+    ${createTextSection("coran", labels.quranEyebrow || "Pour approfondir", labels.quranTitle || "Ce que dit le Coran", content.quran || [])}
+    ${createTextSection("sunna", labels.sunnahEyebrow || "Pour approfondir", labels.sunnahTitle || "Ce que dit la Sunna", content.sunnah || [])}
     ${createReminderSection(content.reminder)}
     ${createAdviceSection(content.advice || [], labels)}
     ${createFaqSection(content.faq || [], labels)}
@@ -213,7 +213,7 @@ function createDuaGroup(group, duaMap, themeId) {
   return `
     <section id="${escapeHtml(group.id)}" class="dua-situation-group">
       <div class="dua-situation-heading">
-        <span aria-hidden="true">${escapeHtml(group.icon || "🤲")}</span>
+        ${group.icon ? `<span aria-hidden="true">${escapeHtml(group.icon)}</span>` : ""}
         <div>
           <h3>${escapeHtml(group.title)}</h3>
           ${group.description ? `<p>${escapeHtml(group.description)}</p>` : ""}
@@ -282,7 +282,7 @@ function createAdviceSection(items, labels = {}) {
     <section id="conseils" class="rich-theme-section">
       <div class="rich-section-heading">
         <p class="eyebrow">${escapeHtml(labels.adviceEyebrow || "Mettre les enseignements en pratique")}</p>
-        <h2>${escapeHtml(labels.adviceTitle || "💡 Conseils pratiques")}</h2>
+        <h2>${escapeHtml(labels.adviceTitle || "Conseils pratiques")}</h2>
         <p>${escapeHtml(labels.adviceIntroduction || "Ces conseils sont une synthèse pratique des textes cités sur cette page. Ils ne remplacent pas l’accompagnement d’une personne compétente lorsqu’une situation est complexe.")}</p>
       </div>
       <div class="advice-list">
@@ -307,7 +307,7 @@ function createFaqSection(items, labels = {}) {
     <section id="faq" class="rich-theme-section">
       <div class="rich-section-heading">
         <p class="eyebrow">${escapeHtml(labels.faqEyebrow || "Questions fréquentes")}</p>
-        <h2>${escapeHtml(labels.faqTitle || "❓ Questions fréquentes")}</h2>
+        <h2>${escapeHtml(labels.faqTitle || "Questions fréquentes")}</h2>
         ${labels.faqIntroduction ? `<p>${escapeHtml(labels.faqIntroduction)}</p>` : ""}
       </div>
       <div class="faq-list">
@@ -330,7 +330,7 @@ function createRelatedSection(items, labels = {}) {
   return `
     <section id="voir-aussi" class="panel related-themes-panel">
       <p class="eyebrow">${escapeHtml(labels.relatedEyebrow || "Continuer votre lecture")}</p>
-      <h2>${escapeHtml(labels.relatedTitle || "📚 Voir aussi")}</h2>
+      <h2>${escapeHtml(labels.relatedTitle || "Voir aussi")}</h2>
       <div class="related-theme-links">
         ${items.map((item) => `
           <a href="/themes/${encodeURIComponent(item.id)}/">${escapeHtml(item.label)} <span aria-hidden="true">→</span></a>
